@@ -1,0 +1,335 @@
+ Задание 3. Продолжение 
+Ответить на вопросы:
+Что такое тестирование безопасности?
+Перечислите Принципы безопасности программного обеспечения
+Перечислите виды уязвимостей в безопасности программного обеспечения
+Что такое Тестирование на отказ и восстановления Failover and Recovery Testing?
+Что такое тестирование Эффективности использования ресурсов?
+Что такое тестирование Масштабируемости (Scalability testing)?
+Что такое тестирование Производительности (Performance testing)/Load testing/Stress testing/Volume testing?
+Что такое тестирование Надежности(Reliability Testing)?
+Что такое тестирование Стабильности (Stability Testing)?
+Что такое тестирование Удобства использования(Usability testing)?
+Что такое тестирование Pixel Perfect? Какие инструментами можно пользоваться при тестировании Pixel Perfect?
+Что такое тестирование Локализации// Совместимости/ Адаптивности?
+Что такое тестирование установки (Installation Testing)?
+Что такое ETL-тестирование/Тестирование перед миграцией (Pre-Migration testing)/Миграционное тестирование (Migration testing)/Тестирование после миграции (Post-Migration testing)?
+
+
+Тестирование безопасности. Принципы безопасности ПО. Виды уязвимостей в безопасности ПО.
+
+Тестирование безопасности (security testing) — тестирование, направленное на проверку способности приложения противостоять злонамеренным попыткам получения доступа к данным или функциям, права на доступ к которым у злоумышленника нет.
+
+Принципы безопасности программного обеспечения (ПО) направлены на защиту от угроз и обеспечивают надежную работу систем. Вот ключевые принципы:
+Принцип минимальных привилегий: ПО должно предоставлять пользователю или процессу только те права и доступы, которые необходимы для выполнения конкретных задач.
+Принцип защиты по глубине: Безопасность должна обеспечиваться на нескольких уровнях (многоуровневая защита), чтобы даже в случае компрометации одного уровня система оставалась защищенной.
+Принцип разделения обязанностей: Критические операции должны требовать участия нескольких лиц или систем, чтобы исключить возможность злоупотребления полномочиями.
+Принцип явного отказа: По умолчанию доступ к ресурсам и операциям должен быть закрыт, если нет явного разрешения на доступ.
+Принцип использования доказанных решений: Предпочтение отдается проверенным временем и широко использующимся решениям в области безопасности, вместо разработки новых, неопробованных методов.
+Принцип безопасности по умолчанию: Все настройки и конфигурации системы должны быть максимально безопасными без необходимости дополнительного вмешательства пользователя.
+Принцип учета человеческого фактора: Учитывается, что ошибки пользователей могут привести к уязвимостям, поэтому ПО должно быть спроектировано таким образом, чтобы минимизировать такие риски.
+Принцип отказоустойчивости: ПО должно быть способно продолжать функционировать корректно даже в случае сбоя или компрометации одной из частей системы.
+Принцип конфиденциальности: Данные должны быть защищены от несанкционированного доступа и раскрытия.
+Принцип целостности: ПО должно гарантировать, что данные и процессы не будут изменены или повреждены без авторизации.
+Виды уязвимостей в безопасности ПО - топ-10 OWASP:
+нарушение контроля доступа;
+недочёты криптографии;
+инъекции;
+небезопасный дизайн;
+небезопасная конфигурация;
+использование уязвимых или устаревших компонентов;
+ошибки идентификации и аутентификации;
+нарушения целостности программного обеспечения и данных;
+ошибки логирования и мониторинга безопасности;
+подделка запросов на стороне сервера.
+Security Testing is a process aimed at evaluating an application's ability to withstand malicious attempts to access data or functions without proper authorization. ISTQB: A type of testing to determine the security of a component or system.
+Principles of Software Security are guidelines designed to protect software from threats and ensure reliable system performance. Key principles include:
+Principle of Least Privilege: Users or processes should be granted only the permissions necessary for specific tasks.
+Defense in Depth: Security should be implemented across multiple layers to ensure protection even if one layer is compromised.
+Separation of Duties: Critical operations should require the involvement of multiple people or systems to prevent misuse of power.
+Fail-Safe Defaults: By default, access to resources and operations should be denied unless explicitly allowed.
+Use of Proven Solutions: Preference should be given to time-tested and widely adopted security measures over unproven new methods.
+Security by Default: System settings should be configured to be secure without requiring additional user intervention.
+Consideration of Human Factors: Software should be designed to minimize risks associated with user errors.
+Resilience: Software should continue functioning correctly even in the event of a failure or compromise.
+Confidentiality: Data must be protected from unauthorized access and disclosure.
+Integrity: Software must ensure that data and processes are not altered or damaged without authorization.
+
+
+OWASP = Open Web Application Security Project
+Top 10 OWASP Web Application Security Risks:
+A01:2021-Broken Access Control 
+A02:2021-Cryptographic Failures 
+A03:2021-Injection 
+A04:2021-Insecure Design
+A05:2021-Security Misconfiguration 
+A06:2021-Vulnerable and Outdated Components 
+A07:2021-Identification and Authentication Failures
+A08:2021-Software and Data Integrity Failures
+A09:2021-Security Logging and Monitoring Failures
+A10:2021-Server-Side Request Forgery 
+
+
+
+Тестирование эффективности:
+масштабируемость
+производительность
+использование ресурсов
+
+Тестирование масштабируемости (scalability testing) — исследование способности приложения увеличивать показатели производительности в соответствии с увеличением количества доступных приложению ресурсов.
+Типы масштабируемости
+Горизонтальная масштабируемость: Увеличение мощности системы за счет добавления новых узлов или серверов. 
+Вертикальная масштабируемость: Увеличение мощности существующих узлов за счет добавления ресурсов (процессоров, оперативной памяти и т.д.).
+
+Тестирование производительности (performance testing) — исследование показателей скорости реакции приложения на внешние воздействия при различной по характеру и интенсивности нагрузке. В рамках тестирования производительности выделяют следующие подвиды: 
+
+Нагрузочное тестирование (load testing, capacity testing) — исследование способности приложения сохранять заданные показатели качества при нагрузке в допустимых пределах и некотором превышении этих пределов (определение «запаса прочности»).
+
+Стрессовое тестирование (stress testing) — исследование поведения приложения при нештатных изменениях нагрузки, значительно превышающих расчётный уровень, или в ситуациях недоступности значительной части необходимых приложению ресурсов. Стрессовое тестирование может выполняться и вне контекста нагрузочного тестирования: тогда оно, как правило, называется «тестированием на разрушение» (destructive testing) и представляет собой крайнюю форму негативного тестирования. 
+
+Объёмное тестирование (volume testing) — исследование производительности приложения при обработке различных (как правило, больших) объёмов данных. 
+Тестирование выносливости (stability testing, soak testing, Endurance Testing) - исследование производительности приложения при постоянной рабочей нагрузке в течение длительного времени. 
+Тестирование пиков нагрузки (Spike Testing) - поведение системы при резком повышении нагрузки.
+
+Тестирование использования ресурсов (resource utilization testing , efficiency testing, storage testing) — совокупность видов тестирования, проверяющих эффективность использования приложением доступных ему ресурсов (процессор (CPU), оперативная память (RAM), дисковое пространство и сетевые ресурсы) и зависимость результатов работы приложения от количества доступных ему ресурсов. 
+
+
+
+Efficiency:
+scalability (vertical, horizontal)
+performance (load, stress, volume)
+resource utilization (CPU, memory, disk, network)
+
+Scalability Testing evaluates an application's ability to improve performance as more resources become available. There are two types of scalability:
+Horizontal Scalability: Increases system capacity by adding new nodes or servers.
+Vertical Scalability: Enhances the capacity of existing nodes by adding more resources (e.g., processors, RAM).
+Performance Testing examines how quickly an application responds under various load conditions. Subtypes include:
+Load Testing: Assesses the application's ability to maintain performance under expected and slightly exceeded load conditions.
+Stress Testing: Evaluates application behavior under extreme load or resource constraints, often called "destructive testing" when pushed to failure.
+Volume Testing: Tests application performance with large data volumes.
+Stability Testing: Measures performance under sustained load over time.
+Spike Testing: Observes system behavior during sudden load increases.
+
+Resource Utilization Testing: Checks how efficiently an application uses resources like CPU, RAM, storage, and network bandwidth, and how performance depends on resource availability.
+
+
+
+
+
+
+
+
+
+
+
+
+Тестирование надежности:
+прочность
+восстанавливаемость
+отказоустойчивость
+Тестирование на отказ и восстановление
+
+Тестирование надёжности (reliability testing) — тестирование способности приложения выполнять свои функции в заданных условиях на протяжении заданного времени или заданного количества операций.
+
+ Тестирование восстанавливаемости (recoverability testing) — тестирование способности приложения восстанавливать свои функции и заданный уровень производительности, а также восстанавливать данные в случае возникновения критической ситуации, приводящей к временной (частичной) утрате работоспособности приложения. 
+Back Up (Резервное копирование) — это процесс создания копий данных, которые могут быть использованы для восстановления информации в случае ее потери или повреждения. Типы резервных копий:
+Полное резервное копирование (Full Backup): Создает полную копию всех данных.
+Инкрементное резервное копирование (Incremental Backup): Копируются только те данные, которые изменились с момента последнего резервного копирования (полного или инкрементного). Этот метод экономит время и место, но требует всех предыдущих копий для восстановления.
+Дифференциальное резервное копирование (Differential Backup): Копируются все данные, измененные с момента последнего полного резервного копирования. Требует больше места, чем инкрементное, но восстановление быстрее, поскольку нужно только последнее полное и последнее дифференциальное копирование.
+Restore (Восстановление) — это процесс возвращения данных из резервной копии в рабочую систему.
+
+
+ Тестирование отказоустойчивости (failover testing) — тестирование, заключающееся в эмуляции или реальном создании критических ситуаций с целью проверки способности приложения задействовать соответствующие механизмы, предотвращающие нарушение работоспособности, производительности и повреждения данных. 
+
+Откат (roll back) — это процесс возврата системы или базы данных к предыдущему, известному корректному состоянию в случае обнаружения ошибки или сбоя.
+Продвижение вперёд (roll forward) — это процесс восстановления системы или базы данных до последнего актуального состояния после отката или сбоя.
+Компенсация (compensation) — это процесс выполнения операций, компенсирующих ранее выполненные действия, которые должны быть отменены или изменены.
+
+Тестирование на отказ и восстановление (Failover and Recovery Testing) — это тип тестирования, направленный на проверку способности системы или приложения продолжать работу в условиях сбоев и эффективно восстанавливаться после них. Важные аспекты:
+Время восстановления (Recovery Time Objective, RTO): Максимальное время, в течение которого система должна восстановиться после сбоя.
+Уровень восстановления данных (Recovery Point Objective, RPO): Максимальное допустимое время потери данных, выраженное в виде времени, предшествующего сбою, на которое могут быть потеряны данные.
+Пример для понимания RTO и RPO:
+Представим, что у компании есть онлайн-магазин. В случае сбоя системы:
+RTO = 2 часа: Магазин может быть недоступен не более 2 часов. Если система не будет восстановлена в течение этого времени, это повлечет значительные убытки.
+RPO = 1 час: Система должна иметь возможность восстановить данные, не потеряв информацию более чем за 1 час. Это значит, что данные, созданные в последний час до сбоя, могут быть утеряны, но потери за больший период недопустимы.
+
+
+
+Reliability:
+robustness
+recoverability (back up, restore)
+fault-tolerance (roll back, roll forward, compensation)
+Failover and Recovery Testing
+
+Reliability Testing assesses an application's ability to perform its functions consistently under specified conditions over a set period or number of operations.
+Recoverability Testing evaluates an application's ability to restore its functions and performance, as well as recover data, after a critical situation causes temporary (partial) loss of functionality.
+Back Up involves creating copies of data to restore information in case of loss or damage. Types of backups include:
+Full Backup: Creates a complete copy of all data.
+Incremental Backup: Copies only data changed since the last backup, saving time and storage but requiring all previous backups for restoration.
+Differential Backup: Copies all data changed since the last full backup, requiring more space but allowing quicker restoration with just the last full and last differential backups.
+Restore is the process of returning data from a backup to a working system.
+Failover Testing involves simulating or creating critical situations to test an application's ability to activate mechanisms that prevent loss of functionality, performance issues, and data corruption.
+Roll Back is the process of returning a system or database to a previous, known good state after an error or failure.
+Roll Forward restores a system or database to the most recent state after a roll back or failure.
+Compensation involves executing operations that negate or adjust previously executed actions that need to be canceled or altered.
+Failover and Recovery Testing verifies a system's ability to continue operating during failures and recover effectively afterward. Key aspects include:
+Recovery Time Objective (RTO): Maximum acceptable time to restore the system after a failure.
+Recovery Point Objective (RPO): Maximum acceptable amount of data loss measured in time before the failure.
+
+
+
+
+Тестирование удобства использования:
+производительность, эффективность
+правильность
+активизация в памяти
+эмоциональная реакция
+Тестирование Pixel Perfect
+
+Тестирование удобства использования (usability testing) — тестирование, направленное на исследование того, насколько конечному пользователю понятно, как работать с продуктом (understandability, learnability, operability), а также на то, насколько ему нравится использовать продукт (attractiveness). И это не оговорка — очень часто успех продукта зависит именно от эмоций, которые он вызывает у пользователей. Для эффективного проведения этого вида тестирования требуется реализовать достаточно серьёзные исследования с привлечением конечных пользователей, проведением маркетинговых исследований и т.д. Еще аспекты:
+Эффективность (Efficiency): Насколько быстро пользователь может выполнить задачу.
+Запоминаемость (Recall): Как легко пользователь вспоминает, как пользоваться продуктом после перерыва.
+Правильность (Accuracy): Сколько ошибок допускает пользователь при выполнении задач.
+Эмоциональная реакция (Emotional Response): Какие чувства вызывает использование продукта.
+
+Тестирование доступности (accessibility testing) — тестирование, направленное на исследование пригодности продукта к использованию людьми с ограниченными возможностями (слабым зрением и т.д.).
+
+Тестирование Pixel Perfect — это тип тестирования, который фокусируется на точности отображения графических элементов веб-страниц или приложений, сравнивая их с утвержденными дизайнами или макетами. Цель тестирования Pixel Perfect — убедиться, что визуальные элементы, такие как изображения, текст и другие графические компоненты, точно соответствуют дизайнерским макетам на всех поддерживаемых устройствах и разрешениях.
+Инструменты:
+Pixel Perfect Plugin (позволяет накладывать дизайнерский макет поверх веб-страницы для проверки точности отображения)
+Zeplin/Figma: предоставляют точные спецификации для разработчиков и тестировщиков.
+LambdaTest — это платформа для тестирования совместимости браузеров, которая предлагает инструменты для отладки и тестирования веб-приложений на различных браузерах и устройствах в режиме реального времени.
+UX-тестирование (User Experience Testing) — это процесс оценки взаимодействия пользователей с продуктом для улучшения общего пользовательского опыта. Основная цель UX-тестирования — выявить проблемы и неудобства в использовании интерфейса, чтобы сделать его более интуитивно понятным и удобным.
+Основные аспекты UX-тестирования:
+Оценка удобства использования: Проверка того, насколько легко и эффективно пользователи могут выполнять свои задачи в приложении или на сайте.
+Обратная связь от пользователей: Сбор и анализ отзывов и предложений пользователей для понимания их потребностей и проблем.
+Тестирование сценариев использования: Анализ того, как пользователи взаимодействуют с продуктом в различных сценариях и ситуациях.
+Анализ поведения: Наблюдение за действиями пользователей для выявления потенциальных проблем и областей для улучшения.
+
+
+Usability:
+efficiency
+accuracy
+recall
+emotional response
+
+Usability Testing assesses how easily and effectively end-users can interact with a product. It evaluates:
+Understandability: How clearly users can understand how to use the product.
+Learnability: How easily users can learn to use the product.
+Operability: How effectively users can operate the product.
+Efficiency: How quickly users can complete tasks.
+Recall: How easily users remember how to use the product after a break.
+Accuracy: How many errors users make while performing tasks.
+Emotional Response: The feelings evoked by using the product.
+Attractiveness: How much users enjoy using the product, as emotional response can significantly impact product success.
+Accessibility Testing evaluates how well a product accommodates users with disabilities, such as those with visual impairments.
+Pixel Perfect Testing focuses on verifying the accuracy of graphical elements on web pages or applications, ensuring they match approved designs or mockups. It ensures that visual elements like images and text align precisely with design specifications across all supported devices and resolutions.
+Tools for Pixel Perfect Testing:
+Pixel Perfect Plugin: Allows overlaying design mockups on web pages to check display accuracy.
+Zeplin/Figma: provide accurate specifications for developers and testers.
+UX Testing (User Experience Testing) is the process of evaluating how users interact with a product to improve the overall user experience. The main goal of UX testing is to identify issues and discomforts in the interface to make it more intuitive and user-friendly.
+Key aspects of UX Testing:
+Usability Evaluation: Checking how easily and effectively users can accomplish their tasks within the application or website.
+User Feedback: Collecting and analyzing user comments and suggestions to understand their needs and problems.
+Scenario Testing: Analyzing how users interact with the product in different scenarios and situations.
+Behavior Analysis: Observing user actions to identify potential issues and areas for improvement.
+
+
+
+
+
+
+Тестирование портативности:
+адаптивность
+совместимость
+локализация
+
+Тестирование адаптивности — это процесс проверки корректности отображения и работы веб-сайта или приложения на разных устройствах и экранах с различными разрешениями и ориентациями. 
+
+Тестирование интернационализации (internationalization testing, i18n testing, globalization testing, localizability testing) — тестирование, направленное на проверку готовности продукта к работе с использованием различных языков и с учётом различных национальных и культурных особенностей. Этот вид тестирования не подразумевает проверки качества соответствующей адаптации (этим занимается тестирование локализации, см. следующий пункт), оно сфокусировано именно на проверке возможности такой адаптации (например: что будет, если открыть файл с иероглифом в имени; как будет работать интерфейс, если всё перевести на японский; может ли приложение искать данные в тексте на корейском и т.д.). 
+
+Тестирование локализации (localization testing, l10n) — тестирование, направленное на проверку корректности и качества адаптации продукта к использованию на том или ином языке с учётом национальных и культурных особенностей. Это тестирование следует за тестированием интернационализации (см. предыдущий пункт) и проверяет корректность перевода и адаптации продукта, а не готовность продукта к таким действиям. 
+
+Тестирование совместимости (compatibility testing, interoperability testing) — тестирование, направленное на проверку способности приложения работать в указанном окружении. Здесь, например, может проверяться:
+ Совместимость с аппаратной платформой, операционной системой и сетевой инфраструктурой (конфигурационное тестирование, configuration testing).
+ Совместимость с браузерами и их версиями (кросс-браузерное тестирование, cross-browser testing).
+Совместимость с мобильными устройствами (mobile testing).
+
+Тестирование прямой совместимости (Forward Compatibility Testing) проверяет, будет ли текущая версия программного обеспечения корректно работать с будущими версиями операционной системы, платформы или другого программного обеспечения. Например, тестирование приложения на совместимость с еще не выпущенными версиями операционной системы, чтобы убедиться, что оно не потеряет функциональность после обновления среды.
+
+Тестирование обратной совместимости (Backward Compatibility Testing) направлено на проверку того, будет ли новая версия программного обеспечения корректно работать с предыдущими версиями операционной системы, платформы или других компонентов. Это важно, когда пользователи не обновляют сразу все системы или когда необходимо поддерживать работу с устаревшими версиями, чтобы избежать проблем с функциональностью или данными.
+Portability:
+adaptability
+co-existence
+localization (internationalization readiness, localization, in-context review)
+
+Responsive Testing (adaptability) is the process of verifying that a website or application displays and functions correctly across different devices and screen sizes with various resolutions and orientations. 
+
+Internationalization Testing (i18n Testing, Globalization Testing, Localizability Testing) is a type of testing focused on verifying a product's readiness to work with various languages and considering different national and cultural specifics. This type of testing does not assess the quality of the corresponding adaptation (which is handled by localization testing; see the next point). Instead, it is focused on verifying the product's ability to undergo such adaptation (e.g., what happens if a file with a name in Chinese characters is opened; how the interface will function if everything is translated into Japanese; whether the application can search for data in Korean text, etc.).
+
+Localization Testing (l10n Testing) is aimed at verifying the correctness and quality of a product's adaptation for use in a specific language, taking into account national and cultural specifics. This type of testing follows internationalization testing (see the previous point) and checks the accuracy of translation and adaptation, rather than the product's readiness for such actions.
+
+Compatibility Testing (Interoperability Testing) is aimed at verifying an application's ability to function in a specified environment. This may include:
+- Compatibility with hardware platforms, operating systems, and network infrastructure (Configuration Testing).
+- Compatibility with browsers and their versions (Cross-Browser Testing).
+- Compatibility with mobile devices (Mobile Testing).
+
+Forward Compatibility Testing checks whether the current version of software will work correctly with future versions of the operating system, platform, or other software. For example, testing an application for compatibility with upcoming versions of an operating system to ensure it won't lose functionality after the environment is updated.
+
+Backward Compatibility Testing is focused on verifying that the new version of software will work correctly with previous versions of the operating system, platform, or other components. This is important when users don't immediately update all systems or when it's necessary to maintain functionality with older versions to avoid issues with functionality or data.
+
+
+
+Тестирование ремонтопригодности:
+исправление проблем
+усовершенствование
+профилактическое обслуживание
+
+
+Maintainability:
+corrective maintenance
+perfective maintenance
+preventive maintenance
+
+
+
+Тестирование установки
+
+Тестирование установки — это вид тестирования программного обеспечения, который фокусируется на проверке правильности установки и настройки приложения. Цель — убедиться, что программа корректно устанавливается, обновляется и удаляется на целевых платформах без ошибок.
+Основные аспекты тестирования установки:
+Проверка процесса установки: Убедиться, что процесс установки завершается успешно, включая все необходимые компоненты, файлы и настройки.
+Проверка совместимости: Убедиться, что программное обеспечение устанавливается корректно на различных операционных системах, аппаратных конфигурациях и в разных средах.
+Обработка ошибок: Проверка, как установщик справляется с ошибками, такими как недостаток места на диске, отсутствие необходимых зависимостей или прерванная установка.
+Обновление и удаление: Убедиться, что обновления программного обеспечения устанавливаются без проблем и что программа может быть корректно удалена, не оставляя остаточных файлов или настроек.
+Installation Testing
+
+Installation Testing is a type of software testing that focuses on verifying the correct installation and setup of a software application. The goal is to ensure that the software installs, updates, and uninstalls correctly on the intended target environments without issues.
+Key aspects of Installation Testing:
+Validation of Installation Process: Ensures that the installation process completes successfully, including all necessary components, files, and configurations.
+Compatibility Checks: Verifies that the software installs correctly across different operating systems, hardware configurations, and environments.
+Error Handling: Checks how the installer handles errors, such as insufficient disk space, missing dependencies, or interrupted installations.
+Upgrade and Uninstall: Ensures that software updates can be installed without issues and that the software can be uninstalled cleanly without leaving residual files or settings.
+
+
+
+
+
+ETL-тестирование
+Тестирование перед миграцией (Pre-Migration testing)
+Миграционное тестирование (Migration testing)
+Тестирование после миграции (Post-Migration testing)
+
+ETL-тестирование (Extract, Transform, Load) — это процесс проверки корректности извлечения данных из различных источников, их трансформации по заданным правилам и загрузки в целевую систему. Цель — убедиться, что данные корректно перемещены и преобразованы без потерь и искажений.
+Тестирование перед миграцией проводится до переноса данных. Цель — оценить текущее состояние данных, выявить возможные проблемы и убедиться в готовности системы и данных к миграции. Проверяются исходные данные, а также создаются контрольные точки для последующего сравнения.
+Миграционное тестирование — это проверка процесса переноса данных из одной системы в другую. В ходе этого тестирования контролируется, что данные были корректно перенесены, сохранена их целостность, и что процесс миграции выполняется в соответствии с планом. В идеале миграция начинается с резервного копирования данных на ленту, чтобы в любой момент можно было восстановить устаревшую систему. Все сценарии и шаги должны быть правильно задокументированы без какой-либо двусмысленности.
+Тестирование после миграции проводится после завершения процесса миграции. Оно направлено на проверку того, что данные в новой системе корректны, полноценно функционируют, и что вся функциональность работает так, как ожидается. Включает сравнение данных до и после миграции, а также проверку производительности новой системы.
+ETL Testing
+Pre-Migration Testing
+Migration Testing
+Post-Migration Testing
+ETL Testing (Extract, Transform, Load) is the process of verifying the correctness of data extraction from various sources, their transformation according to specified rules, and loading into the target system. The goal is to ensure that the data is accurately transferred and transformed without loss or distortion.
+Pre-Migration Testing is conducted before the data transfer. The goal is to assess the current state of the data, identify potential issues, and ensure that the system and data are ready for migration. This involves verifying the source data and establishing checkpoints for later comparison.
+Migration Testing involves verifying the process of transferring data from one system to another. This testing ensures that the data has been correctly transferred, that its integrity is maintained, and that the migration process is executed according to the plan.
+Post-Migration Testing is conducted after the migration process is complete. It focuses on ensuring that the data in the new system is accurate, fully functional, and that all functionality works as expected. This includes comparing data before and after migration and checking the performance of the new system.
+
+
