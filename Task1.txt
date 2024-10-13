@@ -1,0 +1,443 @@
+ТЕОРИЯ 
+
+Задание 1
+Ответить на вопросы:
+Что такое тестирование программного обеспечения?
+Что такое качество программного обеспечения?
+Когда начинать и заканчивать тестирование?
+Какие знаете цели тестирования программного обеспечения?
+Quality Assurance- это?
+Quality Control - это?
+Тестирование - это?
+Какие знаете принципы тестирования?
+Что такое верификация?
+Что такое валидация?
+Перечислите характеристики качества программного обеспечения и их атрибуты.
+
+Что такое тестирование программного обеспечения?
+Тестирование - процесс в рамках жизненного цикла разработки программного обеспечения, который оценивает качество компонента или системы, а также связанных с ними рабочих продуктов. [ISTQB Glossary]
+Тестирование программного обеспечения — процесс анализа программного средства и сопутствующей документации с целью выявления дефектов и повышения качества продукта. [Святослав Куликов]
+Тестирование ПО — проверка соответствия между реальным и ожидаемым поведением программы [Что-то из интернета]
+What is software testing?
+
+Testing. The process consisting of all lifecycle activities, both static and dynamic, concerned with planning, preparation and evaluation of software products and related work products to determine that they satisfy specified requirements, to demonstrate that they are fit for purpose and to detect defects. [ISTQB Glossary] 
+
+Software testing is the process of analysing a software tool and associated documentation to identify defects and improve the quality of the product. [Svyatoslav Kulikov]
+
+Software testing - checking the correspondence between the real and expected behaviour of a program [Something from the Internet].
+
+
+
+Что такое качество программного обеспечения?
+[1061-1998 IEEE Standard for Software Quality Metrics Methodology] ‘Качество программного обеспечения — это степень, в которой программное обеспечение обладает требуемой комбинацией свойств.’
+Качество ПО - это совокупность характеристик ПО, связанных с его способностью удовлетворять установленные или предполагаемые потребности. 
+Принято выделять 6+2 основных характеристик качества ПО 
+Функциональность (Functionality). 
+Надежность (Reliability). 
+Удобство использования(Usability). 
+Эффективность (Efficiency). 
+Удобство сопровождения (Maintainability). 
+Портативность (Portability). 
+Совместимость (Compatibility). 
+Защищенность (Security).
+2. What is software quality?
+
+'Software quality is the extent to which software has a desired combination of properties.'
+
+Software quality is a set of software characteristics related to its ability to fulfil established or perceived needs. 
+
+It is accepted to distinguish 6+2 main characteristics of software quality 
+
+Functionality. 
+Reliability. 
+Usability. 
+Efficiency. 
+Maintainability. 
+Portability. 
+Compatibility. 
+Security.
+
+
+
+3. Когда начинать и заканчивать тестирование?
+
+Раннее начало тестирования (Shift-Left Testing):
+С момента планирования проекта: Начинайте тестирование с самого начала проекта, включая анализ требований и проектирование тестов. Это позволяет выявить потенциальные проблемы на ранних стадиях и минимизировать затраты на исправление.
+После разработки функциональных требований: Как только требования определены и утверждены, вы можете начать разрабатывать тестовые случаи и план тестирования.
+После завершения разработки определенного компонента или модуля: При разработке поэтапно начинайте тестирование по мере завершения отдельных модулей или компонентов.
+В процессе разработки (Continuous Testing):
+По мере написания кода: При использовании подходов, таких как Test-Driven Development (TDD) или Behavior-Driven Development (BDD), тестирование начинается параллельно с разработкой кода. Тесты пишутся до кода (или одновременно с ним), что способствует качеству и стабильности кода.
+3. Подход к тестированию со сдвигом вправо (Shift Right testing) заключается в том, что тестирование выполняется на более поздних стадиях разработки, т. е. после того, как система запущена. Основная цель этого подхода — постоянная проверка производительности и удобства использования системы после того, как она станет доступна для потребления реальным пользователем. Также с помощью конечных пользователей осуществляется получение отзывов о системе. 
+Подводя итог, тестирование должно начинаться настолько рано, насколько это имеет смысл в вашем контексте. 
+Когда заканчивать тестирование?
+100% выполнение тестов: Заканчивайте тестирование, когда все запланированные тестовые случаи выполнены, и все критические и высокоприоритетные дефекты исправлены.
+Когда достигнуты критические метрики качества: Тестирование может считаться завершенным, когда достигнуты заранее определенные критерии завершения, такие как процент покрытых требований, минимальное количество дефектов или допустимый уровень производительности.
+Когда проект достиг своей стадии завершения - фазы выпуска или релиза: Тестирование завершается перед планируемым выпуском или релизом продукта, когда продукт считается готовым для публикации. Это может включать проверку на стабильность, готовность к развертыванию и соответствие требованиям.
+Когда выявлены все критические дефекты: Тестирование может быть завершено, когда все критические и блокирующие дефекты исправлены, и продукт проходит все необходимые проверки для использования в производственной среде.
+Когда ресурсы исчерпаны: В условиях ограниченных ресурсов и времени может возникнуть необходимость завершить тестирование, несмотря на то, что не все тесты выполнены или не все дефекты исправлены.
+По завершении пользовательского тестирования: Заканчивайте тестирование после успешного прохождения пользовательского тестирования (User Acceptance Testing, UAT), если конечные пользователи подтвердили, что продукт соответствует их ожиданиям и требованиям.
+3. When to start and to end testing? (Test entry and exit criteria)
+When to Start Testing
+Testing should start as early as possible in the software development process. This approach is often referred to as Shift Left Testing, where testing activities are moved earlier in the development cycle. Here are specific points when testing can begin:
+During Requirements Gathering:
+Review and Validation: Testing can begin with reviewing and validating the requirements to ensure they are clear, complete, and testable.
+Static Testing: Early test case design can start based on the requirements, helping to identify ambiguities and inconsistencies before development begins.
+During Design Phase:
+Design Review: Testing teams can participate in design reviews to catch issues related to architecture and design flaws.
+Test Case Preparation: Writing test cases based on the design documents can also start at this stage.
+After Code Development Begins:
+Unit Testing: Developers typically start unit testing as they write code, testing individual components to ensure they work as intended.
+Integration Testing: As soon as multiple components or modules are developed, integration testing can begin to ensure they work together correctly.
+When a Build is Available:
+System Testing: Once a stable build is available, system testing can commence to validate the functionality of the entire system.
+Agile/Continuous Testing:
+In Agile environments, testing often starts at the very beginning of the sprint, and testers work alongside developers, continuously testing new features as they are developed.
+When to End Testing
+Testing typically ends when specific criteria are met, and the product is deemed ready for release or further stages of development. Here’s when testing can conclude:
+All Test Cases Executed: Testing ends when all planned test cases, especially critical ones, have been executed.
+Defect Resolution: All critical and high-priority defects have been fixed, retested, and closed. Remaining defects should be low-priority, with acceptable workarounds or deferred for future releases.
+Code Coverage Goals Met: The agreed-upon code coverage targets, such as unit or integration test coverage, have been achieved.
+Performance Benchmarks Achieved: The software meets the required performance, security, and usability benchmarks.
+Stakeholder Approval: Testing can end once the stakeholders, including project managers and clients, have reviewed and approved the testing outcomes.
+User Acceptance Testing (UAT) Sign-Off: If UAT is part of the process, testing concludes when end-users have validated the software, and all UAT criteria are met.
+Regression Testing Completed: Final regression testing is done to ensure that recent changes haven’t introduced new issues, and no new defects have been found.
+Compliance and Security Checks Passed: All necessary compliance and security checks are completed successfully.
+Final Test Report: A comprehensive test completion report is created, summarizing all testing activities, outcomes, and remaining risks. Once this report is approved, testing can formally end.
+No Critical Issues Remain: Testing can end when no critical or show-stopping issues are left, meaning the software is stable and ready for release.
+ 11. When resources are exhausted: With limited resources and time, it may be necessary to complete testing even though not all tests are completed or not all defects are corrected.
+
+
+
+
+
+4. Какие знаете цели тестирования программного обеспечения?
+Оценка рабочих продуктов, таких как требования, пользовательские истории, проекты и код.
+Провоцирование отказов и обнаружение дефектов.
+Обеспечение необходимого покрытия объекта тестирования.
+Снижение уровня риска ненадлежащего качества программного обеспечения.
+Проверка выполнения зафиксированных требований.
+Проверка того, что объект тестирования соответствует контрактным, юридическим и
+нормативным требованиям.
+Предоставление информации заинтересованным сторонам для принятия обоснованных
+решений.
+Создание уверенности в качестве объекта тестирования.
+Проверка того, завершен ли объект тестирования и работает ли он так, как ожидают заинтересованные стороны.
+4. What do you know are the goals of software testing?
+
+Evaluating work products such as requirements, user stories, projects, and code.
+Provoking failures and detecting defects.
+Providing adequate coverage of the test object.
+Reducing the risk of improper software quality.
+Verifying that the recorded requirements are met.
+Verifying that the test object meets contractual, legal and
+regulatory requirements.
+Providing information to stakeholders in order to make informed
+Decisions.
+Creating confidence in the quality of the test item.
+Verifying that the test object has been completed and is performing as expected by the stakeholders.
+
+
+
+
+
+5, 6, 7. Quality Assurance- это? Quality Control - это? Тестирование - это?
+Контроль качества (QC) - набор действий, предназначенных для оценивания качества компонента или системы. [ISTQB Glossary] QA-лиды
+Обеспечение качества (QA) - активности, направленные на обеспечение уверенности в том, что требования к качеству будут выполнены [ISTQB Glossary] Менеджеры
+Тестирование — это конкретная деятельность в рамках QC, ориентированная на проверку функциональности и поиск багов. Тестировщики
+Основные отличия процессов:
+Контроль качества и тестирование (как его часть) направлены на продукт, а обеспечение качества на процесс. 
+Тестирование и контроль качества являются контролирующими мерами, а обеспечение качества - превентивными, или предупреждающими. 
+Активности QA проходят на всем протяжении SDLC: на этапе построения, анализа и улучшения процессов, формирования релизных политик, риск менеджмента и прочих how-to’s.
+QC подключаются на этапе составления критериев качества, quality gate-ов, метрик и способов оценки.
+Тестировщик вступает уже после этапа разработки (с shift left на этапе получения тз и превращения его в спецификацию).
+Основными целями тестирования как части QC являются:
+- предоставление информации о качестве элемента тестирования и любых остаточных рисках относительно того, до какой степени элемент тестирования был проверен;
+- обнаружение дефектов в элементе тестирования до его передачи в эксплуатацию;
+- смягчение рисков получения продукта низкого качества заинтересованными сторонами.
+Вышеупомянутая информация может использоваться в нескольких целях, включая:
+- улучшение элемента тестирования путем устранения дефектов;
+- улучшение управленческих решений, предоставляя как основание для решений информацию о качестве и рисках;
+- улучшение процессов в организации, особо выделяя процессы, которые позволяют дефектам возникать и/или оставаться скрытыми там, где они могут быть обнаружены.
+
+
+5, 6, 7. What is Quality Assurance? What is Quality Control? What is testing?
+
+Quality Control (QC) - Activities designed to evaluate the quality of a component or system.
+Quality Assurance (QA) - Activities focused on providing confidence that quality requirements will be fulfilled.
+Testing is a specific activity within QC focused on verifying functionality and finding bugs. 
+The main differences between the processes are:
+QC and testing (as part of it) is product orientated, while QA is process orientated. 
+Testing and QC are controlling activities, while QA is preventive, or precautionary. 
+QA activities take place throughout the SDLC: at the stage of building, analysing and improving processes, forming release policies, risk management and other how-to's.
+QC gets involved at the stage of drafting quality criteria, quality gates, metrics and evaluation methods.
+The tester enters after the development stage (with shift left at the stage of getting the requirements specification and turning it into a specification).
+The main goals of testing as part of QC are:
+- providing information about the quality of the test item and any residual risks regarding the extent to which the test item has been tested;
+- detecting defects in the test item before it is put into service;
+- mitigating the risks of stakeholders receiving a poor quality product.
+The above information may be used for several purposes, including:
+- Improving the testing element by eliminating defects;
+- improving management decisions by providing quality and risk information as the basis for decisions;
+- improving processes within the organisation, highlighting processes that allow defects to occur and/or remain hidden where they can be detected.
+
+
+
+
+
+
+
+Обеспечение качества (QA)
+Контроль качества (QC)
+Фокус
+Предотвращение дефектов
+Выявление дефектов
+Подход
+Проактивный
+Реактивный
+Деятельность
+Улучшение процессов, планирование тестов, обзоры
+Выполнение тестов, сообщение о дефектах
+Ответственность
+Вся команда 
+Команда тестирования
+Ориентация
+Ориентированность на процесс
+Ориентированность на продукт
+Цель
+Высококачественный процесс разработки программного обеспечения
+Высококачественный программный продукт
+Действие
+Определяет стандарты и методологии
+Обеспечивает соблюдение стандартов
+Этап в SDLC
+На протяжении всего жизненного цикла
+Более поздние этапы (тестирование)
+Мера
+Эффективность предотвращения дефектов
+Количество выявленных дефектов
+
+
+
+8. Какие знаете принципы тестирования?
+
+1. Тестирование демонстрирует наличие дефектов (Testing shows presence of defects)
+2. Исчерпывающее тестирование недостижимо (Exhaustive testing is not possible)
+3. Раннее тестирование (Early testing)
+4. Скопление/кластеризация дефектов (Defect clustering)
+5. Парадокс пестицида (Pesticide paradox)
+6. Тестирование зависит от контекста (Testing is context dependent)
+7. Заблуждение об отсутствии ошибок (Absence of errors fallacy)
+
+Принцип 1. Тестирование показывает наличие дефектов
+Тестирование может показать, что дефекты присутствуют, но не может доказать, что дефектов больше нет. Сколько бы успешных тестов вы не провели, вы не можете утверждать, что нет таких тестов, которые не нашли бы ошибку.
+
+Принцип 2. Исчерпывающее тестирование невозможно
+Для проведения исчерпывающего тестирования придется протестировать все возможные входные значения и все пути выполнения программы, в большинстве случаев число таких вариаций стремится к бесконечности или просто на порядки превосходит отведенное время и бюджет. Вместо попыток «протестировать все» нам нужен некий подход к тестированию (стратегия), который обеспечит правильный объем тестирования для данного проекта, данных заказчиков (и других заинтересованных лиц) и данного продукта. При определении, какой объем тестирования достаточен, необходимо учитывать уровень риска, включая технические риски и риски, связанные с бизнесом, и такие ограничения проекта как время и бюджет. Оценка и управление рисками - одна из наиболее важных активностей в любом проекте.
+
+Принцип 3. Раннее тестирование
+Тестовые активности должны начинаться как можно раньше в SDLC, а именно когда сформированы требования. Такой подход называется Shift Left Testing.
+Этот принцип связан с понятием «цена дефекта» (cost of defect). Цена дефекта существенно растет на протяжении жизненного цикла разработки ПО. Чем раньше обнаружен дефект, тем быстрее, проще и дешевле его исправить. Дефект, найденный в требованиях, обходится дешевле всего. Кривая Боэма.
+
+Еще одно важное преимущество раннего тестирования - экономия времени. Тестовые активности могут начинаться еще до того, как написана первая строчка кода. По мере того, как готовятся требования и спецификации, тестировщики могут приступать к разработке и ревью тест-кейсов. И когда появится первая тестовая версия, можно будет сразу приступать к выполнению тестов.
+Аналогия из повседневной жизни - продумывание списка вещей, которые необходимо взять в поездку. На стадии обдумывания добавить, изменить, удалить любой пункт в этом списке не стоит ничего. На стадии поездки по магазинам для закупки необходимого недоработки в списке уже могут привести к необходимости повторной поездки в магазин. На стадии отправки на место назначения недоработки в списке вещей явно приведут к ощутимой потере нервов, времени и денег. А если фатальный недостаток списка вещей выяснится только по прибытии, может так оказаться, что вся поездка потеряла смысл.
+Принцип 4. Скопление (или кластеризация) дефектов
+Небольшое количество модулей содержит большинство дефектов, обнаруженных на этапе предрелизного тестирования, или же демонстрируют наибольшее количество отказов на этапе эксплуатации. В таком случае обычно руководствуются частным случаем закона Парето: в 20% модулей приложения сокрыто 80% всех дефектов.
+Многие тестировщики наблюдали такой эффект - дефекты «кучкуются». Это может происходить потому, что определенная область кода особенно сложна и запутана, или потому, что внесение изменений производит «эффект домино». Это знание часто используется для оценки рисков при планировании тестов - тестировщики фокусируются на известных «проблемных зонах». Также полезно проводить анализ первопричин (root cause analysis), чтобы предотвратить повторное появление дефектов, обнаружить причины возникновения скоплений дефектов и спрогнозировать потенциальные скопления дефектов в будущем.
+Пример: при тестировании модулей регистрации, авторизации и создания профиля пользователя большая часть дефектов сконцентрирована в модуле авторизации.
+Принцип 5. Парадокс пестицида
+Чем больше вы тестируете ПО, тем более невосприимчивым оно становится к имеющимся тестам, т.е.
+каждый метод и набор тестов, который используется для предотвращения или поиска ошибок, может оставлять часть не найденных ошибок, против которых эти методы и тесты неэффективны;
+имеющиеся тесты устаревают после исправления дефекта и не могут обнаружить новые;
+Из чего следует, что набор тестов, тестовых данных и подходов нужно постоянно пересматривать и улучшать для выявления не найденных ошибок, а также необходимо обновлять тесты и тестовые данные после исправления уже найденных дефектов, разнообразить подходы к тестированию, применять различные техники тестирования, смотреть на ситуацию «свежим взглядом» (возможно, с привлечением тех участников команды, которые ранее не работали с данной областью программного продукта).
+
+Принцип 6. Тестирование зависит от контекста
+Тестирование выполняется по-разному, в зависимости от контекста. Например, тестирование систем, критических с точки зрения безопасности, проводится иначе, чем тестирование сайта интернет-магазина.
+Этот принцип тесно связан с понятием риска. Разные системы связаны с различными уровнями риска, влияние того или иного дефекта также сильно варьируется. Одни проблемы довольно тривиальны, другие могут дорого обойтись и привести к большим потерям денег, времени, деловой репутации, а в некоторых случаях даже привести к травмам и смерти.
+Уровень риска влияет на выбор методологий, техник и типов тестирования.
+
+Принцип 7. Заблуждение об отсутствии ошибок
+Нахождение и исправление дефектов бесполезно, если построенная система неудобна для использования и не соответствует нуждам и ожиданиям пользователей. Отсутствие дефектов — не самоцель. Представьте, что вы купили кому-то идеальный апельсин, но тот, кому вы покупали этот апельсин, разочарован — он ведь просил грейпфрут.
+Пример из IT: компания разработала интернет-магазин для страны, в которой часть населения не может использовать онлайн-оплату. В итоге, конечные пользователи не смогли приобрести желаемый товар, перестали пользоваться приложением и занизили его рейтинг. 
+
+Даже если вы выполнили все тесты и ошибок не обнаружили, это еще не гарантия того, что ПО будет соответствовать нуждам и ожиданиям пользователей.
+8. Principles of Software Testing
+
+1. Testing shows the presence of defects, not their absence
+If your QA team reports zero defects after the testing cycle, it does not mean there are no bugs in the software. It means that there could be bugs, but your QA team did not find them. The reasons for not detecting any defects could be many, including the most common one - the test cases do not cover all scenarios.
+This principle helps in setting stakeholder expectations. Don't make claims that the software is defect-free.
+2. Exhaustive testing is impossible
+Consider a simple real-world example in which you have a screen that takes two numbers as input and prints their sum. It would take infinite time to validate this screen for all possible numbers.
+If a simple screen like this is virtually impossible to test exhaustively, what about a full-fledged application?
+Trying to test exhaustively will burn time and money without affecting the overall quality. The correct way is to optimize the number of test cases using standard black-box testing and white-box testing strategies.
+3. Early testing saves time and money
+The proverb: a stitch in time saves nine, applies to most things in life, and software testing is no exception. As shown in a study conducted by IBM, what costs a dollar to fix in the design phase can cost fifteen in the testing phase and a whopping hundred if detected in a production system.
+
+Early testing also saves time. Unit testing and integration testing can quickly reveal design flaws, which can cause massive delays if detected later during system testing.
+4. Defects cluster together
+This principle is an example of the 80:20 rule (also called the Pareto principle) – 80 percent of defects are due to 20 percent of code. While most believe this is some divine mandate, it is based on the observation that 80 percent of users use 20 percent of the software. It is this 20 percent of the software that will contribute most towards the defects.
+This principle can help your team focus on the right area - the most popular software part.
+5. Beware of the pesticide paradox
+The use of a pesticide makes pests immune to its use. Similarly, subjecting a module to the same test cases can make the module immune to the test cases. This principle is compelling while testing complex algorithms.
+For example, consider a resource scheduling software that schedules resources for tasks based on their work timings, time zones, and holidays. Testers wrote ten test cases related to scheduling, and after four rounds of testing, all the test cases passed. Does this mean the module is defect-free? Probably not, since it took four cycles to clear ten bugs.
+What's the solution?
+Rethink and write more and better test cases, especially when it is a crucial part of the application. Preferably, use a code-coverage tool to ensure that your test cases cover all code paths.
+6. Testing is context-dependent
+There is no one-strategy-fits-all in software testing. Yes, testing a web application and ATM will be different but what this principle says is more profound.
+For example, consider two companies making a ten-pack battery set. The first one is a premium one costing $50 while the other costs $5 - ten times cheaper.
+Do you think it makes sense for both companies to have the same QA processes? The answer is obvious - no. The first company is charging for quality and hence will have more robust standards and quality control.
+In your application, don't go for strategies without understanding your cost of quality - you don't want to spend more on quality than what you get in return. Put quality in the context of your product offering.
+7. Beware of the absence-of-errors fallacy
+It is a common belief that a low defect rate implies the product is a success. This idea is the absence-of-errors delusion.
+Zero defects do not mean the software solves end-user problems successfully. Linux always had very few bugs, while Microsoft Windows was (is?) notorious for its bugs. However, most people used Microsoft Windows as their operating system because they found it easier to use and solved their problems better. Linux is becoming more and more mainstream today as it started focusing on end-user experience.
+
+
+
+
+9, 10. Что такое верификация? Что такое валидация?
+
+Верификация (verification): Доказанное объективными результатами исследования подтверждение того, что определенные требования были выполнены. (ISO 9000)
+Валидация (validation): Доказанное объективными результатами исследования подтверждение того, что требования для ожидаемого конкретного использования приложения были выполнены. (ISO 9000)
+Верификация - это проверки, выполняемые в процессе разработки ПО для ответа на вопрос: “правильно ли мы разрабатываем продукт?”. Это в т.ч. включает проверку документации: requirements specification, design documents, database table design, ER diagrams, test cases, traceability matrix и т.д. Верификация гарантирует, что ПО разрабатывается в соответствии со стандартами и процессами организации, полагаясь на reviews и статические методы тестирования (т.е. без запуска ПО, но, например, с unit/integration tests). Верификация является превентивным подходом (Preventative approach).
+
+Валидация - это процесс оценки конечного продукта, чтобы проверить, соответствует ли он потребностям бизнеса и ожиданиям клиентов, т.е. отвечает на вопрос: “правильный ли мы разработали продукт?”. Валидация является динамическим тестированием, т.е. происходит с помощью выполнения кода и прогона тестов на нём (UAT/CAT, usability, всё что угодно). Валидация является реактивным подходом (Reactive approach).
+Если попробовать привести очень упрощенный пример, представим блюдо в ресторане. Верификация будет включать проверку технологической карты, оценку процесса приготовления (температуры, времени и т.п.). На протяжении этого процесса можно будет примерно быть уверенным, что блюдо получится именно тем, какое задумывалось и в итоге формально мы его приготовим. Валидация же - это, по сути, попробовать приготовленное блюдо, чтобы удостовериться, действительно ли получилось то, что ожидал бизнес и клиент.
+
+
+9, 10. What is verification? What is validation?
+
+Verification: “Confirmation, through the provision of objective evidence, that specified requirements have been fulfilled.” The process of confirming that a work product fulfills its specification.
+Validation: “Confirmation, through the provision of objective evidence, that the requirements for a specific intended purpose or application have been fulfilled.” Confirmation by examination that a work product matches a stakeholder's needs.
+Software verification is usually carried out by means of:
+Unit tests
+Integration tests
+Software system tests in which black box testing methods are used
+Code reviews
+Static code analysis
+The most important methods for the validation of (standalone) software are:
+Validation of usability (summative usability evaluation), typically through usability tests
+Clinical evaluation, which may require clinical investigations
+Verification ensures that the software is developed in accordance with the organisation's standards and processes, relying on static testing methods (i.e. without running the software, but with unit/integration tests, for example). Verification is a Preventative approach.
+Validation is the process of evaluating the final product to see if it meets the business needs and customer expectations. Validation is dynamic testing, i.e. it happens by executing code and running tests on it (UAT/CAT, usability, whatever). Validation is a reactive approach.
+
+
+
+
+
+
+
+
+
+11. Перечислите характеристики качества программного обеспечения и их атрибуты.
+
+Функциональность (Functionality)
+Определяется способностью ПО решать задачи, которые соответствуют зафиксированным и предполагаемым потребностям пользователя. (Например, способность оплачивать товар несколькими способами и, если эта возможность отсутствует, вы уходите из магазина т.к. нет необходимой функциональности)
+Корректность (Correctness) или Точность (accuracy): Этот атрибут означает, насколько правильно программа выполняет заданные функции. Например, если программе поручено сортировать данные, корректность подразумевает, что она сортирует их правильно.
+Полнота (Completeness): Полнота означает способность программы предоставлять все функции, заявленные в требованиях. Это означает, что программа не должна иметь недостающих функций.
+2. Надежность (Reliability)
+Способность ПО выполнять требуемые задачи в обозначенных условиях на протяжении заданного промежутка времени или указанное количество операций. 
+Доступность (Availability): Этот атрибут измеряет время, в течение которого система доступна для использования. Надежная система должна иметь высокую доступность, чтобы минимизировать простои.
+Отказоустойчивость (Fault Tolerance): оценивает способность программы работать надежно, даже если возникают сбои или ошибки. Надежные программы могут продолжать функционировать, даже если произошел сбой.
+Устойчивость (Resilience): Этот атрибут связан с способностью программы восстанавливаться после сбоев и неполадок. Восстановление может включать в себя восстановление данных или переключение на резервные ресурсы.
+Предсказуемость (Predictability): Надежная система должна предсказуемо вести себя в различных ситуациях, что важно для пользователей и операторов системы.
+3. Удобство использования (Usability).
+ Степень удобства ПО для пользователей, его наглядность, легкость эксплуатации и изучения.
+Понимаемость (Understandability): Понимаемость оценивает, насколько легко пользователи могут понять, как использовать программу. Простой и понятный интерфейс повышает удобство использования.
+Простота обучения (Learnability): Этот атрибут связан с легкостью освоения программы новыми пользователями. Чем быстрее пользователи могут освоить программу, тем лучше.
+Ориентация на пользователя (User-Centered Design):  Удовлетворение потребностей и ожиданий пользователей является ключевой составляющей удобства использования.
+4. Эффективность (Efficiency).
+ Способность ПО обеспечивать требуемый уровень производительности в соответствие с выделенными ресурсами, временем и другими обозначенными условиями.
+Эффективность использования ресурсов (Resource Utilization): Этот атрибут оценивает, насколько эффективно программа использует ресурсы, такие как память, процессорное время и сетевая пропускная способность. Высокая эффективность обеспечивает оптимальное использование ресурсов.
+Время отклика (Response Time): Время отклика измеряет, сколько времени требуется программе для реагирования на запросы пользователя. Снижение времени отклика повышает удовлетворенность пользователей.
+Пропускная способность (Throughput): Пропускная способность определяет, сколько операций программа может обработать за единицу времени. Высокая пропускная способность важна для приложений с большой нагрузкой.
+Соответствие стандартам производительности (efficiency compliance)
+5. Удобство сопровождения (Maintainability).
+Легкость, с которой ПО может изменяться для исправления дефектов, для реализации новых требований, для облегчения дальнейшего обслуживания и адаптации к имеющемуся окружению.
+Модульность (Modularity): Модульность оценивает способность программы быть разбитой на отдельные модули, что облегчает сопровождение и поддержку. Модульные системы позволяют быстрее вносить изменения и устранять ошибки.
+Изменяемость (Changeability): Изменяемость определяет, насколько легко программа может подвергаться изменениям без существенных нарушений работы. Поддерживаемость связана с управлением изменениями в программе.
+Документация (Documentation): Наличие подробной и актуальной документации для пользователей и разработчиков оказывает значительное влияние на поддерживаемость и сопровождаемость программы.
+6. Портативность (Portability). 
+Характеризует ПО с точки зрения легкости его переноса из одного окружения (software/ hardware) в другое.
+Удобство установки (convenience of installation): определяет, насколько легко и быстро программа может быть установлена на оборудование с различными характеристиками.
+Заменяемость (replaceability):  относится к способности одной системы заменить другую систему с тем же назначением в том же окружении. Это может включать в себя замену одного или нескольких компонентов программы внутри программной системы.
+7. Совместимость (Compatibility). 
+Способность программных компонентов взаимодействовать друг с другом.
+Совместимость с платформами (Platform Compatibility): Этот атрибут оценивает способность программы работать на различных операционных системах и аппаратных платформах. Совместимость важна для программ, предназначенных для разных сред.
+Совместимость с другими программами (Software Interoperability): Этот атрибут оценивает способность ПО взаимодействовать с другими программными продуктами, включая ПО от других производителей.
+Совместимость с операционными системами (Operating System Compatibility): Этот атрибут оценивает способность программы работать на разных версиях операционных систем, что важно для пользователей с разными ОС.
+8. Защищенность или Безопасность (Security). 
+Способность минимизации угроз, связанных с несанкционированным чтением, изменением информации и т. д. Угрозы могут быть также связаны с некорректным использованием ПО, внешним воздействием со стороны посторонних лиц, выходом из строя технических средств.
+Конфиденциальность (Confidentiality): Этот атрибут оценивает способность программы защищать конфиденциальные данные от несанкционированного доступа. Высокая конфиденциальность важна для систем, которые обрабатывают чувствительные данные.
+Целостность (Integrity):  Способность программы обеспечивать целостность данных и защищать их от несанкционированных изменений. Например, если данные не должны быть подвергнуты изменениям без авторизации, целостность играет важную роль.
+Доступность (Availability): Этот атрибут определяет способность программы оставаться доступной даже при атаках или сбоях. Надежные системы должны быть доступными для пользователей даже в условиях неполадок.
+Помимо перечисленных характеристик и атрибутов качества, определяет наборы метрик для оценки каждого атрибута. Вот некоторые примеры таких метрик.
+Полнота реализации функций 
+Корректность реализации функций 
+Отношение числа исправленных дефектов к общему числу заведенных. 
+Отношение числа проведенных тестов к общему их числу. 
+Отношение числа ошибок, найденных пользователями к числу ошибок найденных при тестировании. 
+Отношение числа доступных проектных документов к указанному в их списке. 
+Наглядность и полнота документации
+11. List the software quality characteristics and their attributes.
+
+Functionality
+Defined by the software's ability to perform tasks that meet the user's stated and perceived needs. (For example, the ability to pay for goods in several ways and if this feature is missing, you leave the shop because there is no functionality).
+Correctness or Accuracy: This attribute refers to how correctly the programme performs a given function. For example, if a programme is tasked with sorting data, correctness implies that it sorts the data correctly.
+Completeness: Completeness refers to the ability of a programme to provide all the functions stated in the requirements. It means that the programme should not have any missing functions.
+
+2. Reliability
+The ability of the software to perform the required tasks under the specified conditions for a specified period of time or a specified number of operations. 
+Availability: This attribute measures the amount of time a system is available for use. A reliable system should have high availability to minimise downtime.
+Fault Tolerance: This attribute measures the ability of a programme to operate reliably even if failures or errors occur. Reliable programmes can continue to function even if a failure occurs.
+Resilience: This attribute relates to a programme's ability to recover from failures and malfunctions. Recovery may include restoring data or switching to backup resources.
+Predictability: A reliable system should behave predictably in different situations, which is important to users and system operators.
+
+3. Usability.
+ The degree to which the software is user-friendly, clear, easy to use and easy to learn.
+Understandability: Understandability measures how easy it is for users to understand how to use the software. A simple and clear interface enhances usability.
+Learnability: This attribute relates to the ease with which new users can learn the programme. The faster users can learn the programme, the better.
+User-Centered Design:  Meeting the needs and expectations of users is a key component of usability.
+
+
+4. Efficiency.
+ The ability of the software to deliver the required level of performance according to allocated resources, time, and other specified conditions.
+Resource Utilisation: This attribute assesses how efficiently the software uses resources such as memory, CPU time and network bandwidth. High efficiency ensures optimal resource utilisation.
+Response Time (Response Time): Response time measures how long it takes a programme to respond to user requests. Reducing response time improves user satisfaction.
+Throughput: Throughput measures how many operations a programme can process per unit of time. High throughput is important for applications with heavy workloads.
+Efficiency compliance
+
+5. Maintainability.
+The ease with which software can be changed to correct defects, to implement new requirements, to facilitate future maintenance, and to adapt to the existing environment.
+Modularity: Modularity assesses the ability of a programme to be broken down into individual modules to facilitate maintenance and support. Modular systems allow for faster changes and error correction.
+Changeability: Changeability measures how easily a programme can be changed without significant disruption. Maintainability relates to the management of changes to the programme.
+Documentation: The availability of detailed and up-to-date documentation for users and developers has a significant impact on the maintainability and supportability of a programme.
+
+6. Portability. 
+Characterises software in terms of how easily it can be transferred from one environment (software/hardware) to another.
+Convenience of installation: defines how easily and quickly the software can be installed on equipment with different characteristics.
+Replaceability: refers to the ability of one system to replace another system with the same purpose in the same environment. This may include replacing one or more components of a programme within a software system.
+
+7. Compatibility. 
+The ability of software components to interact with each other.
+Platform Compatibility: This attribute evaluates the ability of a programme to run on different operating systems and hardware platforms. Compatibility is important for programmes designed for different environments.
+Software Interoperability: This attribute assesses the software's ability to interoperate with other software products, including software from other vendors.
+Operating System Compatibility: This attribute assesses the ability of the software to run on different versions of operating systems, which is important for users with different operating systems.
+
+8. Security. 
+The ability to minimise threats associated with unauthorised reading, alteration of information, etc. Threats can also be related to incorrect use of software, external influence from unauthorised persons, and failure of technical means.
+Confidentiality: This attribute assesses the software's ability to protect sensitive data from unauthorised access. High confidentiality is important for systems that handle sensitive data.
+Integrity: The programme's ability to ensure the integrity of the data and protect it from unauthorised changes. For example, if data is not to be modified without authorisation, integrity is important.
+Availability: This attribute defines the ability of a programme to remain available even in the face of attacks or failures. Reliable systems should be available to users even in the face of malfunctions.
+
+
+In addition to the quality characteristics and attributes listed, defines sets of metrics to evaluate each attribute. Here are some examples of such metrics.
+Completeness of function realisation 
+Correctness of function realisation 
+The ratio of the number of defects corrected to the total number of defects entered. 
+The ratio of the number of tests performed to the total number of tests. 
+The ratio of the number of errors found by users to the number of errors found during testing. 
+Ratio of the number of available project documents to the number of documents specified in their list. 
+Visibility and completeness of documentation
+
+
+
+
