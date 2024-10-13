@@ -1,0 +1,554 @@
+Задание 3
+Ответить на вопросы:
+Что такое функциональное тестирование (Functional/Behavioral testing)?
+Что такое нефункциональное тестирование (Non-Functional testing)?
+Какие виды тестирования относятся к функциональному тестированию?
+Какие виды тестирования относятся к нефункциональному тестированию?
+Что такое Статическое/Динамическое тестирование?
+Что такое Черный/Серый/Белый ящик тестирования(White/Black/Grey Box testing)?
+Что такое Компонентное(Component or Unit Testing) /Интеграционное (Integration Testing)
+/Системное (System Testing)/Приемочное тестирования (Acceptance Testing)?
+Что такое Позитивное/Негативное тестирование?
+Что такое Альфа (Alpha Testing)/Бета тестирование(Beta Testing)?
+Что такое Интуитивное/Исследовательское тестирование?
+Что такое Gorilla testing/ Monkey testing?
+Что такое Дымовые (Smoke)/Ре-тест (Re-test)/ Санити (Sanity)/Регрессионное (Regression) тестирование?
+Что такое Тестирование нового функционала/ Приемочное тестирование?
+Что такое Ручное/Автоматизированное/Полуавтоматизированное тестирование?
+На основании чего происходит разработка тестовых сценариев?
+Что такое Frontend / Backend?
+
+Функциональное и нефункциональное тестирование. Виды.
+
+Функциональное тестирование системы (functional testing) вид тестирования, направленный на проверку корректности работы функциональности приложения (корректность реализации функциональных требований). Данный вид тестирования можно проводить на всех уровнях. Функциональные требования могут быть описаны в рабочих продуктах (требования, спецификация, бизнес-потребность, пользовательская история, сценарий использования) или в функциональной спецификации, а могут быть вообще не задокументированы. Функции системы дают ответ на вопрос «что делает система».
+Примеры:
+Юнит-тестирование (Unit Testing) — проверка отдельных модулей или компонентов на уровне кода.
+Интеграционное тестирование (Integration Testing) — тестирование взаимодействия между модулями или компонентами.
+Системное тестирование (System Testing) — полная проверка всей системы в целом.
+Приемочное тестирование (Acceptance Testing) — проверка системы на соответствие бизнес-требованиям и ожиданиям пользователя.
+Тестирование интерфейса пользователя (UI Testing) — проверка графического интерфейса пользователя.
+Тестирование API — проверка работы программных интерфейсов (API) с различными запросами и ответами.
+Регрессионное тестирование (Regression Testing) — проверка работоспособности системы после внесения изменений или добавления новых функций.
+Тестирование безопасности (Security Testing) — проверка системы на наличие уязвимостей.
+Тестирование совместимости (Compatibility Testing) — проверка работы системы в различных средах (ОС, браузеры, устройства).
+
+
+Нефункциональное тестирование системы выполняется для оценки таких характеристик системы и программного обеспечения, как удобство использования, производительность или безопасность. Нефункциональное тестирование – это проверка того, «насколько хорошо работает система». Вопреки всеобщему заблуждению, нефункциональное тестирование может и, чаще всего, должно выполняться на всех уровнях тестирования, и как можно раньше. 
+Примеры:
+Тестирование производительности (Performance Testing) — проверка быстродействия системы, включая:
+Тестирование нагрузки (Load Testing) — проверка работы системы под ожидаемой нагрузкой.
+Стресс-тестирование (Stress Testing) — проверка работы системы под экстремальной нагрузкой.
+Тестирование устойчивости (Stability Testing) — проверка работы системы в течение длительного времени.
+Тестирование удобства использования (Usability Testing) — оценка удобства и простоты использования интерфейса.
+Тестирование надежности (Reliability Testing) — проверка способности системы работать без сбоев в течение определенного времени.
+Тестирование масштабируемости (Scalability Testing) — оценка способности системы эффективно масштабироваться с ростом нагрузки.
+Тестирование конфигурации (Configuration Testing) — проверка работы системы при различных конфигурациях оборудования и программного обеспечения.
+Тестирование безопасности (Security Testing) — проверка защиты данных и устойчивости системы к атакам.
+Тестирование восстановления после сбоев (Recovery Testing) — проверка способности системы восстанавливаться после сбоев.
+Тестирование соответствия (Compliance Testing) — проверка соответствия системы стандартам, правилам или требованиям.
+Тестирование интернационализации и локализации (Internationalization and Localization Testing) — проверка адаптации системы к различным языкам и регионам.
+
+Двоякая природа тестирования безопасности и производительности
+Существует трактовка, по которой к функциональному тестированию можно отнести тестирование безопасности и тестирование производительности, но только в тех случаях, когда они представляют основную функциональность приложения, а не просто являются дополнительными характеристиками.
+Например, защита денежных транзакций, функции антивируса, возможность одновременной работы над задачей несколькими пользователями.
+
+
+Functional and Non-functional Testing
+Functional Testing focuses on verifying the correctness of an application's functionality. It ensures that the system performs its intended tasks as specified in the requirements, specifications, or other documentation. Functional testing can be applied at all levels of testing and answers the question, "What does the system do?" Examples include:
+Unit Testing: Testing individual modules or components at the code level.
+Integration Testing: Testing interactions between modules or components.
+System Testing: Comprehensive testing of the entire system.
+Acceptance Testing: Validating the system against business requirements and user expectations.
+UI Testing: Testing the graphical user interface.
+API Testing: Verifying the operation of software interfaces with various requests and responses.
+Regression Testing: Ensuring the system works correctly after changes or new features are added.
+Security Testing: Checking for vulnerabilities.
+Compatibility Testing: Ensuring the system works in different environments (OS, browsers, devices).
+Non-functional Testing assesses system characteristics like usability, performance, and security. It focuses on "how well the system works" and can be conducted at all testing levels. Examples include:
+Performance Testing: Evaluating the system's speed and responsiveness, including:
+Load Testing: Testing under expected load.
+Stress Testing: Testing under extreme load.
+Stability Testing: Long-term system testing.
+Usability Testing: Assessing the ease of use of the interface.
+Reliability Testing: Checking the system's ability to function without failure over time.
+Scalability Testing: Evaluating the system's ability to scale effectively.
+Configuration Testing: Testing the system with different hardware and software configurations.
+Security Testing: Ensuring data protection and resistance to attacks.
+Recovery Testing: Checking the system's ability to recover from failures.
+Compliance Testing: Verifying adherence to standards and regulations.
+Internationalization and Localization Testing: Adapting the system for different languages and regions.
+Dual Nature of Security and Performance Testing: In some interpretations, security and performance testing can be considered functional testing if they represent the core functionality of the application, such as securing financial transactions, antivirus functions, or supporting simultaneous users on a task.
+
+
+
+
+
+Классификация по запуску кода на исполнение
+Статическое тестирование (static testing)
+Динамическое тестирование (dynamic testing)
+
+Статическое тестирование (static testing) — тестирование без запуска кода на исполнение. В рамках этого подхода тестированию могут подвергаться: 
+o Документы (требования, тест-кейсы, описания архитектуры приложения, схемы баз данных и т.д.). 
+o Графические прототипы (например, эскизы пользовательского интерфейса). 
+o Код приложения (что часто выполняется самими программистами в рамках аудита кода (code review), являющегося специфической вариацией взаимного просмотра в применении к исходному коду). Код приложения также можно проверять с использованием техник тестирования на основе структур кода. 
+o Параметры (настройки) среды исполнения приложения. 
+o Подготовленные тестовые данные.
+
+Динамическое тестирование (dynamic testing) — тестирование с запуском кода на исполнение. Запускаться на исполнение может как код всего приложения целиком (системное тестирование), так и код нескольких взаимосвязанных частей (интеграционное тестирование), отдельных частей (модульное или компонентное тестирование) и даже отдельные участки кода. Основная идея этого вида тестирования состоит в том, что проверяется реальное поведение (части) приложения. 
+Classification Based on Code Execution
+Static Testing involves testing without executing the code. This approach includes reviewing:
+Documents: Requirements, test cases, architecture descriptions, database schemas, etc.
+Graphical Prototypes: User interface sketches.
+Application Code: Often done by programmers through code review, which is a specific form of peer review focused on the source code. Code can also be checked using code structure-based testing techniques.
+Execution Environment Parameters: Application settings and configurations.
+Prepared Test Data: Data created for testing purposes.
+Dynamic Testing involves testing with code execution. This type of testing evaluates the actual behavior of the application and can include:
+System Testing: Testing the entire application.
+Integration Testing: Testing several interconnected parts.
+Unit/Component Testing: Testing individual parts or specific code sections.
+The key idea of dynamic testing is to verify how the application (or its parts) behaves in reality.
+
+
+
+Классификация по доступу к коду и архитектуре приложения 
+Метод белого ящика
+Метод чёрного ящика
+Метод серого ящика 
+
+Метод белого ящика (white box testing, open box testing, clear box testing, glass box testing) — у тестировщика есть доступ к внутренней структуре и коду приложения, а также есть достаточно знаний для понимания увиденного. Выделяют даже сопутствующую тестированию по методу белого ящика глобальную технику — тестирование на основе дизайна (design-based testing). Некоторые авторы склонны жёстко связывать этот метод со статическим тестированием, но ничто не мешает тестировщику запустить код на выполнение и при этом периодически обращаться к самому коду (а модульное тестирование и вовсе предполагает запуск кода на исполнение и при этом работу именно с кодом, а не с «приложением целиком»).
+[это юнит тесты, их делают только разработчики]
+
+Метод чёрного ящика (black box testing, closed box testing, specification based testing) — у тестировщика либо нет доступа к внутренней структуре и коду приложения, либо недостаточно знаний для их понимания, либо он сознательно не обращается к ним в процессе тестирования. Основной информацией для создания тест-кейсов выступает документация (особенно — требования (requirements-based testing)) и общий здравый смысл (для случаев, когда поведение приложения в некоторой ситуации не регламентировано явно; иногда это называют «тестированием на основе неявных требований», но канонического определения у этого подхода нет). 
+[просто ходим по сайту]
+
+Метод серого ящика (gray box testing) — комбинация методов белого ящика и чёрного ящика, состоящая в том, что к части кода и архитектуры у тестировщика доступ есть, а к части — нет. Обычно говорят о методах белого или чёрного ящика в применении к тем или иным частям приложения, при этом понимая, что «приложение целиком» тестируется по методу серого ящика. 
+[Вадим: другой подход. Это работа с девтулс, постманом, сниферами, инструментами для просмотра баз данных]
+Classification by Access to Code and Application Architecture
+White Box Testing: The tester has access to the internal structure and code of the application and possesses the knowledge to understand it. This method can include techniques like design-based testing. While often associated with static testing, it can also involve code execution, such as in unit testing, where testers work directly with the code rather than the entire application.
+Black Box Testing: The tester does not have access to the internal structure or code, lacks the knowledge to understand it, or deliberately avoids using it during testing. Test cases are primarily based on documentation, especially requirements, and general reasoning for scenarios not explicitly defined by the documentation.
+Gray Box Testing: A combination of white and black box methods. The tester has access to some parts of the code and architecture but not others. This method typically involves using tools like developer tools, Postman, sniffers, or database viewers to test different aspects of the application, effectively combining insights from both white and black box approaches.
+
+
+
+
+
+
+По уровням:
+Компонентное/модульное тестирование
+Интеграционное тестирование 
+Системное тестирование 
+Приемочное тестирование
+
+Компонентное тестирование (также известное как модульное тестирование) фокусируется на компонентах, которые могут быть проверены отдельно.Компонентное тестирование часто выполняется изолированно от остальной системы, может охватывать как функциональные (например, правильность вычислений), так и нефункциональные характеристики (например, поиск утечек памяти) и структурные свойства (например, тестирование решений).
+Типичными объектами для компонентного тестирования являются: ● Компоненты, модули ● Код и структуры данных ● Классы ● Модули БД.
+Примеры типичных дефектов и отказов при компонентном тестировании включают: ● Неправильная работа функциональности (например, не так, как описано в спецификации) ● Проблемы с потоками данных ● Неправильные код и логика.
+Дефекты обычно исправляются, как только они обнаруживаются, часто без оформления, в соответствующей системе управления дефектами. Однако, когда разработчики оформляют отчеты о дефектах, создается важная информация для анализа первопричин дефектов и улучшения процесса. 
+Компонентное тестирование обычно выполняется разработчиком, который написал код. Разработчики могут чередовать разработку компонентов с обнаружением и устранением дефектов. Разработчики часто пишут и выполняют тесты после написания кода для компонента. Тем не менее, написание автоматизированных тестовых сценариев для компонентов может предшествовать написанию кода приложения, особенно в методологии гибкой разработки. 
+
+
+
+Интеграционное тестирование фокусируется на взаимодействии между компонентами или системами.
+Два уровня:
+Компонентное интеграционное тестирование фокусируется на взаимодействиях и интерфейсах между интегрированными компонентами. Оно выполняется после компонентного и, как правило, автоматизируется. 
+ ● Системное интеграционное тестирование фокусируется на взаимодействиях и интерфейсах между системами, пакетами и микросервисами. Системное интеграционное тестирование также может охватывать взаимодействия и интерфейсы, предоставляемые сторонними организациями (например, веб-сервисы). Системное интеграционное тестирование может быть выполнено после системного тестирования или параллельно с выполняемыми активностями по системному тестированию.
+Типичными объектами тестирования при интеграционном тестировании являются: ● Подсистемы ● Базы данных ● Инфраструктура ● Интерфейсы ● Программные интерфейсы приложения (API) ● Микросервисы 
+Компонентное интеграционное тестирование часто является обязанностью разработчиков. А системное интеграционного тестирование, как правило, обязанность тестировщиков.
+Подходы к интеграционному тестированию:
+Подход Большого взрыва (Big Bang Approach): Все или практически все разработанные модули собираются вместе в виде законченной системы или ее основной части, и затем проводится интеграционное тестирование. Такой подход очень хорош для сохранения времени.
+Инкрементальный подход (Incremental Approach): при таком подходе тестирование выполняется путем объединения двух или более логически связанных модулей. Затем другие связанные модули поэтапно добавляются и тестируются для правильного функционирования. Процесс продолжается до тех пор, пока все модули не будут соединены и успешно протестированы. Осуществляется разными методами:
+Нисходящий подход (Top-Down Approach): Вначале тестируются все высокоуровневые модули, и постепенно один за другим добавляются низкоуровневые. Все модули более низкого уровня симулируются заглушками с аналогичной функциональностью, затем по мере готовности они заменяются реальными активными компонентами. 
+Восходящий подход (Bottom-Up Approach): В восходящей стратегии каждый модуль на более низких уровнях последовательно тестируется с более высокоуровневыми модулями, пока не будут протестированы все модули. Для симуляции недостающих модулей используются драйвера для тестирования. 
+Гибридный/сэндвич-подход (Sandwich/Hybrid/Bi-Directional Approach): Представляет собой комбинацию восходящего и нисходящего подходов. Здесь целью является средний слой, в то время как драйверы заменяют верхний слой, а заглушки нижний пока компоненты этих слоев не будут разработаны.
+
+
+Системное тестирование фокусируется на поведении и возможностях целой системы или продукта, часто учитывая сквозные задачи, которые может выполнять система, и нефункциональное поведение, которое она демонстрирует при выполнении этих задач. Оно выполняется после интеграционного тестирования, чтобы проверить, работает ли вся система целиком должным образом. В основном это тестирование типа «черный ящик», которое оценивает работу системы с точки зрения пользователя с помощью документа спецификации и оно не требует каких-либо внутренних знаний о системе, таких как дизайн или структура кода.
+Зачем нужно системное тестирование?
+Очень важно завершить полный цикл тестирования, и ST - это этап, на котором это делается;
+ST выполняется в среде, аналогичной production environment, и, следовательно, заинтересованные стороны могут получить хорошее представление о реакции пользователя;
+Это помогает свести к минимуму устранение неполадок после развертывания и количество обращений в службу поддержки;
+На этом этапе STLC тестируются архитектура приложения и бизнес-требования. Это тестирование очень важно, и оно играет важную роль в предоставлении клиенту качественного продукта.
+
+
+Приемочное тестирование, как и системное тестирование, обычно фокусируется на поведении и возможностях системы или продукта в целом. Цели приемочного тестирования включают:
+● Продемонстрировать уверенность в качестве системы в целом 
+● Проверить, что система завершена и будет работать как ожидалось 
+● Проверить, соответствует ли функциональное и нефункциональное поведение системы установленным проектным требованиям 
+В приемочном тестировании используются end-to-end тесты.
+Формы:
+Пользовательское приемочное тестирование Приемочное тестирование системы пользователями обычно сосредоточено на проверке пригодности использования системы предполагаемыми пользователями в реальной или моделируемой рабочей среде. Основная цель заключается в получении уверенности в том, что пользователи могут использовать систему для удовлетворения своих потребностей, а также в соответствии системы требованиям и ее способности выполнять поставленные бизнесом задачи с минимальными трудностями, затратами и рисками.
+Куликов: этот вид тестирования часто рассматривается как синоним альфа-тестирования.
+Эксплуатационное (операционное) приемочное тестирование Приемочное тестирование системы сотрудниками или администраторами систем обычно проводятся в (имитируемой) среде эксплуатации. В тестах основное внимание уделяется эксплуатационным аспектам, которые могут включать: 
+● Тестирование резервного копирования и восстановления 
+● Установка, удаление и обновление 
+● Восстановление после полного отказа (краха) системы 
+● Управление пользователями 
+● Задачи сопровождения (обслуживания)
+● Задачи загрузки и миграции данных 
+● Проверки уязвимостей 
+● Тестирование производительности 
+Основная цель эксплуатационного приемочного тестирования – получение уверенности в том, что операторы или системные администраторы смогут поддерживать работоспособность системы для пользователей в среде эксплуатации, даже в исключительных или сложных условиях.
+Контрактное и нормативное приемочное тестирование Контрактное приемочное тестирование проводится в соответствии с указанными в контракте критериями приемки специализированного программного обеспечения. Критерии приемки должны определяться, когда стороны заключают контракт. Контрактное приемочное тестирование часто выполняется пользователями или независимой группой тестировщиков. Нормативное приемочное тестирование проводится в соответствии с любыми нормативами, которые должны соблюдаться, например, в отношении правительственных или юридических норм, а также норм безопасности. Нормативное приемочное тестирование часто выполняется пользователями или независимой группой тестировщиков, иногда с результатами, которые засвидетельствованы или проверяются регулирующими органами.
+Альфа-тестирование и бета-тестирование - см ниже.
+
+
+
+
+
+
+
+ 
+Test Levels:
+Component testing
+Integration testing
+System testing
+Acceptance testing
+
+Component testing  (unit or module testing) focuses on components that are separately testable. Component testing is often done in isolation from the rest of the system, may cover functionality (e.g., correctness of calculations), non-functional characteristics (e.g., searching for memory leaks), and structural properties (e.g., decision testing).
+Typical test objects for component testing include: • Components, units or modules • Code and data structures • Classes • Database modules.
+Examples of typical defects and failures for component testing include: • Incorrect functionality (e.g., not as described in design specifications) • Data flow problems • Incorrect code and logic.
+Defects are typically fixed as soon as they are found, often with no formal defect management. However, when developers do report defects, this provides important information for root cause analysis and process improvement.
+Component testing is usually performed by the developer who wrote the code. Developers will often write and execute tests after having written the code for a component. However, in Agile development especially, writing automated component test cases may precede writing application code.
+TDD: Test driven development is highly iterative and is based on cycles of developing automated test cases, then building and integrating small pieces of code, then executing the component tests, correcting any issues, and re-factoring the code. It is an example of a test-first approach. While test driven development originated in eXtreme Programming (XP), it has spread to other forms of Agile and also to sequential lifecycles.
+
+
+
+Integration Testing  focuses on interactions between components or systems.
+Two levels:
+• Component integration testing focuses on the interactions and interfaces between integrated components. Component integration testing is performed after component testing, and is generally automated.
+ • System integration testing focuses on the interactions and interfaces between systems, packages, and microservices. System integration testing can also cover interactions with, and interfaces provided by, external organizations (e.g., web services). System integration testing may be done after system testing or in parallel with ongoing system test activities (in both sequential development and iterative and incremental development). 
+Typical test objects for integration testing include: • Subsystems • Databases • Infrastructure • Interfaces • APIs • Microservices.
+Component integration testing is often the responsibility of developers. System integration testing is generally the responsibility of testers. 
+Approaches to integration testing:
+Big Bang Approach: All or nearly all developed modules are assembled together as a complete system or its main part, and then integration testing is conducted. This approach is time-efficient.
+Incremental Approach: Testing is performed by combining two or more logically related modules. Other related modules are gradually added and tested to ensure correct functionality, continuing until all modules are connected and tested successfully. This approach can be done in several ways:
+Top-Down Approach: High-level modules are tested first, and lower-level modules are gradually added. Lower-level modules are simulated with stubs, which are replaced with actual components when ready.
+Bottom-Up Approach: Lower-level modules are tested first, progressively integrating and testing with higher-level modules. Drivers are used to simulate missing modules.
+Sandwich/Hybrid Approach: A combination of the Top-Down and Bottom-Up approaches. The focus is on the middle layer, with drivers simulating the upper layer and stubs simulating the lower layer until these components are developed.
+
+
+System testing focuses on the behavior and capabilities of a whole system or product, often considering the end-to-end tasks the system can perform and the non-functional behaviors it exhibits while performing those tasks.
+ It is performed after integration testing to check whether the whole system works properly. It is basically a black box type of testing that evaluates the performance of the system from the user's point of view using a specification document and it does not require any internal knowledge about the system such as design or code structure.
+Why do you need system testing?
+It is very important to complete the complete testing cycle and ST is the stage where this is done;
+ST is performed in an environment similar to the production environment and hence the stakeholders can get a good idea of the user response;
+This helps to minimise post-deployment troubleshooting and the number of support calls;
+In this phase of STLC, the application architecture and business requirements are tested. This testing is very important and it plays an important role in delivering a quality product to the customer.
+
+
+Acceptance testing, like system testing, typically focuses on the behavior and capabilities of a whole system or product. Objectives of acceptance testing include: 
+• Establishing confidence in the quality of the system as a whole 
+• Validating that the system is complete and will work as expected
+• Verifying that functional and non-functional behaviors of the system are as specified 
+Forms:
+User acceptance testing (UAT) User acceptance testing of the system is typically focused on validating the fitness for use of the system by intended users in a real or simulated operational environment. The main objective is building confidence that the users can use the system to meet their needs, fulfill requirements, and perform business processes with minimum difficulty, cost, and risk. 
+Operational acceptance testing (OAT) The acceptance testing of the system by operations or systems administration staff is usually performed in a (simulated) production environment. The tests focus on operational aspects, and may include: 
+• Testing of backup and restore 
+• Installing, uninstalling and upgrading 
+• Disaster recovery 
+• User management 
+• Maintenance tasks
+• Data load and migration tasks 
+• Checks for security vulnerabilities 
+• Performance testing
+The main objective of operational acceptance testing is building confidence that the operators or system administrators can keep the system working properly for the users in the operational environment, even under exceptional or difficult conditions. 
+Contractual and regulatory acceptance testing Contractual acceptance testing is performed against a contract’s acceptance criteria for producing custom-developed software. Acceptance criteria should be defined when the parties agree to the contract. Contractual acceptance testing is often performed by users or by independent testers. Regulatory acceptance testing is performed against any regulations that must be adhered to, such as government, legal, or safety regulations. Regulatory acceptance testing is often performed by users or by independent testers, sometimes with the results being witnessed or audited by regulatory agencies. The main objective of contractual and regulatory acceptance testing is building confidence that contractual or regulatory compliance has been achieved. 
+Alpha and beta testing - see below.
+
+ПИРАМИДА ТЕСТИРОВАНИЯ:
+End-to-end тестирование, или сквозное тестирование - это вид тестирования, используемый для проверки программного обеспечения от начала до конца, а также его интеграцию с внешними интерфейсами.
+На примере интернет магазина, это одна объемная проверка, которая включает в себя все шаги пользователя, начиная от регистрации в системе и заканчивая покупкой товара в магазине.
+
+TESTING PYRAMID
+End-to-end testing is a type of testing used to test software from start to finish, as well as its integration with external interfaces.
+Using the example of an online shop, this is one extensive test that includes all user steps, starting from registration in the system and ending with the purchase of goods in the shop.
+
+
+
+
+По признаку позитивности сценариев
+ Позитивное тестирование (Positive testing)
+ Негативное тестирование (Negative testing)
+
+Позитивное тестирование (positive testing) - это тестирование с применением сценариев, которые соответствуют нормальному (штатному, ожидаемому) поведению системы. С его помощью мы можем определить, что система делает то, для чего и была создана. Направлено на исследование приложения в ситуации, когда все действия выполняются строго по инструкции без каких бы то ни было ошибок, отклонений, ввода неверных данных и т.д. Для ускорения тестирования несколько позитивных тест-кейсов можно объединять (например, перед отправкой заполнить все поля формы верными значениями) — иногда это может усложнить диагностику ошибки, но существенная экономия времени компенсирует этот риск. Примеры:
+умножить на калькуляторе цифр 3 и 5,
+в игре посадить морковь на грядку для овощей,
+оплатить покупку действующей картой.
+Негативное тестирование (negative testing , invalid testing) — тестирование, в рамках которого применяются сценарии, которые соответствуют внештатному поведению тестируемой системы. Направлено на исследование работы приложения в ситуациях, когда с ним выполняются (некорректные) операции и/или используются данные, потенциально приводящие к ошибкам (классика жанра — деление на ноль). Деструктивное тестирование (destructive testing) - одна из форм негативного тестирования с целью нарушить работоспособность приложения и обнаружить точку отказа. (Пример: нагрузка приложения выше его предела, чтобы оно перестало работать)
+ Негативных тест-кейсов обычно оказывается значительно больше, чем позитивных. В отличие от позитивных негативные тест-кейсы не стоит объединять, т.к. подобное решение может привести к неверной трактовке поведения приложения и пропуску (необнаружению) дефектов. Пример:
+умножить на калькуляторе числа 3 на грушу (значение «груша» не является валидным для калькулятора),
+в игре посадить морковь на реку,
+оплатить покупку несуществующей картой.
+Результат. Позитивное тестирование должно нам всегда давать результат в виде отсутствия багов. Негативные проверки могут дать 2 результата:
+1. На данный ввод у продукта есть ответ в виде сообщения/контроля.
+2. Система не знает, как реагировать на введенные данные.
+Сначала мы выполняем позитивные тесты, а потом негативные.
+Positive testing
+Negative testing
+Positive Testing: This testing involves scenarios that align with the system's normal, expected behavior. It ensures that the system functions as intended when everything is done correctly, following instructions without errors, deviations, or incorrect inputs. Positive test cases can sometimes be combined to speed up testing, though this may complicate error diagnosis. Examples include multiplying numbers on a calculator, making a purchase with a valid card.
+Negative Testing: This testing uses scenarios that simulate abnormal or unexpected behavior. It tests how the application handles incorrect operations or data that could lead to errors, such as dividing by zero. Negative testing often includes destructive testing, aiming to break the application and find its failure points. Negative test cases are typically more numerous than positive ones and should not be combined, as this could lead to incorrect interpretations and missed defects. Examples include attempting to multiply a number by a non-numeric value, planting carrots in a river in a game, or paying with a nonexistent card.
+Results:
+Positive Testing: Should always result in no bugs if the system works correctly.
+Negative Testing: Can result in either the system responding with an error message/control or the system not knowing how to handle the input.
+Testing typically starts with positive tests followed by negative tests.
+
+
+
+
+
+По времени и месту проведения
+ Альфа тестирование (Alpha testing)
+ Бета тестирование (Beta testing)
+ (Классификация по привлечению конечных пользователей)
+
+Альфа-тестирование и бета-тестирование обычно используются разработчиками готовых коммерческих решений, которые хотят получить обратную связь от потенциальных или существующих пользователей, клиентов и/или операторов до того, как программный продукт будет выставлен в коммерческую продажу. 
+
+Согласно ISTQB-CTFL_Syllabus_2018_v3.1.1 альфа и бета тестирование относят к видам приемочного (Acceptance) тестирования, наряду с: Пользовательское приемочное тестирование (User acceptance testing) ● Эксплуатационное приемочное тестирование (Operational acceptance testing) ● Контрактное и нормативное приемочное тестирование (Contractual and regulatory acceptance testing).
+
+Альфа-тестирование проводится на мощностях компании разработчика, но не командой самого разработчика, а потенциальными или существующими клиентами и/или операторами или независимой группой тестирования. Бета-тестирование проводится потенциальными или существующими клиентами и/или операторами на их собственных мощностях. 
+
+Бета-тестирование может проходить после альфа-тестирования или даже без предшествующего альфа-тестирования. 
+Цели:
+Одной из целей альфа- и бета-тестирования является получение уверенности потенциальных или существующих клиентов и/или операторов в том, что они смогут использовать систему в нормальных, повседневных условиях и в эксплуатационных средах для достижения своих целей с минимальными трудностями, затратами и рисками. 
+Другой целью может быть обнаружение дефектов, связанных с условиями и средой эксплуатации, в которых система будет использоваться, особенно когда команде разработчиков трудно воспроизвести эти условия и среды. [ISTQB_CTFL_Syllabus_2018]
+
+Гамма-тестирование (gamma testing) — финальная стадия тестирования перед выпуском продукта, направленная на исправление незначительных дефектов, обнаруженных в бета-тестировании. Как правило, также выполняется с максимальным привлечением конечных пользователей/заказчиков. Может являться формой внешнего приёмочного тестирования . Суть этого вида вкратце: продукт уже почти готов, и сейчас обратная связь от реальных пользователей используется для устранения последних недоработок. 
+Alpha and beta testing are typically used by developers of commercial off-the-shelf (COTS) software who want to get feedback from potential or existing users, customers, and/or operators before the software product is put on the market. 
+Alpha testing is performed at the developing organization’s site, not by the development team, but by potential or existing customers, and/or operators or an independent test team. 
+Beta testing is performed by potential or existing customers, and/or operators at their own locations. 
+
+Beta testing may come after alpha testing, or may occur without any preceding alpha testing having occurred. 
+
+One objective of alpha and beta testing is building confidence among potential or existing customers, and/or operators that they can use the system under normal, everyday conditions, and in the operational environment(s) to achieve their objectives with minimum difficulty, cost, and risk. 
+Another objective may be the detection of defects related to the conditions and environment(s) in which the system will be used, especially when those conditions and environment(s) are difficult to replicate by the development team.
+
+
+
+
+Альфа
+Бета
+Где?
+Внутри компании, на мощностях компании разработчика 
+Вне компании, на собственных мощностях тестирующих 
+Кем?
+не командой самого разработчика, а потенциальными или существующими клиентами и/или операторами или независимой группой тестирования
+потенциальными или существующими клиентами и/или операторами
+Среда (environment)
+Разработческая среда (Development Environment): Первоначальное тестирование может проводиться в среде разработки, где код разрабатывается и запускается.
+Тестовая среда (Testing/Staging Environment): Более продвинутое альфа-тестирование обычно проводится в изолированной тестовой среде, которая имитирует реальную рабочую среду, но с ограниченным набором данных и конфигураций.
+Предпродажная среда (Pre-production Environment): распространяется через специальный канал, например, бета-магазин приложений или через систему раннего доступа. Эта среда практически идентична реальной производственной среде.
+Реальная среда (Production Environment): В некоторых случаях бета-версии могут быть доступны в реальной производственной среде, но с пометкой "бета", чтобы пользователи понимали, что это не окончательная версия.
+
+
+Устройства
+Внутренние устройства разработчиков: Это могут быть компьютеры, виртуальные машины или тестовые серверы, используемые непосредственно разработчиками и внутренними тестировщиками.
+Тестовые устройства: В некоторых случаях компании используют специальные тестовые устройства или эмуляторы, чтобы проверить работу приложения на различных конфигурациях и платформах (например, разные версии операционных систем, разрешения экрана и т.д.).
+Устройства пользователей: Бета-тестирование проводится на реальных устройствах пользователей, которые согласились участвовать в тестировании. Это могут быть смартфоны, планшеты, компьютеры, игровые консоли и другие устройства, которые соответствуют требованиям приложения.
+Разнообразные платформы и конфигурации: Важно, чтобы бета-тестирование охватывало широкий спектр устройств и конфигураций, чтобы выявить проблемы, которые могут возникнуть у различных пользователей.
+
+
+Главные задачи
+Проверка функциональности и стабильности приложения.
+Поиск критических багов.
+Проверка интеграции разных модулей приложения.
+
+
+Проверка работы приложения в реальных условиях.
+Оценка пользовательского опыта.
+Выявление ошибок, которые не были найдены на стадии альфа-тестирования.
+Сбор отзывов от пользователей для возможных улучшений перед окончательным релизом.
+
+
+
+
+По подготовленности специалиста
+ Интуитивное тестирование (Ad-hoc testing)
+ Исследовательское тестирование (Exploratory testing)
+Тестирование на основе тест-кейсов 
+[Классификация по степени формализации]
+
+Тестирование на основе тест-кейсов (scripted testing, test case based testing) — формализованный подход, в котором тестирование производится на основе заранее подготовленных тест-кейсов, наборов тест-кейсов и иной документации. Это самый распространённый способ тестирования, который также позволяет достичь максимальной полноты исследования приложения за счёт строгой систематизации процесса, удобства применения метрик и широкого набора выработанных за десятилетия и проверенных на практике рекомендаций.
+
+Исследовательское тестирование (exploratory testing) — частично формализованный подход, в рамках которого тестировщик выполняет работу с приложением по выбранному сценарию, который, в свою очередь, дорабатывается в процессе выполнения с целью более полного исследования приложения. Ключевым фактором успеха при выполнении исследовательского тестирования является именно работа по сценарию, а не выполнение разрозненных бездумных операций. Существует даже специальный сценарный подход, называемый сессионным тестированием (session-based testing). В качестве альтернативы сценариям при выборе действий с приложением иногда могут использоваться чек-листы, и тогда этот вид тестирования называют тестированием на основе чек-листов (checklist-based testing).
+
+Свободное (интуитивное) тестирование (ad hoc testing) — полностью неформализованный подход, в котором не предполагается использования ни тест-кейсов, ни чек-листов, ни сценариев — тестировщик полностью опирается на свой профессионализм и интуицию (experience-based testing) для спонтанного выполнения с приложением действий, которые, как он считает, могут обнаружить ошибку. Этот вид тестирования используется редко и исключительно как дополнение к полностью или частично формализованному тестированию в случаях, когда для исследования некоторого аспекта поведения приложения (пока?) нет тест-кейсов. 
+
+
+Based on Tester Preparedness
+Test Case-Based Testing (Scripted Testing): A formalized approach where testing is conducted based on pre-prepared test cases, test sets, and other documentation. This is the most common method, offering systematic coverage of the application, ease of applying metrics, and a wide range of proven best practices developed over decades.
+Exploratory Testing: A partially formalized approach where the tester follows a scenario that evolves during testing to explore the application more thoroughly. Success depends on following a coherent scenario rather than performing random actions. This approach may also involve session-based testing or checklist-based testing when checklists replace scenarios.
+Ad-Hoc Testing (Intuitive Testing): A completely informal approach where no test cases, checklists, or scenarios are used. The tester relies solely on their expertise and intuition to spontaneously perform actions they believe might uncover errors. This method is rarely used and typically serves as a supplement to more formalized testing when specific test cases are not yet available.
+
+
+
+
+
+Gorilla and Monkey testing
+Gorilla testing — это интенсивное, повторяющееся тестирование одной конкретной функции или модуля системы. Цель состоит в том, чтобы выявить дефекты, которые могут проявиться только при длительном или необычном использовании этой функции. При Gorilla testing тестировщик сосредотачивается на одном конкретном функциональном блоке и проводит множество тестов с различными входными данными и сценариями использования. Эта функция может тестироваться снова и снова в течение длительного времени, пока не будут обнаружены все возможные дефекты. Gorilla testing часто используется, когда определенная функция критична для работы системы или когда есть подозрение, что в этом модуле могут быть скрытые дефекты. Тестирование может быть как позитивным (когда проверяется, что функция работает правильно при корректных вводных данных), так и негативным (когда проверяется, как система реагирует на неправильные или некорректные данные).
+Пример: Если в приложении есть функция, позволяющая пользователю загружать файлы, то Gorilla testing будет включать многократное тестирование этой функции с различными файлами (разного размера, типа, с разными именами и т.д.), чтобы убедиться, что она работает надежно во всех возможных сценариях.
+Monkey testing — это менее структурированный и более хаотичный подход к тестированию, при котором тестировщик или программа (в случае автоматизированного тестирования) выполняет случайные действия в приложении без заранее определенного плана. Цель — проверить, как система справляется с непредсказуемыми и случайными вводными данными и действиями.  В Monkey testing тестировщик (или скрипт) действует случайным образом: нажимает на произвольные кнопки, вводит случайные данные в поля, переходит по случайным ссылкам и т.д. Это позволяет выявить неожиданные дефекты, которые могут проявиться при использовании системы в условиях, не предусмотренных разработчиками. Monkey testing часто используется для проверки стабильности системы и выявления неожиданных сбоев или ошибок. Этот метод может выявить редкие или случайные ошибки, которые трудно обнаружить с помощью обычного структурированного тестирования.
+Gorilla and Monkey Testing
+Gorilla Testing: This involves intensive, repetitive testing of a specific function or module in a system. The goal is to uncover defects that may appear only under prolonged or unusual use of that function. The tester focuses on a single functional block, conducting numerous tests with various inputs and usage scenarios. This function is tested repeatedly over time until all possible defects are identified. Gorilla testing is often used for critical functions or when there is suspicion of hidden defects. It includes both positive (correct input) and negative (incorrect input) testing.
+Example: If an application has a file upload feature, Gorilla testing would involve repeatedly testing this function with different files (varying in size, type, names, etc.) to ensure it works reliably in all possible scenarios.
+Monkey Testing: This is a less structured and more chaotic approach where the tester or an automated program performs random actions within the application without a predetermined plan. The aim is to see how the system handles unpredictable and random inputs and actions. The tester (or script) may randomly click buttons, enter data, or follow links, helping to uncover unexpected defects that might arise under conditions not anticipated by the developers. Monkey testing is often used to check system stability and to identify rare or random errors that structured testing might miss.
+
+
+
+
+
+По уровню функционального тестирования (по степени важности тестируемых функций):
+Дымовое, санитарное
+Критического пути
+Расширенное
+По цели тестирования:
+Смоук, санитарное
+Нового функционала
+Ретест (retest, defect validation)
+Регрессионное
+
+Дымовое тестирование (smoke test, intake test, build verification test) направлено на проверку самой главной, самой важной, самой ключевой функциональности, неработоспособность которой делает бессмысленной саму идею использования приложения (или иного объекта, подвергаемого дымовому тестированию). Дымовое тестирование проводится после выхода нового билда, чтобы определить общий уровень качества приложения и принять решение о (не)целесообразности выполнения тестирования критического пути и расширенного тестирования. Поскольку тест-кейсов на уровне дымового тестирования относительно немного, а сами они достаточно просты, но при этом очень часто повторяются, они являются хорошими кандидатами на автоматизацию. В связи с высокой важностью тест-кейсов на данном уровне пороговое значение метрики их прохождения часто выставляется равным 100 % или близким к 100 %.
+
+
+Санитарное тестирование (sanity testing). Что касается Sanity тестирования, то с одной точки зрения это синоним Smoke. 
+Есть и другая точка зрения, при которой Smoke является тестированием основной функциональности на нестабильных билдах, a Sanity проверяет то же самое, но уже на стабильных билдах, близких к релизу.
+Третья версия: Sanity testing используется для проверки конкретных компонентов или функций после внесения изменений или исправления ошибок в коде, чтобы убедиться, что они работают должным образом. Sanity testing более ограничен по сравнению со smoke testing. Он фокусируется на конкретных изменениях в коде или областях системы, которые были изменены или исправлены. Время проведения: Sanity testing проводится после smoke testing и обычно применяется, когда новые функции или исправления внедрены в уже существующую стабильную версию продукта. Выполняется по мере необходимости.
+
+
+Тестирование критического пути (critical path test) направлено на исследование функциональности, используемой типичными пользователями в типичной повседневной деятельности.
+
+
+Расширенное тестирование (extended test) направлено на исследование всей заявленной в требованиях функциональности — даже той, которая низко проранжирована по степени важности.
+
+
+New feature testing - проверка качества новой функциональности. Полный тест (smoke->cr.path -> extended).
+
+
+Подтверждающее (re-testing, ретест, повторное тестирование) - тип тестирования, связанного с изменениями, которое выполняется после исправления дефекта для подтверждения того, что отказ, вызванный этим дефектом, не воспроизводится. [ISTQB Glossary] Ретест подтверждает факт того, что дефект был исправлен. Он не требует оценку влияния изменений.
+Re-test — это просто повторное выполнение теста, который ранее не прошел, с целью проверки исправления конкретной проблемы.
+Defect validation — это более широкий процесс, который включает в себя не только повторное тестирование, но и дополнительную проверку для подтверждения того, что исправление дефекта не вызвало новых проблем и что система по-прежнему работает стабильно.
+
+
+Регрессионное тестирование (regression testing) - тип тестирования, связанного с изменениями, чтобы найти привнесенные или ранее не обнаруженные дефекты в не менявшихся областях программного обеспечения. [ISTQB Glossary] Регрессионное тестирование проводится после любого изменения (новая функциональность, исправление дефекта, удаление функциональности), чтобы убедиться в том, что приложение работает стабильно. Оно не включает в себя ретест, а проводится уже после него.
+Нужно понимать, что на практике регресс не проводится каждый раз, когда в системе появляется изменение, а тестирует скорее "накапливающийся" эффект. Например, две недели мы разрабатывали новые функциональности и тестировали только их. В конце этого периода (итерации) у нас запланирован релиз. И именно перед релизом мы проведем одну общую регрессию для всего приложения.
+Регрессионное тестирование является одной из самых главных активностей тестировщика и проводится перед каждым релизом (выпуском продукта для конечного пользователя). Если релиз запланирован на каждую неделю, то регрессия проводится с такой же периодичностью, поэтому тесты для регрессии, как и дымные тесты очень часто автоматизируют для экономии времени.
+Обычно для проведения регрессии выделяют несколько дней, код проекта "замораживают"(code freeze) и в него нельзя вносить изменения, кроме исправлений критичных дефектов.
+Какие тесты в конечном итоге попадут в регрессионный набор? 
+Регрессионные тесты выбираются из уже существующих тестовых наборов на основании следующих принципов:
+Тесты, проверяющие части приложения, в которые вносились изменения
+Например, если дефект или новая функция локализованы в модуле регистрации, необходимо убедиться, что остальные компоненты этого модуля работоспособны
+Тесты с высоким приоритетом
+Мы не можем рисковать работоспособностью самых важных функций приложения, поэтому необходимо дополнительно проверять и их
+Тесты, которые проверяют модули с наибольшей концентрацией дефектов
+Согласно принципу скопления дефектов необходимо убедиться, что в уязвимой части приложения нет дополнительных проблем.
+Functional Testing Levels (by Importance):
+
+Smoke Testing:
+Focuses on verifying the core functionalities of the application, which are essential for its basic operation. If these functions fail, the application is considered unusable.
+Conducted after a new build to assess overall quality and determine if further testing (like critical path or extended testing) is necessary.
+Due to the critical nature and simplicity of smoke tests, they are often automated, with a pass rate requirement close to 100%.
+
+Sanity Testing:
+Views on Sanity Testing vary:
+Some consider it synonymous with Smoke Testing.
+Others see it as testing key functionalities on more stable, release-ready builds.
+Another view sees it as testing specific components or functions after changes or fixes, ensuring they work correctly. It’s more focused and limited compared to smoke testing, often conducted after smoke tests on stable versions.
+
+Critical Path Testing:
+Tests the functionalities most commonly used by typical users in their daily activities, ensuring these paths work correctly.
+
+Extended Testing:
+Involves a thorough examination of all functionalities, including less critical features, as outlined in the requirements.
+
+
+Testing Objectives:
+
+Smoke Testing:
+As mentioned, it verifies essential functions to decide whether more in-depth testing is justified.
+
+Sanity Testing:
+Ensures specific areas of the application, especially those recently modified, function properly. It is narrower in scope than smoke testing.
+
+New Feature Testing:
+Focuses on validating the quality of newly added functionalities. It typically follows a sequence of smoke, critical path, and extended testing.
+
+Retesting (Defect Validation):
+This involves re-executing tests that previously failed to confirm that the identified defects have been fixed. Unlike regression testing, retesting doesn’t assess the broader impact of changes, but simply verifies the specific fix.
+
+Regression Testing:
+Conducted after changes (like new features or bug fixes) to ensure that no new defects have been introduced and that existing functionality remains stable. It does not include retesting but is performed after retesting.
+Regression testing often occurs before a release to check the cumulative effect of recent changes. It is usually automated due to the frequency and scope of the tests, and it is a critical activity before each product release.
+
+
+
+
+
+По разработке тестовых сценариев:
+На основе требований (requirements based)
+По вариантам использования (use case based)
+На основе модели (model based)
+
+Requirements-based testing (тестирование на основе требований) — это подход к тестированию программного обеспечения, при котором тесты разрабатываются и выполняются на основе требований к системе или продукту. Цель этого типа тестирования — убедиться, что все заявленные требования были реализованы и что продукт работает так, как это предусмотрено в спецификациях.
+
+Тестирование на основе вариантов использования (use case testing) — техника тестирования (по методу чёрного ящика), в которой тест-кейсы разрабатываются на основе вариантов использования. Варианты использования выступают в основном источником информации для шагов тест-кейса, в то время как наборы входных данных удобно разрабатывать с помощью техник выбора входных данных. В общем случае источником информации для разработки тест-кейсов в этой технике могут выступать не только варианты использования, но и другие пользовательские требования в любом их виде. В случае если методология разработки проекта подразумевает использование пользовательских историй, этот вид тестирования может быть заменён тестированием на основе пользовательских историй (user story testing).
+
+Тестирование по моделям поведения приложения (model-based testing) — техника тестирования, в которой исследование приложения (и разработка тест-кейсов) строится на некой модели: таблице принятия решений, таблице или диаграмме состояний, пользовательских сценариев, модели нагрузки и т.д.
+
+
+Approaches to Test Scenario Development
+
+Requirements-Based Testing:
+In this approach, tests are designed and executed based on the system or product requirements. The goal is to ensure that all specified requirements have been implemented correctly and that the product functions as outlined in the specifications.
+Use Case-Based Testing:
+This technique involves developing test cases based on use cases, which describe how users will interact with the system. The use cases provide key information for the steps in a test case, while input data is generated using data selection techniques. In scenarios where user stories are used instead of traditional use cases, this testing can be adapted to user story-based testing.
+Model-Based Testing:
+In this approach, the testing process and test case development are based on a model of the application's behavior. This model could be a decision table, state diagram, user scenarios, or load model, among others. The model serves as a blueprint for understanding the application and guiding the creation of relevant test cases.
+
+Difference between use cases and user stories:
+    A use case is a detailed description of a system's behavior in response to a user's actions. It outlines how a system should interact with users (actors) to achieve a specific goal. Typically includes several components such as the title, actors, preconditions, postconditions, main success scenarios, and alternate flows.
+ A user story is a brief, informal description of a feature from the perspective of an end user. It is part of agile methodologies like Scrum and focuses on what the user needs and why. Typically follows a simple format: "As a [type of user], I want [goal] so that [reason]." It may also include acceptance criteria to define when the story is considered complete.
+
+
+
+По степени автоматизации:
+Ручное
+Автоматизированное
+Полуавтоматизированное
+
+Ручное тестирование (manual testing) - тестирование, в котором тест-кейсы выполняются человеком вручную без использования средств автоматизации. 
+Автоматизированное тестирование (automated testing, test automation) - набор техник, подходов и инструментальных средств, позволяющий исключить человека из выполнения некоторых задач в процессе тестирования.
+Полуавтоматизированное тестирование - вариант ручного с частичным использованием средств автоматизации.
+By Degree of Automation:
+Manual Testing: Testing where test cases are executed manually by a person without the use of automation tools.
+Automated Testing: A set of techniques, approaches, and tools that allows the exclusion of human intervention from certain tasks in the testing process.
+Semi-Automated Testing: A variant of manual testing with partial use of automation tools.
+
+
+
+
+
+По уровню представления системы:
+Фронт энд
+Бэк энд
+Front-end Testing:
+Цель: Проверка пользовательского интерфейса (UI) и взаимодействия пользователя с системой.
+Что тестируется: Внешняя часть приложения, с которой взаимодействует пользователь, включая кнопки, формы, навигацию, внешний вид, удобство использования.
+Примеры: Тестирование корректного отображения страниц, работы кнопок, валидации форм.
+Back-end Testing:
+Цель: Проверка серверной части приложения, которая обрабатывает данные, логику и базу данных.
+Что тестируется: Логика приложения, взаимодействие с базой данных, серверы, API, интеграции.
+Примеры: Тестирование баз данных, API, проверка бизнес-логики, безопасность и производительность системы.
+
+
+By Level of System Representation:
+Front-end Testing:
+Purpose: To test the user interface (UI) and user interaction with the system.
+What is Tested: The external part of the application that users interact with, including buttons, forms, navigation, appearance, and usability.
+Examples: Testing the correct display of pages, functionality of buttons, form validation.
+
+Back-end Testing:
+Purpose: To test the server-side of the application that handles data, logic, and the database.
+What is Tested: Application logic, database interactions, servers, APIs, and integrations.
+Examples: Testing databases, APIs, business logic verification, system security and performance.
+
+
+
+
