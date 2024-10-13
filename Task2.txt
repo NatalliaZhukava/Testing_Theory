@@ -1,0 +1,693 @@
+Задание 2. Теория. Модели разработки ПО. SDLC, STLC
+Ответить на вопросы:
+Что такое проект?
+Из каких этапов состоит Waterfall model/Каскадная модель?
+Какие преимущества и недостатки Waterfall model/Каскадной модели?
+Из каких этапов состоит V-model/V- модель?
+Когда использовать V-model/V- модель?
+Из каких этапов состоит Iterative model/Итеративная модель?
+Когда использовать Iterative model/Итеративной модели?
+Плюсы и минусы Iterative model/Итеративной модели?
+Agile - это?
+Agile манифест - это?
+Какие ценности Agile манифест?
+Основные принципы Agile манифест?
+Scrum - это? (опишите подробно)
+Что такое Velocity / Capacity?
+Преимущества и недостатки Scrum
+Что такое ретроспектива?
+Kanban- это? (опишите подробно)
+Преимущества и недостатки Kanban?
+Что такое SDLS? Из каких этапов состоит? Что происходит на каждом этапе?
+Что такое STLS? Из каких этапов состоит? Что происходит на каждом этапе?
+
+
+Проект — это временное предприятие, направленное на создание уникального продукта, услуги или результата. Проект имеет четко определенные цели, ограничения по времени, ресурсам и бюджету, а также включает в себя планирование, выполнение и завершение всех необходимых работ для достижения поставленных целей. Проект отличается от регулярной операционной деятельности тем, что он имеет начало и конец, а его результат должен быть уникальным и отличаться от стандартных продуктов или услуг.
+
+
+
+Водопадная (каскадная) модель разработки ПО
+
+Это одна из самых ранних и простых моделей жизненного цикла разработки программного обеспечения. Она предполагает линейный подход, где каждая фаза проекта завершается полностью перед переходом к следующей.
+Этапы:
+1. Анализ требований: Этот этап включает взаимодействие с заказчиком для понимания того, что необходимо реализовать.
+2. Проектирование: Создание архитектуры системы и проектирование ее компонентов. Здесь разрабатываются как высокоуровневые, так и детализированные спецификации.
+3. Кодирование: На этом этапе разработчики пишут код, основываясь на проектной документации. Реализуются все функциональные компоненты системы.
+4. Тестирование: Проведение тестирования для выявления и исправления ошибок. На этом этапе проверяется соответствие реализованных функций их требованиям.
+5. Внедрение: Установка и настройка системы в рабочую среду, а также обучение пользователей.
+6. Поддержка: Обеспечение технической поддержки и исправление ошибок в процессе эксплуатации системы. Это также может включать внесение изменений на основе отзывов пользователей.
+Преимущества водопадной модели:
+Простота: Линейная структура облегчает понимание процесса разработки. Каждый этап отчетливо обозначен.
+Четкие требования: Поскольку требования собираются в начале, это помогает избежать путаницы в дальнейших этапах.
+Документированность: Модель предполагает наличие обширной документации на каждом этапе, что облегчает управление проектом.
+Легкая оценка прогресса: Каждый этап завершен до перехода к следующему, что упрощает отслеживание статуса проекта.
+Подходит для небольших проектов: В некоторых случаях, особенно для малых и средних проектов, модель «водопад» может быть достаточно эффективной.
+Недостатки водопадной модели:
+Негибкость: Изменения на поздних стадиях разработки могут быть дорогими и сложными, так как они требуют возврата к предыдущим этапам.
+Риски неполных требований: Если вначале не удается определить все требования, это может привести к серьезным проблемам в будущем.
+Поздняя доставка: Тестирование происходит только после завершения кодирования, что может выявить ошибки и недочеты слишком поздно в процессе.
+Сложность в управлении изменениями: Если в процессе разработки появляются новые требования, их внедрение может вызвать значительные затруднения.
+Неэффективность для крупных проектов: Для проектов с высоким уровнем сложности и изменения требований модель «водопад» может оказаться неэффективной.
+С точки зрения же тестирования эта модель плоха тем, что тестирование в явном виде появляется здесь лишь с середины развития проекта, достигая своего максимума в самом конце.
+Использование водопадной модели
+Ясные и стабильные требования
+Небольшие или средние проекты
+Проекты с наивысшей предсказуемостью
+Проекты с высокими требованиями к документации
+Контрактные проекты
+Проекты в хорошо контролируемой среде
+Низкий уровень риска
+В общем, модель «водопад» лучше всего подходит для простых, четко структурированных и предсказуемых проектов, где изменения в требованиях маловероятны.
+Теперь каскадную модель применяют в авиастроении, военной или космической отраслях, медицине и финансовом секторе. Там Waterfall самое место, потому что этим сферам нужны четко выстроенные процессы и сроки, а это суть каскада. 
+
+
+The Waterfall Model in Software Development 
+It is a linear (sequential) process where each phase is completed before the next begins. In this model, test activities only occur after all other development activities have been completed. 
+The main stages include: requirements analysis, design, coding, testing, deployment, and maintenance.
+Advantages:
+Simplicity and clarity of structure.
+Clear requirements from the start.
+Extensive documentation.
+Easy progress tracking.
+Suitable for small projects.
+Disadvantages:
+Inflexibility with changing requirements.
+Risks due to incomplete initial requirements.
+Late delivery of results.
+Difficulty in managing changes.
+Ineffectiveness for large projects.
+Usage: This model is suitable for projects with clear and stable requirements, high predictability, and a need for detailed documentation. It is often used in aerospace, military, and space industries, as well as in healthcare and finance sectors.
+
+
+
+V-модель
+
+V-модель (V-model) - модель, описывающая процессы жизненного цикла разработки программного обеспечения с момента составления спецификации требований до этапа сопровождения. V модель показывает интеграцию процессов тестирования в каждую фазу цикла разработки программного обеспечения. (ISTQB)
+
+V-модель является логическим развитием водопадной. Упрощенно говоря, мы видим те же стадии, что и в водопадной модели, только нижняя половина “водопада” развернута вверх, образуя форму буквы “V”. В этой модели, как и в водопадной, каждая стадия начинается строго после окончания предыдущей. 
+
+Горизонтальные линии на схеме модели показывают нам то, как каждый этап тестирования ПЛАНИРУЕТСЯ на соответствующем этапе разработки. Другими словами, каждой стадии «на спуске» мы думаем о том, что и как будет происходить на соответствующей стадии «на подъёме». Таким образом, можно сказать, что тестирование в этой модели появляется уже на самых ранних стадиях развития проекта.
+
+Данную модель называют также Verification and Validation model.
+Преимущества V-модели:
+Простота и легкость в использовании.
+Такие действия по тестированию, как планирование, разработка тестов, происходят задолго до кодирования. Это экономит много времени. Отсюда более высокие шансы на успех по сравнению с водопадной моделью.
+Проактивное отслеживание дефектов - то есть дефекты обнаруживаются на ранней стадии. Это позволяет избежать нисходящего потока дефектов.
+Недостатки V-модели:
+Очень жесткая.
+Программное обеспечение разрабатывается на этапе имплементации, ранние прототипы программного обеспечения не создаются.
+Если на середине пути происходят какие-либо изменения, то необходимо обновлять тестовую документацию вместе с документацией по требованиям.
+Еще одна проблема модели V заключается в том, что различие между модульным, интеграционным и системным тестированием не так однозначно, как это подразумевается в модели. Например, определенное количество тестовых случаев иногда можно рассматривать как модульные и интеграционные тесты, что позволяет избежать избыточной разработки соответствующих тестовых входов, тестовых выходов, тестовых данных и тестовых сценариев. 
+Когда использовать V-модель:
+V-образную модель следует использовать для небольших и средних проектов, где требования четко определены и зафиксированы.
+V-образную модель следует выбирать, когда имеются достаточные технические ресурсы с необходимой технической экспертизой.
+Для выбора V-образной модели необходимо высокое доверие заказчика. Поскольку прототипы не производятся, очень высок риск того, что ожидания заказчика не оправдаются.
+Сферы применения: авиационная промышленность, автомобилестроение, медицина, космическая и военная промышленность.
+V-model
+
+Unlike the Waterfall model, the V-model integrates the test process throughout the development process, implementing the principle of early testing. Further, the V-model includes test levels associated with each corresponding development phase, which further supports early testing. In this model, the execution of tests associated with each test level proceeds sequentially, but in some cases overlapping occurs.
+
+The V-Model in Software Development is a lifecycle model where testing processes are integrated at each development phase. It evolves from the Waterfall model by flipping the lower part upward, forming a "V" shape. Each phase starts only after the previous one is completed, with testing planned from the earliest stages.
+Advantages:
+Simplicity and ease of use.
+Early planning and test development before coding, saving time.
+Early defect detection, preventing defect accumulation.
+Disadvantages:
+Rigidity of the structure.
+Lack of early software prototypes.
+Need to update test documentation with requirement changes.
+Blurred lines between unit, integration, and system testing.
+Usage: The V-Model is suitable for small to medium-sized projects with well-defined requirements. It requires sufficient technical resources and high customer trust. It is commonly used in aerospace, automotive, medical, space, and military industries.
+
+
+
+
+
+Итерационная и инкрементальная модели разработки ПО
+Итеративная модель — это подход, при котором проект разбивается на повторяющиеся циклы, или "итерации". На каждом этапе создается рабочая версия продукта, которую затем можно улучшать и дорабатывать.
+Примеры итеративной модели:
+Вы пишете статью, постепенно добавляя и исправляя содержание, пересматривая её несколько раз.
+Создаете приложение, выпуская первые версии с базовым функционалом, а потом постепенно добавляете новые функции и улучшаете его на основе обратной связи пользователей.
+Инкрементальная модель - предполагает, что проект строится и разворачивается по частям или "инкрементам". Каждый инкремент добавляет новую функциональность или улучшение к уже существующему продукту.
+Примеры инкрементальной модели:
+Разработка веб-сайта, где сначала создается базовая версия с минимальным функционалом, а затем добавляются новые функции и улучшения по мере необходимости.
+Создание программного обеспечения, где каждый новый релиз добавляет новые возможности или исправляет существующие проблемы.
+В обоих подходах важна обратная связь и постепенное улучшение продукта, но итеративная модель больше фокусируется на цикличном улучшении, а инкрементальная — на поэтапном добавлении новых функций.
+Итерационная инкрементальная модель (iterative model, incremental model) является фундаментальной основой современного подхода к разработке ПО. Как следует из названия модели, ей свойственна определённая двойственность (а ISTQB-глоссарий даже не приводит единого определения, разбивая его на отдельные части):
+с точки зрения жизненного цикла модель является итерационной, т.к. подразумевает многократное повторение одних и тех же стадий;
+с точки зрения развития продукта (приращения его полезных функций) модель является инкрементальной.
+Ключевой особенностью данной модели является разбиение проекта на относительно небольшие промежутки (итерации), каждый из которых в общем случае может включать в себя все классические стадии, присущие водопадной и v-образной моделям (рисунок 2.1.c). Итогом итерации является приращение (инкремент) функциональности продукта, выраженное в промежуточном билде (build).
+Длина итераций может меняться в зависимости от множества факторов, однако сам принцип многократного повторения позволяет гарантировать, что и тестирование, и демонстрация продукта конечному заказчику (с получением обратной связи) будет активно применяться с самого начала и на протяжении всего времени разработки проекта.
+Итерационная инкрементальная модель очень хорошо зарекомендовала себя на объемных и сложных проектах, выполняемых большими командами на протяжении длительных сроков. Однако к основным недостаткам этой модели часто относят высокие накладные расходы, вызванные высокой «бюрократизированностью» и общей громоздкостью модели.
+Инкремент это не просто новая функциональность полученная в конце итерации. Это рабочий продукт из прошлой итерации, к которому была добавлена новая функциональность. Каждую новую итерацию инкремент прирастает новым кодом.
+Iterative and incremental models of software development
+
+The iterative model is an approach in which a project is broken down into repetitive cycles, or ‘iterations’. At each stage, a working version of the product is created, which can then be improved and refined.
+
+Incremental model - assumes that a project is built and deployed in pieces or ‘increments’. Each increment adds a new functionality or improvement to an existing product.
+
+The Iterative Incremental Model is a software development model that combines iterative and incremental approaches. The project is divided into small iterations, each involving stages typical of Waterfall and V-models. Each iteration results in an increment—new functionality added to the previous product version.
+Key Features:
+Iterations allow for repeated development stages.
+Each iteration increases the product's functionality.
+Continuous testing and product demonstration to the client, with feedback incorporated throughout development.
+Advantages:
+Effective for large, complex projects with long development timelines.
+Flexibility in changing requirements and incorporating feedback.
+Disadvantages:
+High overhead due to the model's bureaucratic and complex nature.
+Conclusion: Each iteration adds new functionality, making the product more functional and operational at every stage.
+
+
+
+
+
+Спиральная модель (spiral model)
+Спиральная модель представляет собой частный случай итерационной инкрементальной модели, в котором особое внимание уделяется управлению рисками.
+Четыре ключевые фазы:
+проработка целей, альтернатив и ограничений;
+анализ рисков и прототипирование;
+разработка (промежуточной версии) продукта;
+планирование следующего цикла.
+Описание каждого этапа: ”
+
+1. Определение целей
+На этом этапе уточняются цели проекта, требования к системе, ограничения и возможные альтернативы. Важные задачи включают:
+- Сбор и анализ требований от всех заинтересованных сторон.
+- Определение целей и приоритетов для текущей итерации.
+- Разработка детализированных спецификаций и критериев успеха.
+
+ 2. Анализ рисков и прототипирование .
+В данном контексте,  риски — это возможные события и состояния проекта, препятствующие достижению командой разработчиков поставленных целей. Главной задачей для команды разработчиков является выявление всех возможных рисков и присвоение им определенного уровня приоритета на основе их значимости. 
+Примеры рисков
+1. Технические риски  
+2. Управленческие риски  
+3. Риски, связанные с требованиями  
+4. Риски, связанные с бюджетом и сроками  
+5. Риски, связанные с пользователями  
+6. Риски, связанные с качеством
+
+- Разработка прототипов или моделей для изучения ключевых аспектов системы и минимизации рисков. Прототипирование — это процесс создания упрощённых версий продукта на каждом витке спирали
+- Проведение экспериментов и тестов для проверки прототипов.
+ 
+3. Разработка и тестирование
+На этом этапе осуществляется непосредственная разработка программного обеспечения, а затем проводится тестирование. 
+
+Оценка и планирование следующего витка
+На заключительном этапе каждой итерации проводится оценка достигнутых результатов и планирование следующих действий. Задачи включают:
+- Оценка результатов текущей итерации: достижение целей, выявленные проблемы, оставшиеся риски.
+- Сбор обратной связи от пользователей и других заинтересованных сторон.
+- Планирование следующей итерации, включая уточнение требований, обновление плана проекта и определение целей.
+
+
+Использование. Спиральная модель разработки используется в тех случаях, когда проект имеет высокую степень неопределенности и значительные риски, которыми нужно управлять на протяжении всего процесса разработки. Кроме того, спиральная модель может быть полезна в проектах, где:
+Требования к продукту не полностью определены или могут изменяться в процессе разработки;
+Проект имеет высокую степень сложности и требует поэтапного уточнения;
+Необходимо повысить уровень контроля качества;
+Существуют технические риски, которые необходимо оценить и управлять на ранних стадиях проекта;
+Проект требует высокой гибкости и адаптивности в процессе разработки
+Оценка рисков и затрат имеет решающее значение. 
+В целом, спиральная модель разработки является наиболее подходящей для проектов, которые не могут быть реализованы с помощью более простых методов разработки и требуют более гибкого, адаптивного и риско-ориентированного подхода.
+Крупные компании используют спиральную модель разработки программного обеспечения, особенно в проектах с высоким уровнем риска и сложностью. Например: авиационная и аэрокосмическая промышленность.
+Достоинства:
+-Управление рисками: Проекты со многими неизвестными рисками, которые возникают по ходу разработки, в этом случае спиральная модель является лучшей моделью разработки, которой следует придерживаться, благодаря анализу рисков и обработке рисков на каждом этапе;
+-Удовлетворенность клиентов: Заказчик может увидеть работающую версию продукта уже на ранних стадиях жизненного цикла ПО;
+-Гибкость требований: Изменения могут быть внесены на поздних стадиях разработки;
+-Итеративный и инкрементный подход: Спиральная модель обеспечивает итеративный и инкрементный подход к разработке программного обеспечения, обеспечивая гибкость и адаптивность в ответ на меняющиеся требования или непредвиденные события;
+-Улучшенное качество: Спиральная модель допускает многократные итерации процесса разработки программного обеспечения, что может привести к повышению качества и надежности программного обеспечения.
+Недостатки:
+-Ресурсоемкость: Спиральная модель может быть ресурсоемкой, поскольку требует значительных инвестиций в планирование, анализ рисков и оценки. Каждая итерация требует отдельной экспертизы, что делает управление проектом сложнее. Именно поэтому спиральная модель плохо подходит для небольших проектов;
+-Сложность: Спиральная модель может быть сложной, поскольку она включает в себя несколько итераций процесса разработки программного обеспечения;
+-Сложность управления временем: Поскольку количество этапов неизвестно в начале проекта, оценить время очень сложно, что также усложняет контроль над процессом разработки
+-Слишком большая зависимость от анализа рисков: Успешное завершение проекта во многом зависит от анализа рисков. Без очень опытных экспертов разработка проекта с использованием этой модели обречена на провал.
+The Spiral Model of software development
+It is a type of iterative incremental model that focuses on risk management. The development process goes through several cycles, each consisting of four main phases:
+Goal Definition: Clarifying project goals, gathering and analyzing requirements, and determining constraints and alternatives.
+Risk Analysis and Prototyping: Identifying potential risks, prioritizing them, creating prototypes to minimize risks, and conducting experiments and tests.
+Development and Testing: Software development and subsequent testing.
+Planning the Next Cycle: Evaluating the results of the current iteration, gathering feedback, and planning the next steps.
+Usage: The Spiral Model is used for projects with high uncertainty and significant risks. It is suitable for complex projects requiring flexibility and iterative refinement of requirements.
+Advantages:
+Effective risk management at each stage.
+The ability to demonstrate the product in early stages.
+Flexibility in changing requirements.
+Iterative and incremental approach, improving software quality and reliability.
+Disadvantages:
+High resource demands and management complexity.
+Dependence on risk analysis and team expertise.
+Challenges in time estimation and project control.
+
+
+
+
+
+Другие модели разработки ПО
+1. Прототипирование (Prototyping)
+Прототипирование предполагает создание упрощенной версии (прототипа) будущего ПО на ранних стадиях разработки. Прототип используется для уточнения требований и получения обратной связи от пользователей. После оценки прототипа, окончательные требования фиксируются, и начинается разработка полноценного продукта.
+2. Модель "Большой взрыв" (Big Bang)
+Модель "Большой взрыв" предполагает начало разработки без четких планов, требований или структуры. Команда просто начинает писать код, внося изменения по мере поступления новых идей. Эта модель рискованная и непредсказуемая, поскольку часто ведет к проблемам с качеством и задержкам. Она редко используется в коммерческих проектах.
+3. RAD (Rapid Application Development)
+RAD — это модель быстрой разработки приложений, ориентированная на быстрые итерации и получение обратной связи от пользователей. Проект делится на небольшие модули, которые разрабатываются параллельно. Основные этапы включают: планирование, проектирование, быструю разработку, тестирование и внедрение. RAD эффективен для проектов с четкими требованиями, которые могут изменяться в процессе.
+4. Модель "Разработка по шаблону" (Template-Based Development)
+Эта модель подразумевает использование готовых шаблонов и фреймворков для ускорения процесса разработки. Она особенно полезна в ситуациях, где нужно быстро создать продукт, основанный на повторяющихся или типовых требованиях.
+Каждая из этих моделей имеет свои особенности и подходит для определенных типов проектов, в зависимости от требований, рисков и сроков.
+
+
+Other Software Development Models:
+Prototyping: Involves creating a simplified version (prototype) of the future software in the early stages of development. The prototype is used to refine requirements and gather user feedback. After evaluating the prototype, final requirements are set, and full-scale development begins.
+Big Bang Model: This model starts development without clear plans, requirements, or structure. The team simply begins coding and makes changes as new ideas emerge. It's a risky and unpredictable approach, often leading to quality issues and delays, and is rarely used in commercial projects.
+Rapid Application Development (RAD): Focuses on quick iterations and user feedback. The project is divided into small modules that are developed in parallel. Key stages include planning, designing, rapid development, testing, and deployment. RAD is effective for projects with clear requirements that may evolve during the process.
+Template-Based Development: Utilizes ready-made templates and frameworks to speed up the development process. This approach is especially useful when a product needs to be quickly developed based on repetitive or standard requirements.
+Each of these models has its own characteristics and is suited for specific types of projects depending on the requirements, risks, and timelines.
+
+
+
+
+
+Agile
+
+Это подход к управлению проектами, предполагающий разбивку проекта на этапы, а также непрерывное сотрудничество и совершенствование.
+Agile - это способность создавать и реагировать на изменения. Это слово олицетворяет адаптивность и реакцию на изменения. Одна вещь, которая отличает Agile от других подходов к разработке программного обеспечения, - это сосредоточение внимания на людях, выполняющих работу, и на том, как они работают вместе. 
+The Agile Manifesto:
+люди и взаимодействие важнее процессов и инструментов;
+работающий продукт важнее исчерпывающей документации;
+сотрудничество с заказчиком важнее согласования условий контракта;
+готовность к изменениям важнее следования первоначальному плану.
+Основополагающие принципы Agile Manifesto:
+наивысшим приоритетом признается удовлетворение заказчика за счет ранней и бесперебойной поставки ценного программного обеспечения;
+изменение требований приветствуется даже в конце разработки (это может повысить конкурентоспособность полученного продукта);
+частая поставка работающего программного обеспечения (каждые пару недель или пару месяцев с предпочтением меньшего периода);
+общение представителей бизнеса с разработчиками должно быть ежедневным на протяжении всего проекта;
+проекты следует строить вокруг заинтересованных людей, которых следует обеспечить нужными условиями работы, поддержкой и доверием;
+самый эффективный метод обмена информацией в команде - личная встреча;
+работающее программное обеспечение - лучший измеритель прогресса;
+спонсоры, разработчики и пользователи должны иметь возможность поддерживать постоянный темп на неопределённый срок;
+постоянное внимание к техническому совершенству и хорошему проектированию увеличивают гибкость;
+простота как искусство не делать лишней работы очень важна;
+лучшие требования, архитектура и проектные решения получаются у самоорганизующихся команд;
+команда регулярно обдумывает способы повышения своей эффективности и соответственно корректирует рабочий процесс.
+
+
+Agile
+It is an approach to project management that involves breaking a project down into phases and continuous collaboration and improvement.
+
+Agile is the ability to create and respond to change. The word epitomises adaptability and responsiveness to change. One thing that sets Agile apart from other software development approaches is the focus on the people doing the work and how they work together. 
+
+Manifesto for Agile Software Development
+We are uncovering better ways of developing
+software by doing it and helping others do it.
+Through this work we have come to value:
+Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+That is, while there is value in the items on
+the right, we value the items on the left more.
+Principles behind the Agile Manifesto
+
+We follow these principles:
+Our highest priority is to satisfy the customer
+through early and continuous delivery
+of valuable software.
+Welcome changing requirements, even late in
+development. Agile processes harness change for
+the customer's competitive advantage.
+Deliver working software frequently, from a
+couple of weeks to a couple of months, with a
+preference to the shorter timescale.
+Business people and developers must work
+together daily throughout the project.
+Build projects around motivated individuals.
+Give them the environment and support they need,
+and trust them to get the job done.
+The most efficient and effective method of
+conveying information to and within a development
+team is face-to-face conversation.
+Working software is the primary measure of progress.
+Agile processes promote sustainable development.
+The sponsors, developers, and users should be able
+to maintain a constant pace indefinitely.
+Continuous attention to technical excellence
+and good design enhances agility.
+Simplicity--the art of maximizing the amount
+of work not done--is essential.
+The best architectures, requirements, and designs
+emerge from self-organizing teams.
+At regular intervals, the team reflects on how
+to become more effective, then tunes and adjusts
+its behavior accordingly.
+
+
+
+
+Scrum
+Scrum — легкий фреймворк, который помогает людям, командам и организациям создавать ценность с помощью адаптивных решений комплексных проблем.
+Ценности Scrum: 
+приверженность своим целям и поддержке друг друга;
+сфокусированность на максимально возможном прогрессе в достижении целей;
+открытость к обсуждению работы и вызовов;
+уважение друг к другу как профессионалам и независимым людям;
+смелость поступать правильно и работать над решением сложных проблем.
+Роли в Scrum
+Scrum Team — небольшая команда людей, не более 10 человек.
+Scrum Team состоит из одного Scrum Master, одного Product Owner и Developers. Внутри Scrum Team нет подкоманд и иерархий. Это сплоченное объединение профессионалов, в любой момент времени сфокусированных на одной цели — Product Goal.
+Scrum Teams являются кросс-функциональными, то есть их участники обладают всеми навыками, необходимыми для создания ценности в каждом Sprint. Также они самоуправляемы, то есть сами решают, кто, что, когда и как делает.
+Scrum Team выполняет все продуктовые активности: сотрудничество с заинтересованными лицами, верификацию, обслуживание, эксплуатацию, эксперименты, исследования, разработку и все то, что может потребоваться.
+1. Developers — это люди в Scrum Team, которые привержены созданию любого аспекта готового к использованию Increment в каждом Sprint.
+Конкретные навыки, необходимые Developers, зависят от предметной области выполняемой работы и могут быть очень разными. Однако Developers всегда несут ответственность за:
+• создание плана на Sprint — Sprint Backlog;
+• стремление к качеству посредством соблюдения определения готовности;
+• ежедневную адаптацию своего плана для достижения Sprint Goal; а также,
+• взаимную подотчетность друг перед другом как профессионалами.
+2. Product Owner несет ответственность за максимизацию ценности продукта, получаемого в результате работы Scrum Team. Способы достижения максимальной ценности могут быть очень разными и зависят от организаций, Scrum Teams и конкретных людей.
+Product Owner также несет ответственность за эффективное управление Product Backlog, в том числе он:
+разрабатывает и точно коммуницирует Product Goal;
+создает и четко объясняет элементы Product Backlog;
+упорядочивает элементы Product Backlog;
+обеспечивает прозрачность, доступность и понимание Product Backlog.
+3. Scrum Master несет ответственность за применение Scrum в соответствии с Руководством по Scrum. Они делают это, помогая всем понять теорию и практики Scrum, как внутри Scrum Team, так и в организации.
+Scrum Master служит Scrum Team, Product Owner и Организации. Наиболее приоритетные задачи:
+коучит участников команды в части самоуправления и кросс-функциональности;
+способствует устранению препятствий, мешающих прогрессу Scrum Team;
+помогает находить техники эффективного определения Product Goal и управления Product Backlog;
+фасилитирует взаимодействие с заинтересованными лицами по запросу или при необходимости.
+События Scrum
+1. Sprint — это контейнер для всех остальных событий. Это событие фиксированной продолжительности не более одного месяца для обеспечения согласованности. Новый Sprint начинается сразу после завершения предыдущего.
+Вся работа, необходимая для достижения Product Goal, включая события Sprint Planning, Daily Scrum, Sprint Review и Sprint Retrospective, выполняется в рамках Sprints.
+В ходе Sprint:
+не вносятся изменения, которые могут поставить под угрозу Sprint Goal;
+не снижается качество;
+Product Backlog уточняется по мере необходимости; а также,
+по мере появления новых знаний содержание работы может быть уточнено и пересмотрено с Product Owner.
+2. Sprint Planning инициирует Sprint, планируя работу, которую необходимо выполнить в этом Sprint. Результатом события становится план, созданный совместными усилиями всей Scrum Team.
+В ходе Sprint Planning рассматриваются следующие темы:
+Почему этот Sprint ценен? Определение Sprint Goal
+Что может быть готово в этом Sprint?
+Как будет выполняться выбранная работа?
+Sprint Goal, выбранные элементы Product Backlog, плюс план их реализации вместе называются Sprint Backlog.
+Sprint Planning ограничено по времени максимум восемью часами для одномесячного Sprint. Для более коротких Sprints событие обычно короче.
+3. Цель Daily Scrum — инспекция прогресса в достижении Sprint Goal, адаптация Sprint Backlog по мере необходимости, корректировка запланированной предстоящей работы.
+Daily Scrum — это 15-минутное событие для Developers, входящих в Scrum Team. Для снижения комплексности событие проводится в одно и то же время, в одном и том же месте, каждый рабочий день в ходе Sprint. 
+Необходимо подготовить ответ на три вопроса (было удалено из гайда в 2020):
+Что я сделал вчера, что помогло нам приблизиться к Цели Спринта?
+Что я сделаю сегодня, чтобы приблизить достижение Цели Спринта? Нужна ли мне помощь в этом?
+Вижу ли я какие-либо препятствия, которые могут помешать нам достичь Цели Спринта?
+4. Цель Sprint Review — инспекция результата Sprint и выявление возможностей для адаптации. Scrum Team представляет результаты своей работы ключевым заинтересованным лицам, и обсуждает прогресс в достижении Product Goal.
+Во время события Scrum Team и заинтересованные лица анализируют, что было достигнуто в ходе Sprint, и что изменилось в их окружении. На основе этой информации участники совместно решают, что делать дальше. Product Backlog также может быть скорректирован с учетом новых возможностей. Sprint Review — это рабочая сессия, и не сводится к презентации.
+Sprint Review является предпоследним событием Sprint и ограничено по времени максимум четырьмя часами для одномесячного Sprint. Для более коротких Sprints событие обычно короче.
+5. Цель Sprint Retrospective — запланировать повышение качества и эффективности.
+Scrum Team инспектирует то, как прошел последний Sprint в отношении людей, взаимодействий, процессов, инструментов и определения готовности. Инспектируемые элементы зависят от предметной области выполняемой работы и могут быть очень разными. Участники Scrum Team обсуждают, что прошло хорошо во время Sprint, с какими проблемами они столкнулись, и как эти проблемы были (или не были) решены.
+Scrum Team определяет наиболее полезные для повышения эффективности изменения. Улучшения с самым высоким влиянием реализуются в кратчайшие сроки. Они могут даже быть добавлены в Sprint Backlog следующего Sprint.
+Sprint Retrospective завершает Sprint. Оно ограничено по времени максимум тремя часами для одномесячного Sprint. Для более коротких Sprints событие обычно короче.
+Артефакты Scrum
+1. Product Backlog — это упорядоченный и постоянно обновляемый список того, что необходимо для улучшения продукта. Это единственный источник работы, выполняемой Scrum Team.
+Элементы Product Backlog, которые могут быть реализованы Scrum Team до состояния готовности в течение одного Sprint, считаются готовыми для взятия в Sprint в ходе события Sprint Planning. Они достигают такого уровня прозрачности после активностей по уточнению. Уточнение Product Backlog (Refinement) — это процесс разбиения элементов Product Backlog на более мелкие и конкретные элементы, и их дальнейшего уточнения. 
+2. Sprint Backlog состоит из Sprint Goal (почему), набора выбранных на Sprint элементов Product Backlog (что), а также осуществимого плана действий по поставке Increment (как).
+Sprint Backlog — это план, созданный силами Developers для самих Developers. Это наглядная и доступная в режиме реального времени картина работы, которую Developers планируют выполнить в ходе Sprint для достижения Sprint Goal. Поэтому Sprint Backlog обновляется на протяжении всего Sprint по мере появления новых знаний. В нем должно быть достаточно деталей, чтобы Developers могли инспектировать свой прогресс во время Daily Scrum.
+3. Increment — это конкретная ступенька к достижению Product Goal. Каждый Increment является дополнением ко всем предыдущим. Они тщательно проверяются для обеспечения совместной работы всех Increments. Чтобы предоставить ценность, Increment должен быть пригодным для использования.
+В рамках одного Sprint можно создать несколько Increments. Итоговые Increments представляются в ходе Sprint Review, тем самым поддерживая эмпиризм. Однако Increment может быть поставлен заинтересованным лицам еще до окончания Sprint. Sprint Review не должно считаться единственным моментом для поставки ценности.
+Дополнительные термины
+Минимально Жизнеспособный Продукт (Minimum Viable Product, MVP) - версия продукта, позволяющая команде с минимальными затратами собрать максимум информации о клиентах и обратной связи от них.
+Заинтересованное лицо [Стейкхолдер] (Stakeholder) - лицо, дающее обратную связь Владельцу Продукта и Скрам-команде в целом по видению, Бэклогу Продукта и Инкрементам. Нередко участвует в Обзоре спринта. Зачастую является частью организации, которая разрабатывает продукт.
+Доска Спринта [Скрам-доска] (Sprint Board) - инструмент, помогающий визуализировать Бэклог Спринта на протяжении Спринта. Доска Спринта (часто называемая Скрам-доской) может быть организована различными способами, например, с помощью онлайн-сервисов или как физическая доска с тремя колонками. Колонки могут называться «Сделать», «В работе», «Готово» или иметь аналогичные названия.
+Scrum
+Scrum is a lightweight framework that helps individuals, teams, and organizations create value through adaptive solutions to complex problems.
+Core Values of Scrum:
+Commitment to goals and supporting each other.
+Focus on achieving the best possible progress towards goals.
+Openness to discussing work and challenges.
+Respect for each other as professionals and individuals.
+Courage to do the right thing and tackle difficult problems.
+Roles in Scrum:
+Developers: Responsible for creating any aspect of the potentially shippable Increment in each Sprint. They handle Sprint planning, strive for quality, adapt plans daily, and hold each other accountable.
+Product Owner: Maximizes the value of the product resulting from the work of the Scrum Team. They manage the Product Backlog, set and communicate the Product Goal, create and clarify Product Backlog items, prioritize backlog items, and ensure transparency and understanding.
+Scrum Master: Ensures Scrum is applied correctly according to the Scrum Guide. They coach the team, facilitate the removal of impediments, help with defining Product Goals and managing the Product Backlog, and facilitate stakeholder interactions.
+Scrum Events:
+Sprint: A time-boxed event lasting no more than one month. It encompasses all other events and begins immediately after the previous Sprint ends. All work is performed within the Sprint, including planning, Daily Scrums, Sprint Review, and Sprint Retrospective.
+Sprint Planning: Initiates the Sprint by planning the work for the Sprint. It results in a plan (Sprint Backlog) developed collaboratively by the Scrum Team. It includes defining the Sprint Goal, determining what can be completed, and how it will be achieved.
+Daily Scrum: A 15-minute event for Developers to inspect progress toward the Sprint Goal, adapt the Sprint Backlog, and adjust upcoming work. It occurs at the same time and place each day.
+Sprint Review: Inspects the outcome of the Sprint and identifies adaptation opportunities. The Scrum Team presents the results to stakeholders and discusses progress towards the Product Goal. The Product Backlog may be adjusted based on new insights.
+Sprint Retrospective: Aims to plan improvements in quality and efficiency. The Scrum Team reviews the past Sprint concerning people, interactions, processes, tools, and definitions of done, identifies what went well and what didn’t, and determines actionable improvements.
+Scrum Artifacts:
+Product Backlog: An ordered, continuously updated list of what is needed to improve the product. It is the sole source of work for the Scrum Team and is refined regularly.
+Sprint Backlog: Includes the Sprint Goal, selected Product Backlog items for the Sprint, and a plan for delivering the Increment. It is a real-time, visible plan created and updated by Developers.
+Increment: A step towards achieving the Product Goal. Each Increment builds on previous ones and must be usable to deliver value.
+Additional Terms:
+Minimum Viable Product (MVP): The version of a product that allows the team to gather the maximum amount of customer feedback with minimal investment.
+Stakeholder: An individual who provides feedback to the Product Owner and Scrum Team about vision, Product Backlog, and Increments. They often participate in Sprint Reviews.
+Sprint Board: A tool to visualize the Sprint Backlog during the Sprint, often organized with columns like "To Do," "In Progress," and "Done." This can be physical or digital.
+
+
+
+
+Velocity (скорость) — это метрика, которая измеряет количество работы, выполненной командой за определенный промежуток времени, например, за один спринт в Scrum. Измеряется в единицах работы, таких как story points, задачи, или любые другие единицы. Можно вычислять среднее значение за последние несколько спринтов.
+Capacity (вместимость) — это мера того, сколько работы команда может выполнить в течение определенного периода времени, учитывая доступное время и ресурсы.
+Velocity показывает, сколько работы команда фактически завершает за спринт или период времени, основываясь на прошлых данных. Capacity показывает, сколько работы команда может потенциально выполнить, исходя из доступного рабочего времени.
+Связь: Velocity можно использовать для прогнозирования, насколько быстро команда будет завершать задачи в будущем, а Capacity помогает планировать, сколько задач можно взять на себя в конкретный спринт. Оба показателя важны для эффективного планирования и управления проектами.
+Эстимация в стори-поинтах:
+числа Фибоначчи (1, 2, 3, 5, 8, 13, …)
+размеры маек (S, M, L, XL)
+породы собак (Чихуахуа, Мопс, Дог)
+Покер планирование  - наиболее популярный метод оценки.  Участники команды используют карточки с числами, чтобы одновременно оценить сложность или трудоёмкость задач. Эти числа обычно соответствуют шкале Фибоначчи (например, 1, 2, 3, 5, 8, 13 и т.д.). После того как все сделали свои оценки, обсуждаются расхождения, и команда пытается прийти к общему согласию. Альтернативы:
+1. Афинная оценка (Affinity Estimation)
+Афинная оценка — это метод оценки задач, который начинается с того, что задачи группируются по схожести (например, по сложности или по типу работы). Затем каждая группа оценивается на основе общей сложности, и эти оценки назначаются задачам. Этот метод эффективен, когда у команды есть много задач, и нужно быстро оценить их, не углубляясь в детали каждой задачи.
+2. Белый слон (White Elephant Sizing)
+Этот метод напоминает игру с обменом подарками "Белый слон". Задачи выкладываются на стол, и участники могут перемещать их, основываясь на своей оценке сложности или стоимости, сравнивая их с другими задачами на столе. В процессе обсуждения и перемещения задач по "стоимости" команда приходит к консенсусу. Это визуальный и интуитивный способ оценки, который позволяет сразу увидеть относительную сложность задач.
+3. Квадрант Кантора (Kano Analysis Quadrants)
+Метод Кантора основан на модели Канто, которая используется для анализа пользовательских предпочтений. Задачи распределяются по квадрантам в зависимости от их влияния на удовлетворенность пользователя и сложности реализации:
+Q1: Высокая удовлетворенность, низкая сложность.
+Q2: Высокая удовлетворенность, высокая сложность.
+Q3: Низкая удовлетворенность, низкая сложность.
+Q4: Низкая удовлетворенность, высокая сложность.
+Такой подход помогает команде определить, какие задачи приносят наибольшую ценность при минимальных затратах усилий, и сосредоточиться на них.
+
+
+Velocity is a metric that measures the amount of work done by a team in a certain period of time, such as a single sprint in Scrum. It is measured in units of work, such as story points, tasks, or any other units. You can calculate an average over the last few sprints.
+
+Capacity is a measure of how much work a team can accomplish in a given time period, given the available time and resources.
+
+Velocity shows how much work a team actually completes per sprint or time period based on past data. Capacity shows how much work a team can potentially complete based on available work time.
+
+Correlation: Velocity can be used to predict how fast a team will complete tasks in the future, and Capacity helps plan how many tasks can be taken on in a particular sprint. Both metrics are important for effective project planning and management.
+
+Estimation in Story Points:
+Fibonacci numbers (1, 2, 3, 5, 8, 13, ...)
+T-shirt sizes (S, M, L, XL)
+dog breeds (Chihuahua, Pug, Dog)
+
+Planning poker is the most popular method of evaluation.  Team members use number cards to simultaneously rate the difficulty or labour intensity of tasks. These numbers usually correspond to the Fibonacci scale (e.g., 1, 2, 3, 5, 8, 13, etc.). After everyone has made their estimates, discrepancies are discussed and the team tries to come to a common agreement. 
+
+Alternatives for Estimating Tasks:
+
+Affinity Estimation. Affinity Estimation is a method for estimating tasks by grouping them based on similarity (e.g., complexity or type of work). Each group is then assessed for overall complexity, and these assessments are applied to the tasks. This method is effective when there are many tasks to evaluate quickly without delving into the details of each one.
+
+White Elephant Sizing. This method resembles the "White Elephant" gift exchange game. Tasks are laid out and participants can move them based on their perceived complexity or cost, comparing them to other tasks on the table. Through discussion and movement of tasks by "cost," the team reaches a consensus. It provides a visual and intuitive way to see the relative complexity of tasks.
+Kano Analysis Quadrants
+
+The Kano Analysis method uses Kano's model to analyze user preferences. Tasks are categorized into quadrants based on their impact on user satisfaction and implementation complexity:
+Q1: High Satisfaction, Low Complexity
+Q2: High Satisfaction, High Complexity
+Q3: Low Satisfaction, Low Complexity
+Q4: Low Satisfaction, High Complexity
+This approach helps the team identify tasks that deliver the most value with minimal effort and focus on those tasks.
+
+
+
+
+
+Преимущества Scrum
+Гибкость и адаптивность
+Более быстрая доставка продукта
+Контроль и управление рисками
+Прозрачность и видимость
+Улучшение качества продукта
+
+Недостатки Scrum
+ Scrum очень требователен к команде проекта: Она должна быть небольшой (5-9 человек) и кроссфункциональной 
+Может быть неподходящим для долгосрочного планирования:
+ Риски недостаточной документации
+Scrum — инкрементальный подход (мост по Scrum не построить)
+  Траты временного ресурса Ежедневные скрам-встречи и частые обзоры требуют значительных временных ресурсов. Издержки на «болтовню» могут составлять 10-30%.
+Advantages of Scrum
+Flexibility and adaptability
+Faster product delivery
+Control and risk management
+Transparency and visibility
+Improved product quality
+
+Disadvantages of Scrum
+ Scrum is very demanding on the project team: It should be small (5-9 people) and cross-functional 
+May not be suitable for long term planning:
+ Risks of insufficient documentation
+Scrum is an incremental approach (you can't build a Scrum bridge)
+  Waste of time resource Daily Scrum meetings and frequent reviews require significant time resources. The cost of ‘chatter’ can be 10-30%.
+
+
+
+
+Kanban
+Это метод управления, сосредоточенный на управлении потоком задач с помощью визуального представления работы на доске Kanban, что позволяет команде контролировать процесс разработки и быстро реагировать на изменения.
+Основные принципы:
+Визуализация работы: Используются доски с колонками и карточками, чтобы показать все этапы процесса и текущие задачи. Это помогает всем участникам видеть, на каком этапе находится работа.
+Ограничение незавершенной работы (WIP - Work In Progress): Устанавливаются лимиты на количество задач, которые могут находиться в работе на каждом этапе. Это помогает избежать перегрузок и улучшает фокус на текущих задачах.
+Управление потоком: Основной акцент на непрерывное улучшение и оптимизацию процесса доставки задач, что позволяет быстро реагировать на изменения.
+Ясные правила и процессы: Оговариваются четкие правила для всех этапов, включая начало работы над задачей, переходы между этапами и завершение.
+Инкрементальные изменения: Изменения вносятся постепенно, с акцентом на улучшение существующего процесса.
+Использование обратной связи: Регулярно анализируются результаты и процессы, чтобы вносить коррективы и улучшать работу.
+Преимущества
+1. Визуализация работы.
+ 2. Гибкость. 
+ 3. Ориентация на непрерывную постановку задач. (команды могут работать над задачами по мере их поступления, а не ждать начала определенного спринта).
+4. Улучшенное сотрудничество. 
+
+Недостатки
+
+1. Отсутствие структуры.
+2. Отсутствие временных рамок. 
+3. Ограниченное количество ретроспектив спринта. 
+4. Отсутствие расстановки приоритетов.
+Kanban
+It is a management method centred on controlling the flow of tasks through a visual representation of work on a Kanban board, allowing the team to control the development process and respond quickly to changes.
+
+Key principles:
+
+Visualisation of work: boards with columns and cards are used to show all stages of the process and current tasks. This helps all participants to see where the work stands.
+Limiting Work In Progress (WIP - Work In Progress): Limits are set on the number of tasks that can be in work at each stage. This helps avoid overload and improves focus on current tasks.
+Flow Management: The focus is on continuous improvement and optimisation of the task delivery process, allowing for rapid response to change.
+Clear rules and processes: Clear rules are specified for all phases, including task start, transitions between phases, and completion.
+Incremental changes: Changes are made gradually, with a focus on improving the existing process.
+Use of feedback: Results and processes are regularly analysed to make adjustments and improvements.
+
+Advantages
+1. Visualisation of the work.
+ 2. Flexibility. 
+ 3. Orientation to continuous tasking. (Teams can work on tasks as they come in, rather than waiting for a particular sprint to start).
+4. Improved collaboration. 
+
+Disadvantages
+
+1. lack of structure.
+2. lack of a time frame. 
+3. Limited number of sprint retrospectives. 
+4. Lack of prioritisation.
+
+
+
+Differences between Scrum and Kanban:
+ 
+Scrum
+Kanban
+Framework vs. Methodology:
+a structured framework with defined roles, ceremonies, and artifacts
+a flexible methodology focused on visualizing workflow and continuous improvement
+Iterations:
+fixed-length iterations called sprints, usually 2-4 weeks long
+does not use iterations; work is continuously pulled through the system
+Roles:
+has specific roles: Scrum Master, Product Owner, and Development Team
+does not prescribe specific roles; it adapts to existing team structures
+Artifacts:
+includes artifacts such as the Product Backlog, Sprint Backlog, and Increment
+focuses on visual boards with columns representing different stages of work
+Workload Management:
+uses time-boxed sprints to manage workload and prioritize tasks
+manages workload by limiting work in progress (WIP) and focusing on flow
+Change Management:
+changes are planned and introduced at the start of each sprint
+allows for continuous changes and adjustments as work progress
+
+
+Жизненный цикл разработки программного обеспечения (SDLC) 
+Это процесс, направленный на создание и поддержание работоспособности, качества и надежности ПО. Этапы:
+Анализ и сбор требований (планирование) (требования, анализ затрат и выгод, составление расписания, оценка и распределение ресурсов, график и план достижения поставленных целей).
+Дизайн и проектирование (выбор технологии, фреймворков, конфигурации, внедрения и управления изменениями).
+Разработка программного обеспечения (цель - преобразовать прототип системы, созданный на этапе дизайна, в рабочую информационную систему, отвечающую всем задокументированным системным требованиям)
+Тестирование (цель - составлять отчеты, отслеживать, разрешать и повторно тестировать программные компоненты до тех пор, пока они не достигнут стандартов качества, установленным компанией и отраслью).
+Развертывание (перемещение последней копии сборки в производственную среду, т.е. упаковка, конфигурация среды и установка).
+Обслуживание и поддержка (исправление ошибок, обновление, улучшение).
+Software Development Life Cycle (SDLC) 
+
+It is a process aimed at creating and maintaining the performance, quality and reliability of software. Stages:
+
+Requirements Analysis and Gathering (planning) (requirements, cost-benefit analysis, scheduling, resource estimation and allocation, schedule and plan to achieve objectives).
+Design and engineering (technology selection, frameworks, configuration, implementation and change management).
+Software development (the goal is to convert the prototype system created during the design phase into a working information system that meets all documented system requirements)
+Testing (the goal is to report, track, resolve, and retest software components until they achieve the quality standards set by the company and industry).
+Deployment (moving the latest copy of the build into the production environment, i.e., packaging, configuring the environment, and installing).
+Maintenance and support (bug fixes, upgrades, enhancements).
+
+
+
+Жизненный цикл тестирования (STLC)
+
+Это процесс тестирования, который включает в себя определенную последовательность шагов, чтобы гарантировать достижение целей в области качества. 
+Основные этапы:
+Анализ требований (Requirement Analysis)
+Определение типов тестирования
+Сбор информации о приоритетах в тестировании
+Подготовка матрицы отслеживания требований (RTM — Requirement Traceability Matrix)
+Определение тестового окружения 
+Анализ возможности автоматизации тестирования (если нужно)
+Планирование тестирования (Test Planning)
+Подготовка стратегии (или плана тестирования)
+Выбор инструментов тестирования
+Оценка трудозатрат
+Планирование ресурсов, определение ролей и ответственности
+Дополнительное обучение команды (если нужно)
+Разработка тест-кейсов (Test Case Development)
+Создание тест-кейсов (и автотестов, если будет применяться автоматизация)
+Подготовка исходных данных для тестирования
+Настройка тестового окружения (Test Environment Setup)
+Понять нужную архитектуру, настройки окружения и подготовить список требований к харду и софту
+Настроить тестовое окружение и тестовые данные
+Провести smoke-тест окружения
+Выполнение тестирования (Test Execution)
+Выполнение тестирования в соответствии с планом
+Получение результаты тестирования
+Обновление RTM-матрицы (тест-кейсы из RTM-матрицы связываются с найденными багами)
+Повторное тестирование исправленных багов
+6. Завершение цикла тестирования (Test Cycle Closure)
+Оценка критериев завершения цикла (основывается на времени, трудозатратах, покрытии тестами)
+Подготовка документа с выводами, сделанными во время тестирования
+Подготовка отчета о завершении тестирования
+Подготовка отчета для клиента с количественными и качественными характеристиками тестируемой системы
+Анализ результатов тестирования
+Testing life cycle (STLC)
+
+It is a testing process that involves a defined sequence of steps to ensure that quality objectives are met. 
+The main steps are:
+Requirement Analysis
+Determining the types of testing
+Gathering information on testing priorities
+Preparing a Requirement Traceability Matrix (RTM)
+Defining the test environment 
+Analyse the possibility of test automation (if required)
+Test Planning
+Preparing a strategy (or test plan)
+Selecting testing tools
+Estimating labour costs
+Resource planning, defining roles and responsibilities
+Additional team training (if needed)
+Test Case Development
+Creation of test cases (and autotests, if automation will be used)
+Preparing source data for testing
+Test Environment Setup
+Understand the required architecture, environment settings and prepare a list of hard and software requirements
+Set up the test environment and test data
+Conduct smoke test of the environment
+Test Execution
+Execute the test according to the plan
+Receive test results
+Update RTM-matrix (test cases from RTM-matrix are linked to the bugs found)
+Retesting of fixed bugs
+Test Cycle Closure
+Evaluate the criteria for cycle closure (based on time, labour, test coverage)
+Prepare a document of the conclusions reached during testing
+Preparation of test completion report
+Preparation of a report for the client with quantitative and qualitative characteristics of the system under test
+Analysis of test results
+
+
+
+
+
