@@ -1,0 +1,629 @@
+ТЕОРИЯ. Задание 5-6
+
+Что такое Тест план?
+Что должен описывать тест план?
+Какие вы знаете Виды тест планов?
+Что такое Чек лист?
+Перечислите возможные атрибуты Чек листа
+Перечислите варианты статусов при прохождении Чек листа
+Что такое Тест кейс?
+Перечислите атрибуты Тест кейса?
+Перечислите виды Тест кейсов?
+Что такое Тестовый набор (Test Suite)?
+Что такое Баг репорт?
+Какое нужно соблюдать правило в баг репорте для хорошего Summary?
+Перечислите атрибуты Баг репорта?
+Опишите Жизненный цикл бага
+Что такое Priority?
+Перечислите классификации Priority
+Что такое Severity?
+Перечислите классификации  Severity
+Приведите пример Низкого Priority и Высокого Severity
+Приведите пример Низкого Severity и Высокого Priority
+Что такое Матрица соответствия требований (Requirements Traceability Matrix)?
+Что такое Тест-отчет?
+По времени Тест отчет на сколько типов возможно разделить?
+Что должен показывать Промежуточный отчет?
+Что должен показывать Итоговый отчет?
+Что такое Ошибка/Дефект/Отказ?
+Перечислите Основные типы багов?
+Перечислите “Хитрые баги”?
+Приведите пример Blocker bug
+Приведите пример Critical bug
+Приведите пример Major bug
+Приведите пример Minor bug
+Приведите пример Trivial bug
+Какой жизненный цикл Bug report?
+Какие основные цели локализации дефекта?
+Где могут находиться дефекты?
+Перечислите методы локализации дефекта в клиентской части
+Перечислите методы локализации дефекта в серверной части
+
+
+
+Что такое Тест план?
+Что должен описывать тест план?
+Какие вы знаете Виды тест планов?
+
+План тестирования (test plan): Документ, описывающий цели, подходы, ресурсы и график запланированных тестовых активностей. Он определяет объекты тестирования, свойства для тестирования, задания, ответственных за задания, степень независимости каждого тестировщика, тестовое окружение, метод проектирования тестов, определяет используемые критерии входа и критерии выхода и причины их выбора, а также любые риски, требующие планирования на случай чрезвычайных обстоятельств. Может включать:
+Перечень планируемых тестовых активностей (Test Activities);
+Тестовая логистика (Test Logistics);
+Необходимые ресурсы (Resources);
+Необходимые коммуникации (Your Support Network);
+Оценки трудозатрат (Estimates);
+Зависимости и риски (Dependencies, Risks and Assumptions);
+Порядок обсуждений и отчетности в процессе работы (Communication, Commitment and Progress Reporting).
+Виды тест-планов:
+Мастер Тест-План (Master Test Plan): “Главный план тестирования (master test plan, project test plan): План тестирования, обычно охватывающий несколько уровней тестирования.” (ISTQB). Это может быть как единственный базовый план, так и главный в иерархии нескольких планов, самый статичный и высокоуровневый. Нужен когда:
+продукт имеет множество релизов или итераций, между которыми сохраняется общая информация, которую нет смысла повторять;
+различные тестовые команды работают над одним продуктом, выполняя различные задачи, которые необходимо объединить в рамках одного документа;
+Детальный Тест-план (Phase Test plan): “Уровневый план тестирования (level test plan): План тестирования, обычно относящийся к одному уровню тестирования.” (ISTQB). Детальный план составляется на каждый релиз/итерацию или для каждой команды в рамках проекта и является динамическим, т.е. может претерпевать изменения по необходимости. Его основная цель - кратко и доходчиво отразить задачи тестирования. Детальных планов может быть несколько для отдельных модулей ПО или команд тестирования. Кроме того, могут быть созданы планы для отдельных уровней тестирования (Level Test Plan) или видов тестирования. В Agile проектах могут быть планы итерационного тестирования (iteration testing plans) для каждой итерации;
+План приемочных испытаний (Acceptance Test Plan, ПСИ): план приемочного тестирования отличают от обычного плана тестирования факторы, которые приводят к принятию бизнес-решения. План приемочного тестирования - это один из жизненно важных документов, который содержит руководство по выполнению приемочного тестирования для конкретного проекта. Пишется на основе бизнес-требований (Business Requirements). Ревью этого плана обычно выполняется by Managers/Business Analysts/Customers.
+Основное различие между стратегией тестирования и тест-планом заключается в их целях, уровне детализации и контексте применения:
+Стратегия тестирования:
+Это высокоуровневый документ, который описывает общий подход и основные принципы, по которым будет происходить тестирование.
+Включает в себя такие аспекты, как цели тестирования, методы, типы тестов (функциональные, нагрузочные, регрессионные и т.д.), инструменты и критерии успешности.
+Ориентирована на долгосрочную перспективу и обычно охватывает весь проект или компанию в целом.
+Часто создается на уровне организации и может применяться к нескольким проектам.
+Тест-план:
+Это более детализированный документ, который описывает, как конкретная фаза тестирования будет проводиться для отдельного проекта или выпуска.
+Включает подробности, такие как что будет тестироваться, когда, кем, какие ресурсы необходимы, а также критерии начала и завершения тестирования.
+Ориентирован на конкретный этап или часть проекта и более узкий по своему охвату, чем стратегия тестирования.
+
+
+
+**Test Plan:** A document describing the objectives, approaches, resources, and schedule of planned testing activities. It defines the test items, test features, tasks, task owners, the degree of independence of each tester, the test environment, test design methods, entry and exit criteria, and the reasons for their selection. It also includes any risks that require contingency planning. It may include:
+
+- List of planned test activities (Test Activities);
+- Test logistics (Test Logistics);
+- Required resources (Resources);
+- Communication needs (Your Support Network);
+- Effort estimates (Estimates);
+- Dependencies and risks (Dependencies, Risks, and Assumptions);
+- Communication, commitment, and progress reporting procedures.
+
+**Types of Test Plans:**
+
+1. **Master Test Plan:**  
+   “A master test plan or project test plan is a test plan typically covering multiple test levels” (ISTQB). It can serve as either the sole base plan or the highest-level plan in a hierarchy of plans, being the most static and high-level. It's needed when:
+   - The product has multiple releases or iterations, and there is shared information across them that doesn't need to be repeated.
+   - Different test teams are working on the same product, performing different tasks that need to be consolidated into a single document.
+
+2. **Phase Test Plan (Detailed Test Plan):**  
+   “A level test plan is a test plan typically relating to a single level of testing” (ISTQB). A detailed plan is prepared for each release/iteration or for each team within the project and is dynamic, meaning it can change as necessary. Its main purpose is to briefly and clearly outline the testing tasks. There can be several detailed plans for specific software modules or test teams. Additionally, plans for individual test levels (Level Test Plan) or types of testing can be created. In Agile projects, there may be iteration test plans for each iteration.
+
+3. **Acceptance Test Plan:**  
+   The acceptance test plan differs from the usual test plan in that it factors in business decision-making. An acceptance test plan is one of the critical documents that provides guidance for conducting acceptance testing for a particular project. It is written based on business requirements. The review of this plan is typically conducted by Managers, Business Analysts, or Customers.
+
+
+
+Что такое Чек лист?
+Перечислите возможные атрибуты Чек листа
+Перечислите варианты статусов при прохождении Чек листа
+
+В общем смысле, чек-лист - это набор идей: идей по тестированию, идей по разработке, идей по планированию и управлению — любых идей. 
+Чек-лист в тестировании - это список проверок, которые необходимо провести для тестирования приложения или его части. 
+Важно понять, что нет и не может быть никаких запретов и ограничений при разработке чек-листов — главное, чтобы они помогали в работе. Иногда чек-листы могут даже выражаться графически (например, с использованием ментальных карт или концепт-карт), хотя традиционно их составляют в виде многоуровневых списков.
+Для того чтобы чек-лист был действительно полезным инструментом, он должен обладать рядом важных свойств:
+Логичность
+Последовательность и структурированность
+Полнота и неизбыточность.
+Можно выделить две разновидности чек-листов: специальные и универсальные. Специальные создаются для конкретного проекта, проверки отражают его специфику. Универсальные подходят для тестирования проектов одного типа, проверки в них не привязываются к графическим элементам или конкретной реализации.
+Обязательные части чек-листа
+Шапка:  содержит информацию о названии приложения, его версии, окружении, на котором проводится тестирование (версия ОС, браузера, эмулятора), ответственного за тестирование, дату тестирования 
+Тестируемые модули, субмодули: например, регистрация, аутентификация авторизация
+Список проверок: они должны отражать основную суть, без лишней детализации
+Статус: информация о статусе прохождения проверки:
+Passed (Пройден) — проверка прошла успешно. Используется, когда тест полностью соответствует ожидаемым результатам.
+Failed (Провален) — проверка провалилась. Это значит, что обнаружены несоответствия между фактическим результатом и ожидаемым.
+Blocked (Заблокирован) — тест не может быть выполнен из-за каких-то внешних причин. Например, недостаток данных, сбои в системе или зависимость от другой задачи, которая не завершена.
+Skipped (Пропущен) — тест был намеренно пропущен. Может быть, проверка нерелевантна для текущей версии, задачи или её выполнение не требуется.
+Not Run (Не выполнен) — тест ещё не был выполнен. Этот статус ставится до того, как проверка началась.
+N/A (Not Applicable, не применимо) означает, что проверка или тест не относится к текущему контексту, сценарию или продукту. 
+
+
+Дополнительные части чек-листа
+Ожидаемый результат:  то, что мы ожидаем увидеть после запуска проверки согласно требованиям
+Типы тестирования: к какому типу относится проверка?
+Отчеты о дефекте: ссылки на отчеты о дефектах для прослеживаемости
+Заметки: если нужно добавить комментарии
+Также у проверок может быть уникальный идентификатор для прослеживаемости.
+ Какие преимущества чек-листов по сравнению с тест-кейсами:
+нивелирование эффекта пестицида в регрессионном тестировании
+расширение тестового покрытия за счёт отличий при прохождении
+сокращение затрат на содержание и поддержку тестов: не надо писать много буковок!
+отсутствие рутины, которую так не любят квалифицированные тестировщики
+возможность проходить и комбинировать тесты по-разному, в зависимости от предпочтений сотрудников
+При этом, чек-листы сохраняют множество плюсов, за которые так популярны детальные тест-кейсы:
+статистика: кто, когда, что проходил (с детализацией по сборке продукта и окружению, на котором проводилось тестирование)
+памятка, которая помогает не забыть важные тесты
+возможность оценить состояние продукта, его готовность к выпуску
+Конечно, было бы нечестно рассказать про плюсы и умолчать о минусах чек-листов:
+начинающие тестировщики не всегда эффективно проводят тесты без достаточно подробной документации
+чек-листы невозможно использовать для обучения начинающих сотрудников, так как в них недостаточно подробной информации
+заказчику или руководству может быть недостаточно того уровня детализации, который предлагают чек-листы
+
+
+In a general sense, a checklist is a collection of ideas: ideas for testing, development, planning, and management—any kind of ideas.  
+A testing checklist is a list of checks that need to be carried out to test an application or part of it.  
+It's important to understand that there are no rules or limitations when creating checklists—the main goal is to make them helpful in the work. Sometimes, checklists can even be represented graphically (for example, using mind maps or concept maps), although traditionally, they are written as multi-level lists.
+
+For a checklist to be a truly useful tool, it should have several key properties:
+- **Logical structure**
+- **Consistency and organization**
+- **Completeness and lack of redundancy**
+
+There are two types of checklists: **specific** and **universal**. Specific checklists are created for a particular project, with checks reflecting its unique characteristics. Universal checklists are suitable for testing projects of the same type, where checks are not tied to specific graphical elements or implementations.
+
+### Required Parts of a Checklist:
+- **Header:** Contains information about the application name, version, environment (OS version, browser, emulator) where the testing is conducted, the tester responsible, and the testing date.
+- **Modules and submodules:** For example, registration, authentication, authorization.
+- **List of checks:** These should capture the core of the task without unnecessary details.
+- **Status:** Information on the status of the check:
+  - **Passed** — The check passed successfully, meaning the test fully matched the expected results.
+  - **Failed** — The check failed, indicating discrepancies between the actual and expected results.
+  - **Blocked** — The test cannot be executed due to external reasons, such as lack of data, system failures, or dependencies on incomplete tasks.
+  - **Skipped** — The test was intentionally skipped, possibly because the check is irrelevant to the current version or task.
+  - **Not Run** — The test has not yet been executed. This status is set before the check starts.
+  - **N/A (Not Applicable)** — The check or test does not apply to the current context, scenario, or product.
+
+### Optional Parts of a Checklist:
+- **Expected result:** What we expect to see after the check is performed, according to requirements.
+- **Test types:** What type of testing the check belongs to.
+- **Defect reports:** Links to defect reports for traceability.
+- **Notes:** Any additional comments or information.
+- **Unique identifier:** Checks may have a unique ID for tracking purposes.
+
+### Advantages of Checklists Compared to Test Cases:
+- Mitigating the "pesticide effect" in regression testing.
+- Expanding test coverage through variations in execution.
+- Reducing the cost of maintaining and supporting tests (no need to write lengthy documentation).
+- Eliminating the routine tasks that skilled testers tend to dislike.
+- Allowing flexible and varied test execution depending on employee preferences.
+
+At the same time, checklists retain many of the benefits that make detailed test cases popular:
+- **Statistics:** Who performed which tests, when, and with details on the product build and environment.
+- **Reminder:** A tool to help ensure important tests aren’t forgotten.
+- **Assessment of product readiness:** Ability to evaluate the product’s state and readiness for release.
+
+### Disadvantages of Checklists:
+- Novice testers may not conduct tests effectively without sufficiently detailed documentation.
+- Checklists cannot be used for training new employees due to their lack of detailed information.
+- The level of detail in checklists may not be sufficient for customers or management.
+
+
+
+Что такое Тест кейс?
+Перечислите атрибуты Тест кейса?
+Перечислите виды Тест кейсов?
+Что такое Тестовый набор (Test Suite)?
+Тестовый случай (test case) -  это алгоритм действий, которые требуется совершить для проверки работы программы (кнопок, полей ввода и т.д.). Это набор предусловий, входных данных, действий (где применимо), ожидаемых результатов и постусловий, разработанных на основе тестовых условий. В отличие от чек-листа,  тест-кейс содержит в себе больше деталей.
+Тест-кейсы объединяют в тестовые наборы (test suites) по одинаковым признакам: проверки для одного модуля, проверки для определенного типа тестирования, регрессионные наборы.
+Атрибуты тест-кейса
+Идентификатор (ID):  уникальный номер, необходимый для прослеживаемости. В системах по управлению кейсами (TMS - test management system) проставляется автоматически
+Приоритет (Priority): срочность и важность выполнения задачи
+Требование (Requirement): ссылка на требование, для проверки которого служит кейс
+Модуль (Module): название структурной части, в которой находится предмет тестирования
+Заголовок (Title): Отражает суть проверки
+Тестовые данные и предусловия (input data, test data, preconditions):  информация о данных, которые необходимы для тестирования (данные для ввода, файлы с определенным расширением и размером и т.д.) + специальное состояние системы до начала тестирования (пользователь зарегистрирован, созданы объекты в базе данных и т.д.)
+Шаги (Steps): последовательность действий для получения ожидаемого результата
+Ожидаемые результаты (Expected results): по каждому шагу тест-кейса описывают реакцию приложения на действия, описанные в поле «шаги тест-кейса». Номер шага соответствует номеру результата. 
+Постусловия (Postconditions): возвращение системы в исходное состояние (удаление данных, пользователей, отключение виртуальной машины и т.д.) 
+Обязательными атрибутами для тест-кейса являются: идентификатор, приоритет, заголовок, шаги и ожидаемые результаты. Все остальное используется в зависимости от конкретной задачи.
+Виды тест-кейсов
+Тест-кейсы делят на несколько групп в зависимости от входных данных, действий и предполагаемого поведения системы.
+Позитивные тест-кейсы. Доказывают, что программное обеспечение отвечает всем требованиям: если были введены верные данные, а пользователь следовал указаниям, система реагирует адекватно.
+Отрицательные тест-кейсы. Их результаты позволяют убедиться в способности программного обеспечения правильно реагировать на ошибочные вводные или некорректные действия. Это может быть, например, появление всплывающего окна с подсказкой.
+Деструктивные тест-кейсы. Служат для проверки способности системы выдерживать большие нагрузки и внешние воздействия без утери данных пользователя. Должно соблюдаться условие о запрете разрушения аппаратной части.
+
+
+
+A **test case** is an algorithm of actions required to verify the functioning of a program (e.g., buttons, input fields, etc.). It is a set of preconditions, input data, actions (where applicable), expected results, and postconditions, developed based on the test conditions. Unlike a checklist, a test case contains more details.
+
+Test cases are grouped into **test suites** based on common characteristics, such as checks for one module, checks for a specific type of testing, or regression sets.
+
+### Test Case Attributes:
+- **ID (Identifier):** A unique number required for traceability. In test management systems (TMS), this is often assigned automatically.
+- **Priority:** The urgency and importance of executing the task.
+- **Requirement:** A reference to the requirement that the test case is designed to verify.
+- **Module:** The name of the structural part in which the test item is located.
+- **Title:** Reflects the essence of the check.
+- **Test data and preconditions:** Information about the data required for testing (input data, files with specific extensions or sizes, etc.) and the system’s special state before testing begins (e.g., the user is registered, objects are created in the database, etc.).
+- **Steps:** The sequence of actions required to obtain the expected result.
+- **Expected results:** Describes the application's response to each action outlined in the “steps” field of the test case. Each step number corresponds to a result number.
+- **Postconditions:** Restores the system to its original state (e.g., deleting data, removing users, turning off virtual machines, etc.).
+
+The essential attributes of a test case are: ID, priority, title, steps, and expected results. All other elements are used depending on the specific task.
+
+### Types of Test Cases:
+Test cases are divided into several groups depending on the input data, actions, and expected system behavior.
+
+- **Positive test cases:** Prove that the software meets all requirements. When valid data is entered and the user follows the instructions, the system behaves as expected.
+- **Negative test cases:** Ensure that the software responds correctly to invalid input or incorrect actions, such as showing a pop-up window with a hint.
+- **Destructive test cases:** Verify the system’s ability to withstand heavy loads and external impacts without losing user data. A condition must be met that prevents damage to hardware.
+
+
+
+
+
+Что такое Баг репорт?
+Какое нужно соблюдать правило в баг репорте для хорошего Summary?
+Перечислите атрибуты Баг репорта?
+Опишите Жизненный цикл бага
+Что такое Priority?
+Перечислите классификации Priority
+Что такое Severity?
+Перечислите классификации  Severity
+Приведите пример Низкого Priority и Высокого Severity
+Приведите пример Низкого Severity и Высокого Priority
+
+Дефект (defect, bug, problem, fault) — недостаток в компоненте или системе, способный привести к ситуации сбоя или отказа.
+Отчёт о дефекте (defect report, bug report) — документ, описывающий и приоритизирующий обнаруженный дефект, а также содействующий его устранению.
+Атрибуты отчета о дефекте
+Идентификатор:  уникальный номер отчета. Присваивается автоматически в багтрекинговой системе (BTS, bug tracking system) 
+Краткое описание (summary): отвечает на три вопроса: что, где, когда?  Что произошло? Где это произошло? При каких условиях?
+Подробное описание (description): информация о дефекте в развернутом виде + фактический и ожидаемый результат + ссылка на требование.
+Шаги по воспроизведению (steps to reproduce, STR).
+Окружение (environment): информация о среде, на которой был обнаружен баг (версия ОС, браузера, мобильного устройства)
+Важность (severity) - степень ущерба, который наносится проекту существованием дефекта. Серьезность для разрабатываемого ПО.
+Критическая (critical) — существование дефекта приводит к масштабным последствиям катастрофического характера
+Высокая (major) — существование дефекта приносит ощутимые неудобства многим пользователям в рамках их типичной деятельности
+Средняя (medium) — существование дефекта слабо влияет на типичные сценарии работы пользователей, и/или существует обходной путь достижения цели
+Низкая (minor) — существование дефекта редко обнаруживается незначительным процентом пользователей и (почти) не влияет на их работу.
+Другая классификация:
+Blocker - блокирует работу приложения, пользователь не может продолжать работу с приложением.
+Critical - не работает критически важный функционал приложения, обходного пути нет.
+Major - важный функционал некорректно работает , и обходной путь может быть.
+Minor- данная ошибка особого влияния на важный функционал приложения не имеет, связано второстепенной важности функционалом.
+Trivial- не влияет на основной функционал , но портит впечатление о приложении, обычно связано с GUI .
+Срочность (priority) показывает, как быстро дефект должен быть устранён.
+Наивысшая (ASAP, as soon as possible) срочность указывает на необходимость устранить дефект настолько быстро, насколько это возможно.
+Высокая (high) срочность означает, что дефект следует исправить вне очереди, т.к. его существование или уже объективно мешает работе, или начнёт создавать такие помехи в самом ближайшем будущем.
+Обычная (medium, normal) срочность означает, что дефект следует исправить в порядке общей очерёдности. Такое значение срочности получает большинство дефектов.
+Низкая (low) срочность означает, что в обозримом будущем исправление данного дефекта не окажет существенного влияния на повышение качества продукта.
+Комментарий (comments, additional info) дополнительные данные о дефекте, возможность упомянуть исполнителя
+Вложения (attachments) подтверждение дефекта: фото, видео, логи, тестовые данные, архивы и так далее
+Также в дефектах обычно есть следующие поля:
+Статус в жизненном цикле
+Информация об исполнителе
+Ссылки на связанные артефакты
+
+
+Высокий приоритет и низкая серьезность
+Такое сочетание бывает, когда баг на функционал влияет незначительно, но зато на пользовательский опыт влияет очень сильно. Также в эту категорию попадают баги, не влияющие на программу, но требующие исправления. Вот пара примеров:
+Кнопки перекрывают друг друга. Они кликабельны, но визуальное впечатление портится.
+Логотип компании на главной странице содержит орфографическую ошибку. На функционал это вообще не влияет, но портит пользовательский опыт. Этот баг нужно исправить с высоким приоритетом, несмотря на то, что на продукт он влияет минимально.
+
+Высокая серьезность и низкий приоритет
+Такое сочетание бывает у багов, которые возникают в отдельных функциях программы. Эти баги не позволяют пользоваться системой, при этом обойти их невозможно. Но сами функции, содержащие эти дефекты, конечным потребителем используются  редко. Примеры:
+Домашняя страница сайта ужасно выглядит в старых браузерах. Перекрывается текст, не загружается логотип. Это мешает пользоваться продуктом, поэтому серьезность бага высокая. Но так как очень мало пользователей открывают сайт при помощи устаревшего браузера, такой баг получает низкий приоритет.
+Допустим, у нас есть приложение для банкинга. Оно правильно рассчитывает ежедневный, ежемесячный и ежеквартальный отчет, но при расчете годового возникают проблемы. Этот баг имеет высокую степень серьезности. Но если сейчас формирование годовой отчетности не актуально, такой дефект имеет низкий приоритет: его можно исправить в следующем релизе.
+
+
+A **defect** (also known as a bug, problem, or fault) is a flaw in a component or system that could lead to failure or malfunction.  
+A **defect report** (bug report) is a document that describes and prioritizes the identified defect, helping facilitate its resolution.
+
+### Defect Report Attributes:
+- **ID:** A unique number for the report. This is automatically assigned in a bug tracking system (BTS).
+- **Summary:** Answers three questions: What, where, and when? What happened? Where did it happen? Under what conditions?
+- **Description:** Expanded information about the defect, including actual and expected results, and a link to the requirement.
+- **Steps to Reproduce (STR):** Instructions for replicating the defect.
+- **Environment:** Information about the environment in which the bug was found (OS version, browser, mobile device).
+- **Severity:** The degree of damage caused by the defect to the project. Severity relates to the impact on the software being developed.
+  - **Critical:** The defect leads to catastrophic consequences.
+  - **Major:** The defect causes significant inconvenience to many users in typical usage scenarios.
+  - **Medium:** The defect has a minor effect on typical user scenarios and/or has a workaround.
+  - **Minor:** The defect is rarely encountered by a small percentage of users and has little impact on their work.
+
+Another classification of severity:
+- **Blocker:** The defect blocks the application, preventing the user from continuing to work.
+- **Critical:** Critical functionality does not work, and there is no workaround.
+- **Major:** Important functionality works incorrectly, but a workaround exists.
+- **Minor:** The defect has little impact on critical functionality and is related to less important features.
+- **Trivial:** The defect does not affect core functionality but negatively impacts the user experience (often related to the GUI).
+
+- **Priority:** Indicates how quickly the defect should be fixed.
+  - **ASAP (as soon as possible):** The defect must be fixed as quickly as possible.
+  - **High:** The defect should be fixed out of turn because it is already disrupting the workflow or will cause issues soon.
+  - **Medium (normal):** The defect should be fixed in the normal course of work. This priority applies to most defects.
+  - **Low:** Fixing the defect in the near future will not significantly improve the product quality.
+
+- **Comments (additional info):** Additional information about the defect, with the option to mention the assignee.
+- **Attachments:** Evidence of the defect, such as photos, videos, logs, test data, archives, etc.
+
+Defects typically also include the following fields:
+- **Lifecycle status**
+- **Assignee information**
+- **Links to related artifacts**
+
+### High Priority and Low Severity
+This combination occurs when the bug minimally affects functionality but significantly impacts the user experience. It may also include bugs that don't affect the program but need to be fixed. For example:
+- Buttons overlap each other. They are clickable, but the visual impression is poor.
+- The company's logo on the homepage contains a spelling mistake. It doesn’t affect functionality but negatively affects the user experience, so it needs to be fixed with high priority despite minimal impact on the product.
+
+### High Severity and Low Priority
+This combination occurs with bugs that prevent the use of certain program functions but are rarely used by end users. For example:
+- The homepage of a website looks terrible in old browsers, with text overlapping and the logo not loading. This prevents users from using the product, so the bug is of high severity. However, since very few users open the site with outdated browsers, this bug is assigned a low priority.
+- In a banking application, daily, monthly, and quarterly reports are calculated correctly, but issues arise when calculating the annual report. This bug has high severity, but if annual reporting is not currently relevant, it can be assigned a low priority and fixed in a future release.
+
+
+
+Что такое Матрица соответствия требований (Requirements Traceability Matrix)?
+
+
+Трассируемость (traceability): Способность идентифицировать связанные объекты в документации и программном обеспечении, например, требования со связанными с ними тестами. (ISTQB)
+Матрица трассируемости (traceability matrix): Двумерная таблица, описывающая связь двух сущностей (например, требований и тестовых сценариев). Таблица позволяет производить прямую и обратную трассировку от одной сущности к другой, обеспечивая таким образом возможность определения покрытия и оценки влияния предполагаемых изменений. (ISTQB)
+Матрица трассируемости может служить одновременно в качестве матрицы покрытия. Наличие такой матрицы позволяет объективно оценить, какая часть продукта покрыта тестами, а какая нет.
+Виды трассируемости:
+Вертикальная трассируемость (vertical traceability): Отслеживание требований через уровни разработки к компонентам. (ISTQB) Например, если в начале проекта было написано требование, то на каждом уровне (дизайн, код, тестирование) можно проследить, как это требование реализуется. То есть, мы видим, как требование проходит через все этапы разработки до готового компонента.
+Горизонтальная трассируемость (horizontal traceability): Трассировка требований к уровню тестирования по отношению к уровням документации (например, план тестирования, спецификация проектирования теста, спецификация тестовых сценариев и спецификация процедуры тестирования или автоматизированный сценарий тестирования). (ISTQB) Например, у нас есть требования, и мы проверяем, что для них созданы тестовые планы, сценарии и процедуры. Это помогает убедиться, что все требования покрыты тестами и описаны в документах, касающихся тестирования.
+Другой источник:
+Прямая трассируемость (Forward Traceability): гарантирует, что проект продвигается в желаемом направлении и что каждое требование тщательно проверяется. Это отслеживание требований вперед — от момента их создания до реализации и тестирования. Мы проверяем, что каждое требование учтено и реализовано в конечном продукте. 
+Обратная трассируемость (Backward Traceability): гарантирует, что текущий разрабатываемый продукт находится на правильном пути. Это отслеживание наоборот — от уже существующих компонентов или тестов назад к исходным требованиям. Это также помогает определить, что дополнительные неуказанные функции не добавляются и, таким образом, это не влияет на объем проекта;
+Двунаправленная трассируемость (Bi-Directional Traceability = Forward + Backward): содержит ссылки от тестовых примеров к требованиям и наоборот. Это гарантирует, что все тестовые примеры можно отследить до требований, и каждое указанное требование содержит точные и действительные тестовые примеры для них.
+*Когда на основе требований к продукту составляются тест-сценарии и выполняется тестирование, это называется Requirement based testing.
+
+
+**Traceability:** The ability to identify related objects in documentation and software, such as requirements and their associated tests. (ISTQB)  
+**Traceability Matrix:** A two-dimensional table that describes the relationship between two entities (e.g., requirements and test cases). This table allows both forward and backward traceability between entities, thus enabling the assessment of coverage and the impact of proposed changes. (ISTQB)  
+A traceability matrix can also serve as a coverage matrix, allowing an objective evaluation of which parts of the product are covered by tests and which are not.
+
+### Types of Traceability:
+- **Vertical Traceability:** Tracing requirements through development levels to components. (ISTQB) For example, if a requirement is written at the start of the project, it can be tracked through design, coding, and testing to ensure that the requirement is realized in the final component.
+- **Horizontal Traceability:** Tracing requirements at the testing level in relation to documentation levels (e.g., test plan, test design specification, test case specification, and test procedure specification or automated test script). (ISTQB) This ensures that all requirements are covered by test plans, cases, and procedures documented in test-related documents.
+
+Another source:
+- **Forward Traceability:** Ensures that the project progresses in the desired direction and that every requirement is thoroughly tested. This traces requirements forward—from their creation to implementation and testing, ensuring that each requirement is considered and realized in the final product.
+- **Backward Traceability:** Ensures that the current product being developed is on the right track. This traces backward from existing components or tests to the original requirements, helping to ensure that no additional, unlisted features are added, which could affect the scope of the project.
+- **Bi-Directional Traceability (Forward + Backward):** Contains links from test cases to requirements and vice versa. This ensures that all test cases can be traced back to the requirements and that every specified requirement has corresponding test cases for validation.
+
+*When test cases are created based on product requirements and testing is conducted, this is called requirement-based testing.*
+
+
+
+
+
+Что такое Тест-отчет?
+По времени Тест отчет на сколько типов возможно разделить?
+Что должен показывать Промежуточный отчет?
+Что должен показывать Итоговый отчет?
+
+Отчет - это документ, содержащий информацию о выполненных действиях, результатах проведённой работы. Обычно он включает в себя таблицы, графики, списки, просто описывающую информацию в виде текста. Их пропорция и содержание определяют пользу и понятность отчета.
+Наиболее известные варианты отчетов в тестировании.
+Отчет по инциденту (incident report)
+Отчет по инциденту (incident report): Документ, описывающий событие, которое произошло, например, во время тестирования, и которое необходимо исследовать. (IEEE 829)
+Отчет об инцидентах можно определить как письменное описание инцидента, наблюдаемого во время тестирования. Чтобы лучше понять, давайте начнем с того, что такое «инцидент». Инцидент при тестировании программного обеспечения можно определить как наблюдаемое изменение или отклонение поведения системы от ожидаемого. Это может быть отклонение от функционального требования или от настроек среды. Очень часто инцидент называют дефектом или ошибкой, но это не всегда так. Инцидент - это в основном любое неожиданное поведение или реакция программного обеспечения, требующая расследования.
+Инцидент необходимо расследовать, и на основании расследования инцидент может быть преобразован в дефект. Чаще всего это оказывается дефектом, но иногда это может произойти из-за различных факторов, например:
+Человеческий фактор;
+Требование отсутствует или неясно;
+Проблема среды, например отсутствие ответа от внутреннего сервера, вызывающее периодическое непредвиденное поведение или ошибку. Либо неправильная конфигурация среды;
+Ошибочные тестовые данные;
+Некорректный ожидаемый результат.
+Incident report призван зафиксировать и сообщить об инциденте заинтересованным лицам, провести расследование. Составляется аналогично баг-репорту, возможно с упором на расследование, обсуждение, влияние (impact) и может быть назначен не на разработчиков для уточнения деталей.
+Отчет о результатах тестирования (test result report)
+Отчет о результатах тестирования - периодический отчет, в котором документируется подробная информация о выполнении теста и его результате. Также он содержит условия, предположения, ограничения теста, какой элемент теста кем тестируется. Помимо этого вносится подробная информация об оставшейся работе, чтобы показать, сколько еще работы необходимо выполнить в проекте.
+Отчет о выполнении теста (Test Execution Report)
+Отчет о выполнении теста содержит детали выполнения и результат выполнения теста. Обычно его готовят для отправки вышестоящему руководству от группы тестирования, чтобы показать состояние выполнения теста и ход тестирования. Когда мы доставляем программное обеспечение клиенту, мы вкратце отправим полную информацию о выполнении теста. Это даст клиенту лучшее понимание выполненного теста и покрытия.
+Отчет о ходе тестирования (test progress report)
+Отчет о ходе тестирования (test progress report): Документ, подводящий итог задачам и результатам, составляемый с определенной периодичностью с целью сравнения прогресса тестирования с базовой версией (например, с исходным планом тестирования) и извещения о рисках и альтернативах, требующих решения руководства. (ISTQB)
+Аналитический отчет о тестировании (test evaluation report)
+Аналитический отчет о тестировании (test evaluation report): Документ, создаваемый в конце процесса тестирования и подводящий итог тестовым активностям и результатам. Также в нем содержится оценка процесса тестирования и полученный опыт. (ISTQB)
+Итоговый отчет о тестировании (test summary report)
+Итоговый отчет о тестировании (test summary report): Документ, подводящий итог задачам и результатам тестирования, также содержащий оценку соответствующих объектов тестирования относительно критериев выхода. (IEEE 829)
+Сводный отчет о тестировании содержит подробную информацию о тестировании, проведенном на протяжении жизненного цикла разработки программного обеспечения. Элементы в итоговом отчете по тестированию различаются от организации к организации, а также различаются для разных проектов. Информация в отчете об испытаниях основывается на аудитории отчета об испытаниях. Аудитория может быть клиентом, менеджментом, бизнес-аналитиком, разработчиками, членами команды тестирования, членами организации и т. д.
+Отчет о пользовательском приемочном тестировании (User acceptance test report)
+Отчет о пользовательском приемочном тестировании создается во время и после UAT. В нем указываются подробности проведенного пользователем приемочного теста и результат пользовательского приемочного теста. В нем также перечислены дефекты, не учтенные при UAT.
+
+Промежуточный отчет о тестировании
+Этот отчет обычно создается в процессе тестирования, когда тестирование еще не завершено. Он помогает отслеживать прогресс и информировать заинтересованные стороны о текущем состоянии тестирования.
+Основные элементы промежуточного отчета:
+Статус выполнения тестов: сколько тестов запланировано, сколько выполнено, сколько еще предстоит провести.
+Пройденные и проваленные тесты: сколько тестов прошло успешно, а сколько завершилось с ошибками.
+Текущие дефекты: список обнаруженных дефектов с указанием их критичности (блокирующие, критичные, незначительные).
+Прогресс тестирования: процент выполнения по отношению к запланированным задачам.
+Проблемы и риски: любые проблемы, которые могут замедлить тестирование, или риски, которые могут повлиять на качество продукта.
+Статус выполнения по времени: соответствует ли процесс тестирования запланированным срокам (есть ли отклонения от графика).
+Изменения в требованиях: если во время тестирования были внесены изменения в требования, они должны быть отражены в отчете.
+Цель промежуточного отчета — предоставить актуальную картину состояния тестирования и дать возможность скорректировать планы, если это необходимо.
+Итоговый отчет о тестировании
+Этот отчет создается после завершения тестирования и является обобщением всех результатов тестирования. Он служит доказательством того, что тестирование проведено и его результаты обработаны.
+Основные элементы итогового отчета:
+Результаты тестирования: общее количество проведенных тестов, сколько прошло успешно и сколько провалилось.
+Окончательное количество дефектов: список всех выявленных дефектов, включая их статус (исправлены/не исправлены) и приоритет (высокий/низкий).
+Покрытие требований: какой процент требований был проверен, какие требования не покрыты тестами и почему.
+Оценка качества продукта: об щее заключение о качестве продукта на основе проведенного тестирования, включая степень соответствия требованиям.
+Оставшиеся риски: какие риски остались после завершения тестирования (например, нерешенные проблемы, которые могут повлиять на работу продукта).
+Оценка соответствия срокам и планам: насколько тестирование соответствовало планам по времени и ресурсам, были ли отклонения и их причины.
+Рекомендации: могут включать рекомендации по дополнительному тестированию или по дальнейшим действиям для повышения качества продукта.
+Цель итогового отчета — дать полную и исчерпывающую картину о том, насколько продукт готов к выпуску и какие проблемы все еще существуют.
+
+
+
+A report is a document containing information about completed actions and the results of the work done. It usually includes tables, charts, lists, and descriptive text, with the content tailored for clarity and usefulness.
+
+### Common Types of Reports in Testing:
+
+1. **Incident Report**: Describes an event (e.g., during testing) that requires investigation. An incident in software testing is any deviation from expected system behavior, which may or may not be classified as a defect. Causes could include human error, unclear requirements, environmental issues, or incorrect test data.
+
+2. **Test Result Report**: A periodic document detailing test execution and outcomes, including remaining work and testing assumptions.
+
+3. **Test Execution Report**: Provides details of test execution and results, often shared with management to show test progress and coverage.
+
+4. **Test Progress Report**: Summarizes tasks and results over time, comparing current progress to the initial test plan. It highlights risks and alternative actions for management.
+
+5. **Test Evaluation Report**: Created at the end of the testing process, summarizing testing activities, outcomes, and lessons learned.
+
+6. **Test Summary Report**: Provides a comprehensive overview of the testing performed, including the assessment of testing objects against exit criteria. The content varies by organization and project, depending on the audience.
+
+7. **User Acceptance Test (UAT) Report**: Documents details and results from user acceptance testing, listing any unresolved defects.
+
+8. **Interim Test Report**: Created during testing to track progress and update stakeholders on the current testing status. It includes:
+   - Test execution status (planned vs. completed tests),
+   - Passed/failed tests,
+   - Current defects and their severity,
+   - Testing progress in relation to the plan,
+   - Problems, risks, and schedule adherence.
+
+9. **Final Test Report**: A summary after testing concludes, providing evidence of the work completed. It covers:
+   - Test results (number of tests passed/failed),
+   - Defects found (with statuses and priorities),
+   - Requirement coverage,
+   - Overall product quality assessment,
+   - Remaining risks,
+   - Timeline and resource adherence,
+   - Recommendations for further actions.
+
+The goal of the final test report is to offer a complete picture of the product's readiness for release and any existing issues.
+
+
+
+
+
+Что такое Ошибка/Дефект/Отказ?
+Перечислите Основные типы багов?
+Перечислите “Хитрые баги”?
+Приведите пример Blocker bug
+Приведите пример Critical bug
+Приведите пример Major bug
+Приведите пример Minor bug
+Приведите пример Trivial bug
+Какой жизненный цикл Bug report?
+
+Ошибка - Действие человека, которое приводит к неправильному результату.
+Дефект - Несовершенство или недостаток рабочего продукта, проявляющееся в несоответствии требованиям или спецификациям.
+Отказ - Событие, при котором компонент или система не выполняют требуемую функцию в соответствии со спецификацией.
+
+ Основные типы багов:
+Функциональный - Баг, при котором действия пользователя не совпадают с их результатом.
+Визуальный - Баг, из-за которого деформируется интерфейс приложения или веб-страницы.
+Логический - Баг, при котором приложение или сайт нарушают логику.
+Дефект UX - Баг, при котором неудобно пользоваться приложением или сайтом.
+Баг нагрузки - Баг, при котором приложение или сайт не справляются с большим количеством входящего трафика.
+Баг производительности - Баг, который делает приложение «прожорливым» до памяти, заряда и т. д.
+
+“Хитрые” баги - специфический тип бага, существование которого предсказано, или предвидится, или он даже был обнаружен, по единичным сообщениям пользователей, но на практике ни тестировщику, ни разработчику обнаружить его не удается — и все работает идеально.
+Гейзенбаг - которые исчезают или меняют свое поведение, как только вы пытаетесь их локализировать и внимательнее изучить. Такое поведение системы в чем-то напоминает принцип неопределенности физика Вернера Гейзенберга. Подобно тому как само по себе наблюдение физика-экспериментатора за элементарными частицами может изменять их состояние, изучение тестировщиком гейзенбага может приводить к его временному исчезновению. Пример гейзенбага: Пользователь пожаловался в техподдержку: баланс его счета иногда отображается некорректно. Но при многократных попытках воспроизвести этот баг — баланс постоянно отображает правильное значение!
+Борбаг («призраками, прячущимися в углах»)- сохраняют свое некорректное поведение постоянно — но только при определенных условиях, или при определенных входных данных. Названные в честь модели атома физика Нильса Бора, в которой особое внимание уделялось предсказуемости, такие борбаги можно обнаружить лишь в редко вызываемых участках кода.  Пример борбага: Функция в приложении выдает ошибку только при очень медленном сетевом подключении.
+Мандельбаг - характеризуются чрезвычайно сложным (с точки зрения обычного тестировщика), или непредсказуемым поведением, чаще всего вызванным глубокими архитектурными дефектами системы. Примеры мандельбагов: В некоторых популярнейших, реально легендарных видеоиграх персонажи застревают в стенах и столбах, оседланные кони стоят в воздухе, машины взлетают в небеса на ровной дороге, тело водителя растягивается на сотню метров. 
+Шрединбаги — это ошибки, которые остаются «лабильными» до тех пор, пока код не будет «вскрыт» и внимательно изучен. Пример шрединбага: Функция выдает некорректные результаты только в присутствии в системе конкретного пользователя с определенной конфигурацией и правами.
+Лунный баг
+Или «баг, зависящий от фазы луны» провоцируется на первый взгляд тривиальным, неопасным параметром времени (дата/время), из-за которого может возникать ошибка.
+Статистический баг - не обнаруживаются при однократном прогоне, но проявляются при многократном выполнении кода, который предназначен для получения случайных (псевдослучайных) результатов. Пример статистического бага: программа для бизнес-моделирования выдает на выходе данные с небольшими отклонениями, что приводит к некорректным результатам при проведении крупномасштабного анализа на больших данных.
+Гинденбаг - характеризуется не сложностью обнаружения, не «хитростью», как предыдущие баги, а реально катастрофическими последствиями, особенно если речь идет о критически важной инфраструктуре, или убытках на миллиарды долларов.
+Баг Хиггса - существование которого предсказано, или предвидится, или он даже был обнаружен, по единичным сообщениям пользователей, но на практике ни тестировщику, ни разработчику обнаружить его не удается — и все работает идеально.
+
+
+
+
+S4 Blocker (Блокирующий) — ситуация, когда программа не работает в принципе: сайт выдает «ошибку 404» или не запускается приложение.
+S3 Critical (Критический) — баг мешает приложению выполнять основные функции: калькулятор расходов неправильно считает бюджет или в текстовом редакторе невозможно вводить текст.
+S2 Major (Серьезный) — баг создает неудобства в использовании, но еще не нарушает функционал программы.
+S1 Minor (Незначительный) — баг почти не нарушает логику процессов, поэтому с ним программа может нормально работать. Например, неудобная навигация в интерфейсе.
+S0 Trivial (Тривиальный) — баг не влияет на работу программы, поэтому для его исправления могут не выделить отдельную задачу, а исправить попутно при исправлении других, похожих ошибок. Например, при заполнении анкеты в поле «Дата рождения» по умолчанию отображается не актуальный год, а 1999-й.
+
+Жизненный цикл Bug report включает в себя этапы обнаружения дефекта, документирования, воспроизведения, назначения приоритета, исправления и проверки.
+Основные статусы:
+Новый (New) — дефект зарегистрирован и ожидает обработки.
+Назначен (Assigned) — дефект подтвержден и назначен разработчику.
+Открыт (Open) — разработчик принял дефект в работу.
+Устранен (Fixed/Resolved) — дефект исправлен разработчиком.
+Ожидает повторного тестирования (Pending Retest) — баг исправлен, ожидает повторной проверки тестировщиком.
+Повторно тестируется (Retest) — тестировщик проверяет баг после исправления.
+Повторно открыт (Reopen) — баг снова проявился при повторной проверке.
+Проверен (Verified) — баг повторно проверен и подтвержден как исправленный.
+Закрыт (Closed) — дефект устранен и окончательно закрыт.
+Дополнительные статусы:
+Отклонен (Rejected) — баг отклонен (не является дефектом, дубликат или не воспроизводится).
+Отложен (Deferred) — баг отложен до будущих релизов.
+Дубликат (Duplicate) — баг дублирует уже существующий дефект.
+Не дефект (Not a Defect) — проблема не считается дефектом.
+Не воспроизводится (Non Reproducible) — баг не удалось воспроизвести.
+Невозможно устранить (Can’t be fixed) — баг невозможно устранить.
+Требует уточнения (Need more information) — разработчику не хватает информации для воспроизведения или исправления.
+
+
+Error - A human action that produces an incorrect result.
+Defect - An imperfection or deficiency in a work product where it does not meet its requirements or specifications or impairs its intended use.
+Failure - An event in which a component or system does not meet its requirements within specified limits.
+
+### Main Types of Bugs:
+1. **Functional Bug**: Occurs when user actions do not produce the expected result.
+2. **Visual Bug**: Affects the appearance of the application's interface.
+3. **Logical Bug**: Disrupts the logical flow of the application or site.
+4. **UX Defect**: Makes the application or site inconvenient to use.
+5. **Load Bug**: Occurs when the application or site cannot handle high traffic.
+6. **Performance Bug**: Makes the application consume excessive resources like memory or battery.
+
+### Special Types of Bugs:
+- **Tricky Bugs**: These bugs are predicted but hard to reproduce or detect consistently.
+- **Heisenbug**: Disappears or changes behavior when you try to debug or study it.
+- **Bohrbug**: Appears consistently, but only under certain conditions.
+- **Mandelbug**: Exhibits highly complex or unpredictable behavior due to deep system flaws.
+- **Schrödinbug**: Exists only when observed under specific user configurations.
+- **Moon Bug**: Triggered by seemingly trivial factors like time or date.
+- **Statistical Bug**: Only appears after repeated executions of code handling random results.
+- **Hindenbug**: Causes catastrophic consequences, especially in critical systems.
+- **Higgs Bug**: Is predicted or reported but eludes testers and developers in practice.
+
+### Bug Severity Levels:
+S4 Blocker: A situation where the program does not work at all, such as a website showing a "404 error" or an application failing to launch.
+S3 Critical: A bug that prevents the application from performing its main functions, for example, an expense calculator miscalculating the budget or being unable to enter text in a word processor.
+S2 Major: A bug that causes inconvenience but does not break the core functionality of the program.
+S1 Minor: A bug that barely disrupts the process logic, so the program can still work properly. For example, inconvenient navigation in the interface.
+S0 Trivial: A bug that does not affect the program’s functionality. It may not be assigned a separate task for fixing but rather addressed alongside other, similar errors. For example, a default birth year being set to 1999 in a form instead of the current year.
+
+### Bug Report Life Cycle:
+- **New**: The defect is registered and awaiting processing.
+- **Assigned**: The defect is confirmed and assigned to a developer.
+- **Open**: The developer starts working on the defect.
+- **Fixed/Resolved**: The defect has been corrected.
+- **Pending Retest**: Awaiting retesting after the fix.
+- **Retest**: The tester checks the defect again.
+- **Reopen**: The defect reappears after the fix.
+- **Verified**: The defect is confirmed as fixed.
+- **Closed**: The defect is resolved and considered final.
+
+### Additional Statuses:
+- **Rejected**: The bug is not valid or a duplicate.
+- **Deferred**: The bug is postponed to future releases.
+- **Duplicate**: The bug is already logged.
+- **Not a Defect**: The issue is not considered a bug.
+- **Non-Reproducible**: The bug cannot be reproduced.
+- **Can’t be Fixed**: The bug cannot be resolved.
+- **Need More Information**: Additional details are required to fix the bug.
+
+
+
+
+
+
+Какие основные цели локализации дефекта?
+Где могут находиться дефекты?
+Перечислите методы локализации дефекта в клиентской части
+Перечислите методы локализации дефекта в серверной части
+
+Основные цели локализации дефекта включают выявление местоположения дефекта в коде или взаимодействиях системы, а также понимание причин его возникновения для последующего устранения.
+Дефекты могут находиться в любой части программного продукта, включая код, пользовательский интерфейс, базу данных, взаимодействие с внешними системами и т. д.
+Методы локализации дефекта в клиентской части могут включать в себя тестирование пользовательского интерфейса, проверку работы приложения на разных операционных системах и браузерах, а также анализ логов и сообщений об ошибках.
+Методы локализации дефекта в серверной части:
+1. Логирование (Logging): Приложение может вести логи событий, ошибок и исключений, что помогает разработчикам определить возможные проблемы и их местоположение.
+2. Отладка (Debugging): Использование отладочных инструментов и техник позволяет анализировать исходный код серверной части на предмет ошибок и неправильного поведения.
+3. Мониторинг (Monitoring): Наблюдение за работой сервера с помощью мониторинговых инструментов позволяет выявить аномалии в его работе, что может указывать на наличие дефектов.
+4. Профилирование (Profiling): Использование инструментов профилирования позволяет анализировать производительность и использование ресурсов сервера, что может выявить проблемные участки кода.
+5. Тестирование API (API Testing): Проведение тестирования интерфейсов программного обеспечения на сервере позволяет выявить неправильное взаимодействие между компонентами или некорректные результаты.
+6. Тестирование Базы данных (Database Testing): Проверка корректности работы запросов к базе данных, целостности данных и оптимизации
+The main objectives of defect localization include identifying the location of the defect in the code or system interactions, as well as understanding the causes of its occurrence for subsequent resolution. Defects can occur in any part of the software product, including the code, user interface, database, or interactions with external systems.
+
+**Client-side defect localization methods** may include testing the user interface, checking the application’s functionality on different operating systems and browsers, and analyzing logs and error messages.
+
+**Server-side defect localization methods**:
+1. **Logging**: The application may keep logs of events, errors, and exceptions, which help developers identify potential issues and their locations.
+2. **Debugging**: Using debugging tools and techniques allows developers to analyze the server-side code for errors and incorrect behavior.
+3. **Monitoring**: Monitoring server performance using monitoring tools can help detect anomalies that may indicate the presence of defects.
+4. **Profiling**: Profiling tools can be used to analyze server performance and resource usage, revealing problematic areas in the code.
+5. **API Testing**: Testing software interfaces on the server helps identify incorrect interactions between components or incorrect results.
+6. **Database Testing**: Verifying the correctness of database queries, data integrity, and optimization ensures proper database functionality.
+
+
+
+
