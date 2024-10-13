@@ -1,0 +1,171 @@
+ТЕОРИЯ. Задание 4
+
+
+What is Test Design? 
+What are Test Design Techniques for? 
+What black box techniques do you know? / Describe them. 
+What white box techniques do you know? / Describe them.
+
+
+Что такое Тест дизайн?
+Для чего нужны Техники тест дизайна?
+
+Тест-дизайн — это процесс создания тестов для проверки качества программного обеспечения. 
+
+Цель тест-дизайна - создать максимально эффективный набор кейсов, покрывающий наиболее важные аспекты тестируемого ПО, т.е. минимизировать количество тестов, необходимых для нахождения большинства серьезных ошибок.
+
+ISTQB: методы тестирования подразделяются на методы черного ящика, методы белого ящика и методы, основанные на опыте. 
+Методы черного ящика (также известные как методы, основанные на спецификации) опираются на анализ заданного для объекта тестирования поведения безотносительно его внутреннего устройства.
+Наиболее распространенные методы черного ящика, как: ● эквивалентное разбиение ● анализ граничных значений ● таблица решений ● переходы между состояниями (State transition) и другие (Use case testing, Domain testing, Classification Tree Method, Cause-Effect Graphing, Scenario Testing, Random Testing, Syntax Testing, Check List Based Testing, Risk-Based Testing, User Journey Test)
+
+Методы белого ящика (методы на основе структуры) опираются на анализ внутренней структуры объекта тестирования и процесса обработки данных.
+
+ Методы, основанные на опыте, позволяют обнаруживать дефекты, которые могут быть пропущены при тестировании методами черного ящика и белого ящика. Таким образом, методы, основанные на опыте, дополняют методы черного ящика и белого ящика.
+Test design is the process of creating tests to verify the quality of software.
+The goal of test design is to create the most efficient set of cases that covers the most important aspects of the software being tested, i.e., to minimize the number of tests needed to find most critical defects.
+ISTQB: Testing methods are divided into black-box methods, white-box methods, and experience-based methods.
+
+
+Black-box methods (also known as specification-based methods) rely on analyzing the specified behavior of the test object, without regard to its internal structure.
+The most common black-box methods include: 
+● Equivalence partitioning
+● Boundary value analysis
+● Decision tables
+● State transitions (State transition) and others (Use case testing, Domain testing, Classification Tree Method, Cause-Effect Graphing, Scenario Testing, Random Testing, Syntax Testing, Check List Based Testing, Risk-Based Testing, User Journey Test).
+White-box methods (structure-based methods) are based on the analysis of the internal structure of the test object and the data processing logic.
+Experience-based methods help to identify defects that might be missed when using black-box or white-box methods. Thus, experience-based methods complement black-box and white-box techniques.
+
+
+
+
+
+Что такое Классы эквивалентности?
+
+Эквивалентное разбиение подразумевает разделение данных на группы (так называемые классы эквивалентности), исходя из предположения, что все элементы одной группы обрабатываются объектом тестирования схожим образом. Теоретическое обоснование этого метода таково: если при выполнении тестового сценария обнаруживается дефект для одного из значений, относящихся к какому-либо классу эквивалентности, тот же дефект должен быть обнаружен и для любых других значений из того же класса. Следовательно, достаточно одного теста на каждый класс. 
+Класс, содержащий позитивные значения, называется позитивным классом. Класс, содержащий негативные значения, называется негативным классом. Понимание негативных и позитивных значений может отличаться в разных командах и организациях. Например, позитивными значениями можно считать такие, которые объект тестирования должен обрабатывать, или такие, для которых обработка заложена в спецификации. Негативными значениями можно считать такие, которые должны быть проигнорированы или не могут быть приняты в обработку объектом тестирования, либо такие, для которых в тестовой спецификации не определено, как они должны обрабатываться. 
+Equivalence Partitioning (EP) divides data into partitions (known as equivalence partitions) based on the expectation that all the elements of a given partition are to be processed in the same way by the test object. The theory behind this technique is that if a test case, that tests one value from an equivalence partition, detects a defect, this defect should also be detected by test cases that test any other value from the same partition. Therefore, one test for each partition is sufficient.
+A partition containing valid values is called a valid partition. A partition containing invalid values is called an invalid partition. The definitions of valid and invalid values may vary among teams and organizations. For example, valid values may be interpreted as those that should be processed by the test object or as those for which the specification defines their processing. Invalid values may be interpreted as those that should be ignored or rejected by the test object or as those for which no processing is defined in the test object specification.
+
+
+
+Что такое Граничные значения?
+
+Анализ граничных значений — это метод, в котором проверка выполняется для границ классов эквивалентности. Отсюда следует, что данный метод может использоваться только для упорядоченных классов. Граничными значениями класса являются его минимальное и максимальное значения. В данном методе принимается, что если два элемента принадлежат к одному классу, то и все элементы, расположенные между ними, принадлежат к тому же классу.
+В варианте метода с определением двух граничных значений  для каждого граничного значения берется два элемента покрытия: само граничное значение и наиболее близкое соседнее значение из смежного класса. 
+В варианте метода с определением трех граничных значений для каждого граничного значения берется три элемента покрытия: само граничное значение и два соседних значения.
+Boundary Value Analysis (BVA) is a technique based on exercising the boundaries of equivalence partitions. Therefore, BVA can only be used for ordered partitions. The minimum and maximum values of a partition are its boundary values. In the case of BVA, if two elements belong to the same partition, all elements between them must also belong to that partition. 
+In 2-value BVA, for each boundary value there are two coverage items: this boundary value and its closest neighbor belonging to the adjacent partition.
+In 3-value BVA , for each boundary value there are three coverage items: this boundary value and both its neighbors. 
+
+
+
+Что такое Таблица принятия решений?
+
+Таблицы решений используются для тестирования программной реализации требований к приложению (системе), где последние определяют какие комбинации условий приводят к каким результатам. Таблицы решений — это наглядный способ представления сложных логических правил, например, бизнес-правил. При создании таблицы решений в системе определяются исходные условия и результирующие действия. Эти элементы формируют строки таблицы. Каждый столбец представляет собой правило, задающее уникальную комбинацию условий, а также относящиеся к нему действия. 
+Полная таблица решений имеет достаточно столбцов для покрытия всех комбинаций условий. Таблица может быть упрощена посредством удаления столбцов, содержащих невыполнимые комбинации условий. Таблица также может быть сокращена посредством объединения столбцов, в которых отдельные условия не влияют на результат, в один столбец.
+Decision tables are used for testing the implementation of system requirements that specify how different combinations of conditions result in different outcomes. Decision tables are an effective way of recording complex logic, such as business rules. When creating decision tables, the conditions and the resulting actions of the system are defined. These form the rows of the table. Each column corresponds to a decision rule that defines a unique combination of conditions, along with the associated actions. A full decision table has enough columns to cover every combination of conditions. The table can be simplified by deleting columns containing infeasible combinations of conditions. The table can also be minimized by merging columns, in which some conditions do not affect the outcome, into a single column
+
+
+
+Диаграмма перехода состояний воспроизводит модель поведения системы, показывая возможные состояния и разрешенные переходы между этими состояниями. Любой переход вызывается событием, которое может к тому же сопровождаться ограничением. Подразумевается, что переходы происходят мгновенно и в некоторых случаях вызывают определенные действия программы. Типичный синтаксис, маркирующий переход, следующий: «событие [ограничение] / действие». Ограничения и действия могут быть опущены, если их нет или если тестировщик считает их неважными. 
+Состояние (state, представленное в виде круга на диаграмме) - это состояние приложения, в котором оно ожидает одно или более событий. Состояние помнит входные данные, полученные до этого, и показывает, как приложение будет реагировать на полученные события. События могут вызывать смену состояния и/или инициировать действия;
+Переход (transition, представлено в виде стрелки на диаграмме) - это преобразование одного состояния в другое, происходящее по событию;
+Событие (event, представленное ярлыком над стрелкой) - это что-то, что заставляет приложение поменять свое состояние. События могут поступать извне приложения, через интерфейс самого приложения. Само приложение также может генерировать события (например, событие «истек таймер»). Когда происходит событие, приложение может поменять (или не поменять) состояние и выполнить (или не выполнить) действие. События могут иметь параметры (например, событие «Оплата» может иметь параметры «Наличные деньги», «Чек», «Приходная карта» или «Кредитная карта»);
+Действие (action, представлено после «/» в ярлыке над переходом) инициируется сменой состояния («напечатать билет», «показать на экране» и др.). Обычно действия создают что-то, что является выходными/возвращаемыми данными системы. Действия возникают при переходах, сами по себе состояния пассивны;
+Точка входа обозначается черным кружком;
+Точка выхода показывается на диаграмме в виде мишени;
+
+
+Таблица переходов — модель, эквивалентная диаграмме перехода состояний. Ее строки представляют собой состояния, а столбцы — события (вместе с контрольными условиями, если таковые имеются). Записи в таблице (ячейки) представляют собой переходы и содержат конечное состояние, а также результирующие действия, если они определены. В отличие от диаграммы состояний и переходов, таблица переходов однозначно отображает недействительные переходы, которые представлены пустыми ячейками. 
+A state transition diagram models the behavior of a system by showing its possible states and valid state transitions. A transition is initiated by an event, which may be additionally qualified by a guard condition. The transitions are assumed to be instantaneous and may sometimes result in the software taking action. The common transition labeling syntax is as follows: “event [guard condition] / action”.
+
+A state table is a model equivalent to a state transition diagram. Its rows represent states, and its columns represent events (together with guard conditions if they exist). Table entries (cells) represent transitions, and contain the target state, as well as the resulting actions, if defined. In contrast to the state transition diagram, the state table explicitly shows invalid transitions, which are represented by empty cells. 
+
+
+
+Перечислите Комбинаторные техники тест дизайна и опишите их.
+
+Техника каждого выбора (EC - Each choice testing): эта стратегия требует, чтобы каждое значение каждого параметра было включено по крайней мере в один тестовый пример. Это также определение 1-wise coverage. В столбцах значения параметров, в пустых ячейках повторяем значения, пока не закончатся строки у параметра с максимальным количеством значений. 
+
+Техника базового выбора (Base Choice Testing): базовые значения - самые часто используемые или наиболее типичные значения. 1-й тест-кейс - только с базовыми значениями, следующие - у одного параметра меняем на оставшиеся небазовые, следующие  - у другого параметра меняем на оставшиеся небазовые (у ост. - базовые) и т.д.
+
+Попарное тестирование (pairwise testing): техника тест-дизайна методом черного ящика, при которой тест-кейсы создаются таким образом, чтобы выполнить все возможные отдельные комбинации каждой пары входных параметров. Метод попарного тестирования базируется на гипотезе, что подавляющее большинство дефектов ПО возникает, когда взаимодействуют два входных параметра. Методики:
+алгоритм All pairs (набор комбинаций, в котором каждая пара параметров встретится хотя бы раз)
+ортогональные массивы  (Orthogonal array testing, OAT. Если какая-либо пара значений двух столбцов встречается несколько раз, то все возможные парные комбинации значений этих столбцов должны встретиться столько же раз. Обеспечивается более равномерное и полное покрытие. Количество тестов может быть больше, чем в попарном тестировании, но все равно значительно меньше, чем при полном переборе всех возможных комбинаций.)
+Инструменты: PICT, Pairwise; https://pairwise.teremokgames.com/ - онлайн. 
+
+
+
+Combinatorial Test Design Techniques and Their Descriptions
+Each Choice Testing (EC):
+This strategy requires that each value of every parameter is included in at least one test case. This is also known as 1-wise coverage. In test tables, parameter values are repeated in empty cells until all combinations are exhausted for the parameter with the maximum number of values.
+Base Choice Testing:
+Base values are the most frequently used or the most typical values. The first test case consists only of base values, and in subsequent test cases, the values for one parameter are changed to non-base values while the other parameters remain set to their base values. This process is repeated for each parameter.
+Pairwise Testing:
+A black-box test design technique where test cases are created to cover all possible combinations of each pair of input parameters. The method is based on the hypothesis that most software defects are caused by the interaction of two input parameters. The primary techniques are:
+All Pairs Algorithm: A set of combinations where every pair of parameters appears at least once.
+Orthogonal Arrays (Orthogonal Array Testing, OAT): If any pair of values in two columns appears more than once, all possible combinations of those values should appear the same number of times. This provides more even and thorough coverage. The number of tests may be greater than with pairwise testing, but it is still significantly fewer than exhaustive testing of all possible combinations.
+
+
+
+
+
+Другие техники
+
+Classification Tree Method: У вас есть иерархически структурированные данные, или данные могут быть представлены в виде иерархического дерева
+
+Cause-Effect Graphing: Причины (входы) и следствия (выходы) связаны большим количеством сложных логических зависимостей
+
+Scenario Testing: В функционале есть четкие сценарии
+
+Random Testing: Вам необходимо имитировать непредсказуемость реальных вводных данных, или функциональность имеет несистематические дефекты
+
+
+
+Syntax Testing: Функциональность имеет сложный синтаксический формат для входных данных (например, коды, сложные имена электронной почты и т. д.)
+
+Domain-тестирование​ - это техника, которая может применяться для определения эффективных и действенных тест-кейсов, когда несколько переменных (например, поля ввода) должны проверяться вместе - либо для эффективности, либо по причине их логического взаимодействия. Она использует и обобщает тестирование классов эквивалентности и граничных значений в n одномерных измерениях. 
+
+Диаграмма пользовательских ролей (User Role Diagram) — это инструмент для моделирования взаимодействий пользователей с системой, который помогает визуализировать различные роли, которые могут существовать в приложении или системе, и их отношения к действиям, функциям или компонентам системы. Основная цель диаграммы — определить, какие роли пользователи играют в системе, и как эти роли влияют на поведение системы или функциональные требования. Это помогает в создании более точных и полезных сценариев использования (use cases) и упрощает тестирование системы с учетом различных пользователей и их потребностей. Основные элементы:
+Роли пользователей: Это представление различных типов пользователей системы. Каждая роль может представлять отдельного пользователя или группу пользователей с похожими характеристиками или правами.
+Действия (Use Cases): Действия или функции, которые пользователи могут выполнять в системе. Эти действия связаны с ролями пользователей.
+Взаимодействия между ролями: Определяют, как различные роли взаимодействуют друг с другом, делятся информацией или совместно работают над выполнением задач.
+Отношения между ролями и системой: На диаграмме может быть представлено, как каждая роль взаимодействует с системой — например, какие действия или функции доступны каждой роли.
+
+
+Исчерпывающее тестирование (exhaustive testing): Методика тестирования, в которой набор тестов включает в себя все комбинации входных данных и предусловий. (ISTQB)
+
+User Journey test, как следует из названия, охватывает полное путешествие пользователя по системе.
+
+Бисекционное деление.
+
+Декомпозиция.
+
+
+
+
+
+
+
+Методы белого ящика:
+● тестирование операторов (элементами покрытия являются операторы)
+● тестирование ветвей (элементами покрытия являются ветви, ветвь представляет собой передачу управления между двумя узлами в графе потока управления, которая показывает возможные последовательности выполнения операторов в исходном коде объекта тестирования)
+
+
+
+Because of their popularity and simplicity, this section focuses on two code-related white-box test techniques: 
+• Statement testing 
+• Branch testing
+
+
+
+Тестирование на основе опыта:
+● предположение об ошибках (основано на знаниях тестировщика, таких как: знания о том, как приложение работало в прошлом, типы ошибок, которые склонны допускать разработчики, и типы дефектов, которые могут проистекать из таких ошибок, типы отказов, которые происходили в других или похожих приложениях)
+● исследовательское тестирование (тесты одновременно разрабатываются, выполняются и получают оценку результата в процессе того, как тестировщик изучает объект тестирования)
+● тестирование на основе чек-листов (тестировщик проектирует, реализует и выполняет тесты, покрывающие тестовые условия, указанные в чек-листе)
+Experience-based Test Techniques: 
+• Error guessing (based on the tester’s knowledge, including: How the application has worked in the past, The types of errors the developers tend to make and the types of defects that result from these errors, The types of failures that have occurred in other, similar applications)
+• Exploratory testing (In exploratory testing, tests are simultaneously designed, executed, and evaluated while the tester learns about the test object. The testing is used to learn more about the test object, to explore it more deeply with focused tests, and to create tests for untested areas.)
+• Checklist-based testing (In checklist-based testing, a tester designs, implements, and executes tests to cover test conditions from a checklist. )
+
+
