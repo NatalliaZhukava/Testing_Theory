@@ -1,0 +1,487 @@
+ТЕОРИЯ. Задание 7-8
+
+Требования - это что?
+Для чего нужен Анализ требований в разработке программного обеспечения?
+Перечислите Виды требований
+Перечислите Функциональные уровни требований
+Перечислите Нефункциональные уровни требований
+Перечислите техники сбора требований
+Что такое Спецификация требований программного обеспечения (SRS)?
+Что такое Use Case?
+Приведите пример Use Case
+Перечислите Характеристики качества требований
+Приведите пример к каждой Характеристике качества требований
+Что такое Пользовательские истории(User story)?
+Приведите пример Пользовательских историй(User story)
+Какие преимущества и недостатки Пользовательских историй(User story)?
+Что такое Критерии приемки(Acceptance criteria)?
+Перечислите виды и форматы критерий приемки
+Приведите пример критерий приемки- список правил
+Приведите пример критерий приемки- поведенческий сценарий
+Перечислите критерии INVEST для User story
+Что такое приемка приложения?
+Что такое аудит приложения?
+Этапы проведения аудита.
+Чем приемка приложения отличается от аудита?
+Назовите типы метрик тестирования. Каковы цели ввода метрик? Приведите примеры метрик.
+Что такое эстимирование?
+Перечислите Принципы эстимирования
+Какие техники оценивания разработки программного обеспечения вы знаете?
+Приведите пример Процесса оценки по каждой технике эстимирования
+Что такое Риск(Risks)?
+
+
+Требования - это что?
+Для чего нужен Анализ требований в разработке программного обеспечения?
+
+Требование (requirement) — описание того, какие функции и с соблюдением каких условий должно выполнять приложение в процессе решения полезной для пользователя задачи.
+Анализ требований (или requirements analysis) — это один из ключевых этапов разработки ПО. Его основная цель — детально понять, что нужно пользователю или заказчику, чтобы создать продукт, который решит их задачи. Основные задачи анализа требований:
+Определение реальных потребностей: Этот этап помогает уточнить, какие именно функции и возможности ожидаются от системы, что важно для бизнеса, а что — второстепенно.
+Минимизация ошибок: Чёткий анализ требований позволяет избежать недоразумений между разработчиками и заказчиками, что снижает вероятность создания продукта, не соответствующего ожиданиям.
+Оптимизация ресурсов: Чёткое понимание объема работы и требований позволяет более эффективно распределить ресурсы и планировать проект.
+Приоритизация: Требования могут быть расставлены по приоритетам, чтобы сосредоточиться на важных функциях и отложить менее критичные на последующие этапы разработки.
+Оценка рисков: Анализ требований помогает выявить потенциальные риски проекта, такие как сложность реализации определённых функций или несоответствие ожидаемого бюджета.
+Определение критериев приёмки: Это помогает чётко сформулировать, как именно будет проводиться проверка того, что продукт выполнен в соответствии с ожиданиями, и что именно должно быть протестировано на этапе приемки.
+Управление изменениями: Если требования меняются в ходе проекта, наличие чётко задокументированных требований помогает управлять этими изменениями и оценивать их влияние на сроки и ресурсы проекта.
+Requirement. A condition or capability needed by a user to solve a problem or achieve an objective that must be met or possessed by a system or system component to satisfy a contract, standard, specification, or other formally imposed document. 
+Requirements analysis is a key stage in software development, aimed at thoroughly understanding user or client needs to create a product that addresses those needs. The main objectives include:
+Identifying real needs: Clarifying the functions and features expected from the system, distinguishing between essential and secondary aspects for the business.
+Minimizing errors: Ensuring clear communication between developers and clients to avoid misunderstandings and reduce the risk of creating a product that doesn't meet expectations.
+Optimizing resources: Understanding the scope of work and requirements to efficiently allocate resources and plan the project.
+Prioritization: Ranking requirements to focus on critical features first and leave less important ones for later.
+Risk assessment: Identifying potential risks, such as implementation complexity or budget issues.
+Defining acceptance criteria: Clearly outlining how the product will be validated to meet expectations and what will be tested during acceptance.
+Managing changes: Documented requirements help manage changes throughout the project and assess their impact on deadlines and resources.
+
+
+
+
+Перечислите Виды требований
+Перечислите Функциональные уровни требований
+Перечислите Нефункциональные уровни требований
+
+Функциональные требования (functional requirements) описывают поведение системы, т.е. её действия (вычисления, преобразования, проверки, обработку и т.д.). В контексте проектирования функциональные требования в основном влияют на дизайн системы.
+Функциональные уровни требований:
+Уровень бизнеса — включает цели и задачи бизнеса, которые должна решать система.
+Уровень пользователя — описывает функциональность, которую пользователи ожидают от системы.
+Уровень системы — охватывает требования к работе системы, её функции и взаимодействие с другими системами.
+Уровень компонентов — касается требований к конкретным компонентам системы, например, к базе данных, модулю отчётов и т.д.
+
+Нефункциональные требования (non-functional requirements) описывают свойства системы (удобство использования, безопасность, надёжность, расширяемость и т.д.), которыми она должна обладать при реализации своего поведения. Здесь приводится более техническое и детальное описание атрибутов качества. В контексте проектирования нефункциональные требования в основном влияют на архитектуру системы. Вигерс выделяет такие уровни нефункциональных требований, как:
+бизнес-правила (это некие ограничения, требования, которые продиктованы нам либо бизнесом – выходят из каких-то локальных актов или внутренних правил конкретного бизнеса; либо это что-то, что продиктовано законодательством – любыми его актами, стандартами, регламентом.)
+атрибуты качества (это характеристики программного обеспечения, которые фокусируются на качественных аспектах работы системы, таких как производительность, безопасность, удобство использования и надежность. Делятся на design-time атрибуты - расширяемость, интернационализация, модульность, поддерживаемость; и runtime-атрибуты - производительность, надежность, безопасность)
+внешние интерфейсы (например, требования к API)
+ограничения (условия, ограничивающие выбор возможных решений по реализации отдельных требований или их наборов)
+Functional requirements describe the system's behavior, including actions like calculations, transformations, validation, and processing. They primarily influence the system's design and operate on various levels:
+Business level: Focuses on the business goals and objectives the system must fulfill.
+User level: Describes the functionality users expect from the system.
+System level: Covers the system's functions and interactions with other systems.
+Component level: Deals with specific components like databases, reporting modules, etc.
+Non-functional requirements describe the system's qualities (e.g., usability, security, reliability, scalability) and define how the system should behave when performing its functions. They mostly impact the system's architecture and include:
+Business rules: Constraints imposed by internal business policies or external legislation.
+Quality attributes: Characteristics such as performance, security, usability, and reliability, divided into design-time (e.g., scalability, modularity) and runtime (e.g., performance, reliability) attributes.
+External interfaces: Requirements for APIs and other system interfaces.
+Constraints: Conditions that limit the choice of implementation solutions.
+
+
+
+
+Перечислите техники сбора требований
+Что такое Спецификация требований программного обеспечения (SRS)?
+
+Сбор (gathering) и выявление (elicitation) требований осуществляются с помощью следующих основных техник:
+Интервью.
+Работа с фокусными группами.
+Анкетирование.
+Семинары и мозговой штурм.
+Наблюдение.
+Прототипирование.
+Анализ документов.
+Моделирование процессов и взаимодействий.
+Самостоятельное описание.
+
+Документирование требований — важная часть процесса разработки программного обеспечения, позволяющая структурировать и описывать то, что нужно создать. Существует несколько основных способов документирования требований:
+
+1. **Традиционная документация (Waterfall)**
+   - **Спецификация требований (SRS)**: Основной документ, содержащий полное описание системы и всех ее требований. Включает функциональные и нефункциональные требования, ограничения, сценарии использования и технические спецификации. Используется в классических методологиях (например, Waterfall). Этот документ служит основным источником информации для всех участников проекта (разработчиков, тестировщиков, менеджеров и заказчиков) и определяет, что должно быть реализовано в системе.
+   - **Технические задания (ТЗ)**: Подробный документ, описывающий цели, требования и этапы разработки системы.
+
+2. **Гибкие подходы (Agile)**
+   - **User Stories (Пользовательские истории)**: Краткие описания того, что должен делать продукт с точки зрения пользователя. Обычно оформляются в формате: "Как [роль], я хочу [функция], чтобы [цель]". Этот подход используется в Agile и Scrum.
+   - **Epic**: Крупные пользовательские истории, которые разбиваются на более мелкие User Stories.
+   - **Acceptance Criteria (Критерии приемки)**: Набор условий, которые должны быть выполнены для того, чтобы требование считалось выполненным. Обычно используется совместно с User Stories.
+   - **Product Backlog**: Список всех задач и требований к продукту, который управляется в течение всего проекта. Постоянно обновляется и меняется по мере работы.
+
+3. **Модели и схемы**
+   - **Диаграммы UML**: Используются для визуального представления требований и взаимодействия между компонентами системы. Например, диаграммы прецедентов, диаграммы классов, диаграммы последовательностей.
+   - **Use Cases (Сценарии использования)**: Описание того, как система взаимодействует с пользователями или другими системами. Содержат подробные шаги, которые выполняются для достижения определенной цели.
+   - **Business Process Models (BPMN)**: Диаграммы для описания бизнес-процессов, которые могут быть связаны с системой.
+
+4. **Методики визуализации и прототипирования**
+   - **Прототипы и мокапы**: Визуальное представление интерфейсов и функциональности системы. Помогает согласовывать требования к пользовательскому интерфейсу.
+   - **Wireframes (Каркасы)**: Упрощенные схемы интерфейсов, которые позволяют понять, как будет выглядеть и работать продукт до его разработки.
+
+5. **Документы уровня бизнеса**
+   - **Vision and Scope (Видение и границы проекта)**: Высокоуровневое описание целей проекта, целевой аудитории, ключевых функций и границ системы.
+   - **Business Requirements Document (BRD)**: Описание бизнес-требований, где фокус на потребностях бизнеса и стратегических целях проекта.
+
+6. **Современные инструменты для управления требованиями**
+   - **Jira, Confluence, Trello**: Инструменты, которые позволяют вести документацию, работать с пользовательскими историями, тасками, багами и их статусами.
+   - **Requirements Management Tools (например, IBM Rational, Jama Software)**: Специализированные системы для управления и отслеживания требований на всех этапах проекта.
+
+
+Gathering and elicitation of requirements are conducted using the following main techniques:
+Interviews
+Working with focus groups
+Surveys
+Workshops and brainstorming
+Observation
+Prototyping
+Document analysis
+Process and interaction modeling
+Self-description
+Software Requirements Specification (SRS): The primary document containing a complete description of the system and all its requirements. It includes functional and non-functional requirements, constraints, use cases, and technical specifications. Used in traditional methodologies (e.g., Waterfall). This document serves as the main source of information for all project participants (developers, testers, managers, and clients) and defines what must be implemented in the system.
+
+
+
+Что такое Use Case?
+Приведите пример Use Case
+
+Use case (юзкейс) — это сценарий взаимодействия пользователя с программным продуктом для достижения конкретной цели.
+Основные элементы юзкейса:
+Актор (actor) — тот, кто использует систему. Например, покупатель, продавец.
+Стейкхолдер (stakeholder) — заинтересованное лицо, получающее выгоду от функционирования системы (например, платежная платформа).
+Первичное действующее лицо (primary actor) — главный пользователь, достигающий целей с помощью системы.
+Предусловия и постусловия — условия до и после выполнения сценария.
+Триггеры — события, запускающие юзкейс.
+Успешный сценарий — сценарий, где все идет по плану.
+Альтернативные пути — варианты на случай отклонений от успешного сценария.
+Шаги создания юзкейса:
+Определите пользователей системы.
+Выберите одного из пользователей.
+Определите, что пользователь хочет делать (юзкейс).
+Опишите основной сценарий взаимодействия.
+Добавьте альтернативные пути.
+Повторите процесс для всех остальных пользователей.
+Юзкейс-диаграммы
+Для визуализации используют диаграммы, где:
+Система изображена в виде прямоугольника.
+Вариант использования (функция) — это овал.
+Актор — изображается человечком.
+Польза юзкейсов для участников разработки:
+Заказчики: Юзкейс описывает бизнес-ценность, понятную нетехническим специалистам.
+Разработчики: Структурированное описание процессов, полезное для понимания сложных требований.
+Тестировщики: Юзкейсы служат основой для тест-кейсов, позволяя эффективно тестировать приложение.
+
+
+A Use Case is a scenario of interaction between a user and a software product to achieve a specific goal.
+Key elements of a use case:
+Actor: The person or entity using the system, such as a customer or seller.
+Stakeholder: A party that benefits from the system's operation (e.g., a payment platform).
+Primary Actor: The main user who achieves goals with the help of the system.
+Preconditions and Postconditions: Conditions before and after the use case is executed.
+Triggers: Events that initiate the use case.
+Success Scenario: The scenario where everything proceeds as expected.
+Alternative Paths: Options for deviations from the success scenario.
+Steps to create a use case:
+Identify the users of the system.
+Select one user.
+Determine what the user wants to do (the use case).
+Describe the primary interaction scenario.
+Add alternative paths.
+Repeat the process for all other users.
+Use Case Diagrams:
+For visualization, use case diagrams include:
+The system, represented as a rectangle.
+A use case (function), shown as an oval.
+An actor, depicted as a stick figure.
+Benefits of use cases for development participants:
+Clients: Use cases describe business value in terms understandable to non-technical stakeholders.
+Developers: A structured description of processes that helps in understanding complex requirements.
+Testers: Use cases form the basis for test cases, facilitating effective application testing.
+
+
+
+
+Перечислите Характеристики качества требований
+Приведите пример к каждой Характеристике качества требований
+
+*Завершённость (completeness). Требование является полным и законченным с точки зрения представления в нём всей необходимой информации, ничто не пропущено по соображениям «это и так всем понятно». 
+Атомарность, единичность (atomicity). Требование является атомарным, если его нельзя разбить на отдельные требования без потери завершённости и оно описывает одну и только одну ситуацию.
+*Непротиворечивость, последовательность (consistency). Требование не должно содержать внутренних противоречий и противоречий другим требованиям и документам. 
+*Недвусмысленность (unambiguousness , clearness). Требование должно быть описано без использования жаргона, неочевидных аббревиатур и расплывчатых формулировок, должно допускать только однозначное объективное понимание и быть атомарным в плане невозможности различной трактовки сочетания отдельных фраз.
+*Выполнимость (feasibility). Требование должно быть технологически выполнимым и реализуемым в рамках бюджета и сроков разработки проекта.
+*Обязательность, нужность (obligatoriness) и актуальность (up-to-date). Если требование не является обязательным к реализации, оно должно быть просто исключено из набора требований. Если требование нужное, но «не очень важное», для указания этого факта используется указание приоритета (см. «проранжированность по…»). Также исключены (или переработаны) должны быть требования, утратившие актуальность. 
+Прослеживаемость (traceability). Прослеживаемость бывает вертикальной (vertical traceability) и горизонтальной (horizontal traceability). Вертикальная позволяет соотносить между собой требования на различных уровнях требований, горизонтальная позволяет соотносить требование с тест-планом, тест-кейсами, архитектурными решениями и т.д. 
+Модифицируемость (modifiability). Это свойство характеризует простоту внесения изменений в отдельные требования и в набор требований. Можно говорить о наличии модифицируемости в том случае, если при доработке требований искомую информацию легко найти, а её изменение не приводит к нарушению иных описанных в этом перечне свойств.
+Проранжированность по важности, стабильности, срочности (ranked for importance, stability, priority). Важность характеризует зависимость успеха проекта от успеха реализации требования. Стабильность характеризует вероятность того, что в обозримом будущем в требование не будет внесено никаких изменений. Срочность определяет распределение во времени усилий проектной команды по реализации того или иного требования.
+*Корректность (correctness) и проверяемость (verifiability). Фактически эти свойства вытекают из соблюдения всех вышеперечисленных (или можно сказать, что они не выполняются, если нарушено хотя бы одно из вышеперечисленных). В дополнение можно отметить, что проверяемость подразумевает возможность создания объективного тест-кейса (тест-кейсов), однозначно показывающего, что требование реализовано верно и поведение приложения в точности соответствует требованию. 
+Key characteristics of software requirements:
+Completeness: The requirement must be fully detailed, leaving no information assumed or implied.
+Atomicity: The requirement should be indivisible, describing only one situation without loss of completeness.
+Consistency: The requirement must not conflict with itself or other requirements and documents.
+Unambiguousness: The requirement must be clearly stated, avoiding jargon and vague terms, allowing for only one interpretation.
+Feasibility: The requirement must be technologically achievable within the project's budget and timeline.
+Obligatoriness and Relevance: Non-essential or outdated requirements should be removed, with priorities set for important ones.
+Traceability: Requirements must be traceable vertically (across different requirement levels) and horizontally (linked to test plans, architectural decisions, etc.).
+Modifiability: Changes to the requirements should be easy to implement without disrupting other properties.
+Ranked by Importance, Stability, Priority: Requirements should be prioritized based on their impact on project success, likelihood of future changes, and urgency.
+Correctness and Verifiability: The requirement should meet all listed criteria and be verifiable through test cases that objectively confirm correct implementation.
+
+
+
+
+
+Что такое Пользовательские истории(User story)?
+Приведите пример Пользовательских историй(User story)
+Какие преимущества и недостатки Пользовательских историй(User story)?
+
+Пользовательская история (user story): Высокоуровневое пользовательское или бизнес-требование, обычно использующееся в гибких методологиях разработки программного обеспечения. Обычно состоит из одного или нескольких предложений на разговорном или формальном языке, описывающих функциональность, необходимую пользователю, любые нефункциональные требования и включающих в себя критерии приемки. (ISTQB)
+Формат:
+Как /роль пользователя или клиента/, я хочу /цель, которую нужно достичь/, чтобы я мог /причина цели/.
+Например, “Как пользователь WhatsApp, я хочу, чтобы значок камеры в поле ввода чата позволял захватывать и отправлять изображения, чтобы я мог щелкнуть и поделиться своими фотографиями одновременно со всеми своими друзьями.”
+
+Плюсы пользовательских историй:
+Сосредоточенность на пользователе
+Простота и ясность
+Гибкость и адаптивность
+Упрощение приоритизации
+Поддержка разработки поэтапно
+Минусы пользовательских историй:
+Неполнота требований
+Сложности с формулировкой
+Игнорирование технических аспектов
+Отсутствие метрик для оценки
+Трудности с масштабированием
+User Story: A high-level user or business requirement, commonly used in agile software development methodologies. It typically consists of one or more sentences in conversational or formal language, describing the functionality a user needs, any non-functional requirements, and includes acceptance criteria. 
+Format: "As a /user or customer role/, I want to /goal to be achieved/ so that I can /reason for the goal/."
+For example: “As a WhatsApp user, I want the camera icon in the chat input field to allow capturing and sending images so that I can quickly take and share my photos with all my friends at once.”
+Advantages of user stories:
+Focus on the user
+Simplicity and clarity
+Flexibility and adaptability
+Simplifies prioritization
+Supports incremental development
+Disadvantages of user stories:
+Incomplete requirements
+Difficulty in formulation
+Ignoring technical aspects
+Lack of metrics for evaluation
+Challenges with scaling
+
+
+
+
+Что такое Критерии приемки(Acceptance criteria)?
+Перечислите виды и форматы критерий приемки
+Приведите пример критерий приемки- список правил
+Приведите пример критерий приемки- поведенческий сценарий
+Перечислите критерии INVEST для User story
+
+Критерии приемки — это набор условий, которым должна соответствовать функциональность программного обеспечения, чтобы считаться завершённой и готовой для использования. Они помогают разработчикам и тестировщикам понять, что ожидается от реализации задачи, и служат основой для проведения тестирования и оценки готовности.
+Виды и форматы критериев приемки
+Список правил: Простой и структурированный формат, где описаны конкретные требования и условия. Включает перечень правил, которым должно соответствовать программное обеспечение.
+Поведенческий сценарий (сценарий на основе BDD - Behavior-Driven Development): Использует формат, основанный на примерах поведения системы. Чаще всего применяется язык описания сценариев Gherkin и включает следующие элементы: Given (Дано), When (Когда), Then (Тогда).
+Критерии на основе пользовательских историй: Включает критерии, которые напрямую связаны с конкретной пользовательской историей.
+Функциональные и нефункциональные критерии: Функциональные: проверяют конкретное поведение и функциональность системы. Нефункциональные: проверяют аспекты, такие как производительность, безопасность, юзабилити.
+Пример критериев приемки — список правил
+Задача: Создание формы регистрации пользователей на сайте.
+Критерии приемки:
+Форма регистрации должна содержать поля: имя, фамилия, email, пароль и подтверждение пароля.
+Поле "email" должно проверяться на корректный формат (пример: user@example.com).
+Пароль должен содержать не менее 8 символов, включать как минимум одну цифру и одну заглавную букву.
+Поле "подтверждение пароля" должно соответствовать введенному паролю.
+При успешной регистрации должно отображаться сообщение "Регистрация успешна".
+Если форма заполнена некорректно, должны отображаться соответствующие сообщения об ошибках.
+Пример критериев приемки — поведенческий сценарий (BDD)
+Задача: Добавление товара в корзину интернет-магазина.
+Критерии приемки (сценарий):
+Scenario: Успешное добавление товара в корзину
+Given: Пользователь находится на странице товара
+When: Пользователь нажимает на кнопку "Добавить в корзину"
+Then: Товар должен быть добавлен в корзину
+And: Количество товаров в корзине должно увеличиться на 1
+And: Отображается уведомление "Товар добавлен в корзину"
+
+Критерии INVEST — это набор характеристик, которым должна соответствовать хорошо написанная пользовательская история (User Story) в методологиях гибкой разработки (например, Scrum или Kanban). Эта аббревиатура помогает определить, насколько качественно составлена пользовательская история и готова ли она к выполнению командой разработки.
+Расшифровка INVEST:
+I — Independent (Независимая)
+Пользовательская история должна быть независимой от других историй. Это означает, что она может быть реализована и протестирована отдельно, без необходимости выполнения других задач. Независимость помогает минимизировать взаимозависимости между разными частями проекта, что упрощает планирование и выполнение.
+N — Negotiable (Оговоримая)
+История должна быть предметом обсуждения и уточнений. Это не фиксированный контракт, а скорее начальная точка для переговоров между разработчиками и бизнесом (или пользователем). Требования могут изменяться по мере обсуждения.
+V — Valuable (Ценная)
+Пользовательская история должна приносить ценность для пользователя или бизнеса. Каждая история должна отражать конкретную выгоду или решать проблему, которая важна для конечных пользователей.
+E — Estimable (Оцениваемая)
+История должна быть достаточно понятной, чтобы команда могла оценить её сложность и затраты времени. Если история не может быть оценена (например, из-за недостатка информации), её следует доработать, чтобы сделать более ясной.
+S — Small (Небольшая)
+История должна быть достаточно небольшой, чтобы её можно было завершить за один спринт (или итерацию). Большие задачи нужно разбивать на более мелкие и управляемые истории. Оптимальный размер истории делает её более предсказуемой и легче управляемой.
+T — Testable (Тестируемая)
+Для каждой истории должны быть чётко определены критерии приёмки, чтобы можно было проверить, выполнена ли она корректно. Тестируемость гарантирует, что история имеет измеримые результаты и её успешное выполнение можно подтвердить.
+Пример пользовательской истории, соответствующей критериям INVEST:
+User Story: Как пользователь интернет-магазина, я хочу иметь возможность добавлять товары в корзину, чтобы затем оформить заказ.
+Критерии INVEST:
+I: История независима — добавление товара в корзину не зависит от других функций (например, от системы оплаты).
+N: История обсуждаема — возможны изменения, например, в пользовательском интерфейсе или количестве кнопок.
+V: История приносит ценность — пользователь может удобно выбирать товары, что ведёт к увеличению продаж.
+E: Историю можно оценить — команда может оценить, сколько времени потребуется на реализацию функции добавления товара в корзину.
+S: История достаточно маленькая — задача реализуется за короткий период, например, в одном спринте.
+T: История тестируема — можно проверить, добавляется ли товар в корзину и корректно ли отображается количество товаров.
+Acceptance Criteria are a set of conditions that a software functionality must meet to be considered complete and ready for use. They help developers and testers understand what is expected from the implementation of a task and serve as a foundation for testing and assessing readiness.
+Types and Formats of Acceptance Criteria:
+Checklist: A simple and structured format that outlines specific requirements and conditions, including a list of rules that the software must adhere to.
+Behavioral Scenario (BDD - Behavior-Driven Development): Uses a format based on examples of system behavior. It often employs the Gherkin language for scenario description, including the following elements: Given, When, Then.
+Criteria Based on User Stories: Includes criteria that are directly related to a specific user story.
+Functional and Non-Functional Criteria:
+Functional: Verify specific behaviors and functionalities of the system.
+Non-Functional: Assess aspects such as performance, security, and usability.
+INVEST Criteria is a set of characteristics that a well-written user story should meet in agile development methodologies (like Scrum or Kanban). This acronym helps determine the quality of a user story and whether it is ready for the development team to work on.
+Breakdown of INVEST:
+I — Independent: The user story should be independent from others, meaning it can be implemented and tested separately without dependencies. This minimizes interdependencies within the project, simplifying planning and execution.
+N — Negotiable: The story should be open for discussion and refinement. It serves as a starting point for negotiations between developers and stakeholders (or users), and requirements may change during discussions.
+V — Valuable: The user story must provide value to the user or business. Each story should reflect a specific benefit or address an important problem for end users.
+E — Estimable: The story should be clear enough for the team to assess its complexity and time requirements. If it cannot be estimated due to lack of information, it should be refined to improve clarity.
+S — Small: The story should be small enough to be completed within a single sprint or iteration. Larger tasks should be broken down into smaller, manageable stories. This optimal size makes the story more predictable and easier to manage.
+T — Testable: Clear acceptance criteria should be defined for each story to verify its correctness. Testability ensures that the story has measurable outcomes and that its successful completion can be confirmed.
+
+
+
+
+Что такое эстимирование?
+Перечислите Принципы эстимирования
+Какие техники оценивания разработки программного обеспечения вы знаете?
+Приведите пример Процесса оценки по каждой технике эстимирования
+Эстимирование (оценка) — это процесс предсказания времени, усилий или ресурсов, необходимых для выполнения задачи или проекта. 
+Популярные техники оценки трудозатрат (эстимации)
+Пальцем в небо (метод проб и ошибок)
+Процентное отношение к разработке (например, на 1 тестировщика приходится 2-3 разработчика; значит на тестирование тратится в 2-3 раза меньше времени, чем на разработку). В ISTQB: Оценка на основе коэффициентов. В этом методе, основанном на метриках, данные собираются по предыдущим проектам внутри организации, что позволяет получить «стандартные» коэффициенты (соотношение затрат на разработку и тестирование) для аналогичных проектов. 
+Процентное распределение, при котором на все фазы SDLC выделяется определенный процент времени. Время выделенное на тестирование, разделяется на отдельные фазы STLC.
+Эстимация, основанная на предыдущем опыте (Экстраполяция)
+Структурная декомпозиция, при которой крупные задачи разделяются на более мелкие, которые легко оценить
+Эстимация по трем точкам = Оценка методом PERT (Program Evaluation and Review Technique): Рассчитывается по следующей формуле: 
+(O + (4 × M) + P)/6, где
+O - оптимистичная оценка, когда все идет по плану (оценки делают эксперты)
+M - наиболее вероятная оценка, с учетом возникающих проблем
+P - пессимистичная оценка, когда все идет не по плану
+Также рассчитывается стандартное отклонение:  (P − O)/6.
+7. Широкополосный метод Дельфи. Эксперты делают оценки, основанные на опыте. Каждый эксперт по отдельности оценивает трудозатраты. Результаты собираются, и, если есть отклонения, выходящие за пределы согласованных границ, эксперты обсуждают свои текущие оценки. Затем изолировано каждого эксперта, просят сделать новую оценку с учетом обратной связи. Этот процесс повторяется до тех пор, пока не будет достигнут консенсус. Разновидность широкополосного метода Дельфи — это покер-планирование.
+Estimation is the process of predicting the time, effort, or resources required to complete a task or project. Here are some popular techniques for effort estimation:
+Guesswork (Trial and Error): A straightforward method that relies on rough estimates.
+Ratio-Based Estimation: For example, if one tester is needed for every 2-3 developers, then testing will take 2-3 times less time than development. This method is often supported by historical metrics from previous projects to create "standard" ratios.
+Percentage Distribution: Allocating a specific percentage of time to all phases of the Software Development Life Cycle (SDLC), with time dedicated to testing divided among the phases of the Software Testing Life Cycle (STLC).
+Experience-Based Estimation (Extrapolation): Using past experiences to predict future effort.
+Structural Decomposition: Breaking down large tasks into smaller, more easily estimable ones.
+Three-Point Estimation (PERT): Calculated using the formula:
+(O+(4×M)+P)/6(O + (4 × M) + P) / 6(O+(4×M)+P)/6
+where:
+O = Optimistic estimate (when everything goes as planned).
+M = Most likely estimate (considering potential issues).
+P = Pessimistic estimate (when everything goes wrong).
+The standard deviation is also calculated as (P−O)/6(P - O) / 6(P−O)/6.
+Wideband Delphi Method: Experts independently estimate effort based on their experience. Results are gathered, and if there are significant deviations, experts discuss their estimates. Each expert is then asked to re-evaluate their estimate based on feedback. This process repeats until consensus is reached. A variant of this method is Planning Poker.
+
+
+Что такое Риск(Risks)?
+Риск — это потенциальное негативное событие, случайность, фактор или ситуация, возникновение которых может иметь неблагоприятные последствия. Риск характеризуется двумя показателями: 
+● Вероятность риска — вероятность, что событие, представляющее собой риск, наступит (значение больше нуля и меньше единицы) 
+● Влияние риска (ущерб) — результат наступления такого события.
+
+
+Риски проекта связаны с управлением проектом и контролем над ним. Риски проекта включают: 
+● Организационные проблемы (например, задержки поставки рабочих продуктов, неточные оценки, сокращение бюджета) 
+● Проблемы, связанные с человеческими ресурсами (например, недостаточные навыки, конфликты, проблемы коммуникации, сокращение штата) 
+● Технические проблемы (например, расползание рамок проекта, некачественный инструментарий) 
+● Проблемы с поставщиками (например, несостоявшаяся поставка от сторонней организации, банкротство поставщика) 
+
+
+Риски продукта связаны с характеристиками качества продукта (например, описанными в модели качества ISO 25010). Примеры рисков продукта включают: пропущенный или неверно работающий функционал, неверные вычисления, ошибки, проявляющиеся при выполнении программы, неудовлетворительное качество архитектуры, неэффективные алгоритмы, неприемлемое время отклика, неудовлетворительное качество реализации пользовательского интерфейса, уязвимости безопасности. Если наступают события, связанные с рисками продукта, то негативные последствия могут быть различны: ● Недовольство пользователей ● Падение дохода доверия, репутации ● Урон третьим лицам ● Высокие затраты на сопровождение программного обеспечения, высокая нагрузка на подразделение техподдержки ● Наказание за нарушение законодательства (включая уголовное) ● В крайних случаях — физический ущерб, травмы и даже смерть 
+Risk is a potential event, hazard, threat, or situation whose occurrence causes an adverse effect. A risk can be characterized by two factors: 
+• Risk likelihood – the probability of the risk occurrence (greater than zero and less than one) 
+• Risk impact (harm) – the consequences of this occurrence
+
+Project risks are related to the management and control of the project. Project risks include: 
+• Organizational issues (e.g., delays in work products deliveries, inaccurate estimates, cost-cutting) 
+• People issues (e.g., insufficient skills, conflicts, communication problems, shortage of staff) 
+• Technical issues (e.g., scope creep, poor tool support) 
+• Supplier issues (e.g., third-party delivery failure, bankruptcy of the supporting company) 
+
+Project risks, when they occur, may have an impact on the project schedule, budget or scope, which affects the project's ability to achieve its objectives. Product risks are related to the product quality characteristics (e.g., described in the ISO 25010 quality model). Examples of product risks include: missing or wrong functionality, incorrect calculations, runtime errors, poor architecture, inefficient algorithms, inadequate response time, poor user experience, security vulnerabilities. Product risks, when they occur, may result in various negative consequences, including: • User dissatisfaction • Loss of revenue, trust, reputation • Damage to third parties • High maintenance costs, overload of the helpdesk • Criminal penalties • In extreme cases, physical damage, injuries or even death
+
+
+
+Что такое приемка приложения?
+Что такое аудит приложения?
+Этапы проведения аудита.
+Чем приемка приложения отличается от аудита?
+1. Приемка приложения
+Приемка приложения — это процесс проверки и утверждения готового программного продукта перед его вводом в эксплуатацию или передачей заказчику. Этот этап проводится в конце разработки и направлен на то, чтобы убедиться, что приложение соответствует техническому заданию, требованиям заказчика, а также стандартам качества. Основные задачи приемки:
+Проверка функциональности.
+Тестирование на соответствие требованиям (в том числе бизнес-логики).
+Оценка юзабилити и производительности.
+Проверка на наличие критических ошибок.
+Подтверждение готовности продукта к использованию.
+Приемка может проводиться командой тестировщиков или заказчиком, и по результатам может быть принято решение о доработке приложения.
+2. Аудит приложения
+Аудит приложения — это комплексная оценка программного продукта, которая включает проверку его архитектуры, безопасности, производительности, качества кода и соответствия стандартам разработки. Аудит может быть проведён на любом этапе жизненного цикла приложения: от разработки до эксплуатации. Цели аудита:
+Оценка безопасности и поиск уязвимостей.
+Проверка качества кода (чистота, масштабируемость, поддерживаемость).
+Анализ производительности (оптимизация ресурсов).
+Соответствие стандартам (например, GDPR, PCI DSS).
+Выявление технических долгов и областей, требующих улучшений.
+3. Этапы проведения аудита приложения
+Этапы могут различаться в зависимости от целей аудита, но общий процесс обычно включает следующие шаги:
+Планирование — определение целей аудита, выбор метрик и ключевых показателей.
+Сбор информации — сбор данных о приложении, включая его архитектуру, используемые технологии, логи и метрики.
+Анализ и тестирование — анализ кода, проверка производительности, тестирование безопасности (пентесты) и других характеристик.
+Отчет и рекомендации — составление отчета с выявленными проблемами, уязвимостями и рекомендациями по их устранению.
+Доработки (при необходимости) — разработчики исправляют найденные проблемы, после чего может быть проведён повторный аудит.
+4. Чем приемка отличается от аудита?
+Цель: Приемка направлена на подтверждение готовности приложения к передаче заказчику или запуску в эксплуатацию. Аудит же направлен на всестороннюю проверку качества, безопасности и производительности приложения, часто с целью его оптимизации.
+Время проведения: Приемка проводится в конце разработки, аудит может быть проведён на любом этапе.
+Содержание: Приемка — это проверка соответствия требованиям, аудит — это глубокий анализ архитектуры, кода, безопасности и других аспектов.
+Исполнители: Приемку обычно проводит заказчик или QA-команда, аудит часто выполняется независимой стороной или экспертами в безопасности/архитектуре.
+Application Acceptance: This process involves checking and approving a completed software product before its deployment or handover to the client. Conducted at the end of development, its main tasks include:
+Verifying functionality.
+Testing against requirements (including business logic).
+Assessing usability and performance.
+Checking for critical errors.
+Confirming readiness for use. Acceptance can be performed by a testing team or the client, and decisions may be made about necessary revisions based on the results.
+Application Audit: This is a comprehensive evaluation of a software product, focusing on its architecture, security, performance, code quality, and compliance with development standards. Audits can occur at any stage of the application lifecycle and aim to:
+Assess security and identify vulnerabilities.
+Check code quality (cleanliness, scalability, maintainability).
+Analyze performance (resource optimization).
+Ensure compliance with standards (e.g., GDPR, PCI DSS).
+Identify technical debts and areas for improvement.
+Stages of Conducting an Application Audit: The stages may vary depending on audit goals, but typically include:
+Planning: Defining audit objectives and selecting metrics.
+Information Gathering: Collecting data on the application, including its architecture, technologies used, logs, and metrics.
+Analysis and Testing: Analyzing code, checking performance, conducting security testing (penetration tests), and assessing other characteristics.
+Reporting and Recommendations: Creating a report detailing identified issues, vulnerabilities, and suggestions for remediation.
+Revisions (if necessary): Developers address identified problems, after which a follow-up audit may occur.
+Differences Between Acceptance and Audit:
+Purpose: Acceptance confirms the application’s readiness for delivery or deployment, while an audit comprehensively checks quality, security, and performance, often aiming for optimization.
+Timing: Acceptance occurs at the end of development, whereas audits can happen at any lifecycle stage.
+Content: Acceptance checks for compliance with requirements; audits involve deep analysis of architecture, code, security, and other aspects.
+Executors: Acceptance is typically carried out by the client or QA team, while audits are often conducted by independent parties or experts in security and architecture.
+
+
+Назовите типы метрик тестирования. Каковы цели ввода метрик? Приведите примеры метрик.
+
+Метрики тестирования 
+Метрики собираются для того, чтобы зафиксировать прогресс в ходе тестирования согласно запланированному графику и бюджету, а также для оценки текущего уровня качества объекта тестирования и оценки эффективности активностей тестирования в соответствии с целями или планами итерации. Мониторинг тестирования предполагает сбор разнообразных метрик, которые помогают процессам контроля тестирования и завершения тестирования. Общепринятые метрики тестирования включают: 
+● Показатели хода выполнения проекта (например, завершение задач, использование ресурсов, затраты на тестирование) 
+● Показатели хода тестирования (например, ход реализации тестовых сценариев, ход подготовки среды тестирования; количество выполненных и невыполненных тестовых сценариев, тест пройден / не пройден, время выполнения тестов) 
+● Показатели качества продукта (например, доступность, время отклика, среднее время наработки на отказ) 
+● Метрики дефектов (например, количество и приоритет найденных и исправленных дефектов, плотность дефектов, процент обнаружения дефектов) 
+● Метрики рисков (например, остаточный уровень риска) 
+● Метрики покрытия (например, покрытие требований, кода) 
+● Стоимостные показатели (например, стоимость тестирования, организационные затраты на качество) 
+Metrics used in Testing 
+Test metrics are gathered to show progress against the planned schedule and budget, the current quality of the test object, and the effectiveness of the test activities with respect to the objectives or an iteration goal. Test monitoring gathers a variety of metrics to support the test control and test completion. Common test metrics include: • Project progress metrics (e.g., task completion, resource usage, test effort) 
+• Test progress metrics (e.g., test case implementation progress, test environment preparation progress, number of test cases run/not run, passed/failed, test execution time) 
+• Product quality metrics (e.g., availability, response time, mean time to failure) 
+• Defect metrics (e.g., number and priorities of defects found/fixed, defect density, defect detection percentage) 
+• Risk metrics (e.g., residual risk level) 
+• Coverage metrics (e.g., requirements coverage, code coverage) 
+• Cost metrics (e.g., cost of testing, organizational cost of quality) 
+
+
